@@ -1,0 +1,24 @@
+<?php
+@include("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+E_D("DROP TABLE IF EXISTS `phome_enewsplayer`;");
+E_C("CREATE TABLE `phome_enewsplayer` (
+  `id` smallint(6) NOT NULL auto_increment,
+  `player` varchar(30) NOT NULL default '',
+  `filename` varchar(20) NOT NULL default '',
+  `bz` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=gbk");
+E_D("replace into `phome_enewsplayer` values('1','RealPlayer','realplayer.php','RealPlayer²¥·ÅÆ÷');");
+E_D("replace into `phome_enewsplayer` values('2','MediaPlayer','mediaplayer.php','MediaPlayer²¥·ÅÆ÷');");
+E_D("replace into `phome_enewsplayer` values('3','FLASH','flasher.php','FLASH²¥·ÅÆ÷');");
+E_D("replace into `phome_enewsplayer` values('4','FLV²¥·ÅÆ÷','flver.php','FLV²¥·ÅÆ÷');");
+
+@include("../../inc/footer.php");
+?>

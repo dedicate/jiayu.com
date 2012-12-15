@@ -1,0 +1,11 @@
+<?php
+require('../../class/connect.php');
+require('../../class/user.php');
+if($eloginurl)
+{
+	Header("Location:$eloginurl");
+	exit();
+}
+//µ¼ÈëÄ£°å
+require(ECMS_PATH.'e/template/member/login.php');
+?>

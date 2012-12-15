@@ -1,0 +1,12 @@
+<?php
+require('../../class/connect.php');
+require('../../class/user.php');
+if($eloginurl)
+{
+	echo"<script>window.close();</script>";
+	//Header("Location:$eloginurl");
+	exit();
+}
+//µ¼ÈëÄ£°å
+require(ECMS_PATH.'e/template/member/loginopen.php');
+?>
