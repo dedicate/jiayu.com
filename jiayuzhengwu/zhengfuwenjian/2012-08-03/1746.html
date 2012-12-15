@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于整体推进统计基础工作规范化建设的指导意见 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于整体推进统计基础工作规范化建设的指导意见" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于整体推进统计基础工作规范化建设的指导意见</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-08-03</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-size: 15pt"><font face="仿宋_GB2312">嘉政办发<span lang="EN-US">[2012]96</span>号<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US"><o:p><font size="5" face="仿宋_GB2312">&nbsp;</font></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">为认真贯彻落实国家、省、市加强统计机构规范化建设的有关要求，充分发挥统计工作服务全县科学发展、跨越发展的基础性作用，现结合我县实际，就整体推进统计基础工作规范化建设提出以下指导意见：<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　</font></span><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　认真贯彻落实全国和全省统计工作会议精神，紧紧围绕提高统计能力、统计数据质量和政府统计公信力，坚持以夯实基础、增强能力、创新理念、整体推进、综合配套、提高水平为工作方针，以更新的理念、更宽的视野、更高的标准、更扎实的工作，持之以恒地推进全县统计基础建设，努力使我县统计工作实现&ldquo;保障有力、管理规范、质量可信、服务高效、内外和谐&rdquo;的建设目标，为推进企业一套表制度、联网直报系统等&ldquo;四大工程&rdquo;建设，促进全县统计事业科学发展奠定坚实的基础，为建设湖北经济强县、长江临港新城提供强有力的统计保障。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　</font></span><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">二、建设原则<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　坚持质量第一、整体推进、探索创新、依法展开四大原则。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　</font></span><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">三、主要任务<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">（一）统计数据要真实可信<span lang="EN-US"><o:p></o:p></span></font></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">一是严格执行统计制度方法，严格按照统计业务工作流程开展统计调查。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">二是客观真实提供统计资料，不得伪造、篡改统计资料，不得以任何方式干预正常的统计行为。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">三是认真做好企业一套表工作，严把新增单位入口关，提高网上直报能力，凡&ldquo;三上&rdquo;企业必须独立上网直报数据，坚决杜绝代报代填现象，从源头上提高数据质量，保证数据不受人为干扰。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">四是加强统计数据质量审核评估，提高统计数据之间的匹配性、协调性。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">五是加强数据质量检查，依法查处违法行为，对上级统计巡查、检查意见，贯彻落实并整改到位。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　<b style="mso-bidi-font-weight: normal">（二）统计保障要满足需求<span lang="EN-US"><o:p></o:p></span></b></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">一是设立独立的统计机构，满足统计工作需要。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">二是配备相应的统计力量，与人口规模、经济社会发展水平相适应。各镇要配备<span lang="EN-US">3</span>名以上专（兼）职统计人员。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">三是提供相当的工作条件，要有办公用房，办公设施齐全配套。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">四是确保统计工作经费，建立统计工作经费保障的长效机制，从制度上保障统计改革、建设和发展的资金需要。县统计调查机构的行政经费、基本建设投资、按规定应由县政府承担的周期性普查和大型调查以及专项调查经费列入年度财政预算，并按时拨付到位。确保统计经费随着统计工作量的增加和财政收入的增长而增长。各镇要按照&ldquo;分级管理、分级负担&rdquo;的原则，将统计调查工作人员经费、公用经费、普查和专项调查经费以及大型普查经费、基层普查员补助经费等纳入镇级预算，并保障镇普查员经费。县统计局要着力探索、研究镇统计机构人员经费纳入政府统计部门统一管理的办法。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">五是加强统计信息化建设，县、镇两级将优先安排、落实统计信息化建设项目，努力把县统计局建设成为县委、县政府的数据资料中心和信息发布中心。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　<b style="mso-bidi-font-weight: normal">（三）统计管理要科学规范<span lang="EN-US"><o:p></o:p></span></b></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 35pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">一是逐步形成科学、开放的管理理念并建立规范的制度体系，使统计工作高效规范运行，具有较强的执行力。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 35pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">二是建立县、部门、镇、村、企业五位一体、全覆盖的统计工作网络，巩固镇统计&ldquo;八有八化&rdquo;建设成果，严格执行统计从业资格认定制度，定期对镇、企业统计人员进行业务培训。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">三是加强部门统计工作管理，各部门依法及时为统计部门提供相关的数据和信息。县统计局要加强对各部门统计资料发布的管理，避免数出多门。部门公布重要统计数据，事先要与县统计局沟通。各部门负责系统内各项统计工作的督促与管理。县政府办公室负责协调县直部门统计与政府综合统计信息共享机制的建立。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">四是做好重大专项统计工作。及时启动上级部署的重大国情国力调查和重大统计专项工作，并按质完成工作任务。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　<b style="mso-bidi-font-weight: normal">　（四）统计领导要依法到位<span lang="EN-US"><o:p></o:p></span></b></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　一是继续落实《县人民政府关于进一步加强和改进统计工作的意见》（嘉政发<span lang="EN-US">[2009]24</span>号）精神。注重发挥统计部门的信息、咨询、监督职能，在统计分析、统计咨询和服务决策、考核评价等方面为统计部门提供平台。尽可能为统计参与和服务经济社会发展提供方便，积极安排统计部门参加、列席全县重要会议，支持统计部门参与县内重大调研活动。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　二是县、镇和部门将统计工作纳入重要议事日程，定期听取统计工作汇报，专题研究统计工作。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　三是县、镇、部门和企业领导带头学习统计法和统计知识，年内举办两期以统计法和统计知识为主要内容的领导干部培训班。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　四是建立统计工作联席会议制度，加强统计部门与政府各部门的协调、合作和交流。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　五是各级领导要经常了解、亲自部署、督促检查统计工作，全力支持统计工作的开展，不人为干预统计上报。切实保障统计条件，认真解决统计的困难和问题。切实关心统计队伍建设，为统计干部的成长创造良好的条件和环境。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　<b style="mso-bidi-font-weight: normal">（五）统计服务要优质高效<span lang="EN-US"><o:p></o:p></span></b></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　一是及时准确提供统计数据和统计信息。不断丰富统计服务产品，为县域经济发展和社会各界提供优质的统计信息服务。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　二是及时、深入开展调查研究和跟踪监测。掌握并分析全县热点和难点问题，反映企业和群众呼声，为嘉鱼发展献计献策。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">　　三是认真做好各种考核评价工作。县统计部门积极做好对镇和部门的考核评价工作。做好与毗邻或类似地区的比较分析，为县域经济考核等考评工作提供优质服务。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">四是做好统计新闻宣传工作。利用新闻和网络媒体，积极主动向党政领导和社会各界发布统计信息，解读统计数据。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">五是县统计局要着手建立灵活、高效的统计服务机制。建立主要经济指标的预测预报制度。建立快速反应机制，及时完成党政领导交办的任务。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">四、工作要求<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">（一）加强组织领导<span lang="EN-US"><o:p></o:p></span></font></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">各镇、各部门和&ldquo;三上&rdquo;企业要高度重视，落实领导责任，层层建立责任机制，细化分解工作目标和任务，安排专人组成强有力的工作班子。主要领导要亲自抓，并提供必要的工作经费，确保统计基础规范化建设活动扎实开展。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 21.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">（二）强化工作监督<span lang="EN-US"><o:p></o:p></span></font></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">各镇要按照省定标准，健全工作制度，规范工作流程，完善档案资料，强化统计基础工作。县统计局要联合有关单位，对各镇、各部门和&ldquo;三上&rdquo;企业统计基础规范化建设活动进行巡回检查和指导，确保我县统计基础规范化建设取得成效。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 21.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">（三）严格考核奖惩<span lang="EN-US"><o:p></o:p></span></font></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-size: 14pt"><font face="仿宋_GB2312">全县将在<span lang="EN-US">8</span>月下旬对各镇、各部门和&ldquo;三上&rdquo;企业的基础规范化建设工作进行检查、指导和初步验收；<span lang="EN-US">9</span>月份进行复查，并考核验收。在两次检查验收的基础上，对各镇、各部门和&ldquo;三上&rdquo;企业统计基础规范化建设活动进行百分制综合打分评比。达到时间进度要求且得分<span lang="EN-US">95</span>分以上的为示范单位；达到时间进度要求且得分<span lang="EN-US">85</span>&mdash;<span lang="EN-US">95</span>分的为达标单位；不能按进度要求完成任务且得分在<span lang="EN-US">85</span>分以下的为不达标单位，对不达标单位在全县给予通报批评。<span lang="EN-US"><o:p></o:p></span></font></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-size: 14pt"><o:p><font face="仿宋_GB2312">&nbsp;</font></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm">&nbsp;</p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><font face="仿宋_GB2312"><span lang="EN-US" style="line-height: 200%; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="line-height: 200%; font-size: 14pt">二<span lang="EN-US">0</span>一二年八月二日<span lang="EN-US"><o:p></o:p></span></span></font></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt"><span lang="EN-US"><o:p><font size="5" face="仿宋_GB2312">&nbsp;</font></o:p></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

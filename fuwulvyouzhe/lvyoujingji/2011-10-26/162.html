@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>嘉鱼县旅游饭店 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="嘉鱼县旅游饭店" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/">服务旅游者</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">嘉鱼县旅游饭店</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-26</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p>&nbsp;</p>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>㈠ 嘉鱼宾馆：</b>位于三湖连江风景区沙滩浴场旁边，由原湖北省委宣传部长、著名书法家李尔重题写馆名，1997年建成正式开业，设计6层，建筑面积2560平方米，有标准间和套房50多套，共110个床位，是二星级、涉外宾馆，咸宁市旅游饭店协会会员单位。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>㈡ 三湖假日大酒店：</b>坐落在咸宁有名的旅游胜地&mdash;&mdash;嘉鱼县美丽的三湖连江湖畔，酒店占地6万余平方米，主楼高6层，使用面积1万多平方米。依山伴水，欧式建筑、园林布局，湖光山色尽收眼底，是嘉鱼县首家按四星级标准投资兴建的旅游饭店。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">酒店集客房、餐饮、娱乐、康乐、购物、商务、会议、会展、旅游、度假于一体，是咸宁市目前规模最大的综合性旅游饭店，酒店全部客房免费提供宽带上网服务，拥有各式豪华行政套房、普通套房、高级单人间、普通标准间共98套；各式可容纳60人、500人同时与会的中、小型会议厅、会客厅和国际会议中心；自助餐厅和餐饮包房，可容纳160余人同时进餐，多功能宴会厅可容纳400人同时进餐，酒店另有大堂吧、商务中心、商场、足疗、桑拿、垂钓场地等配套接待服务项目。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">三湖假日休闲会所融现代风情的慢摇吧、大中小各式风格的豪华KTV包房、棋牌室、网球场于一体，是全市目前规模最大、设施最为精良的大型娱乐场所。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>㈢ 棉花宾馆：</b>位于鱼岳镇老城区中心，1991年建成开业，高7层，有电梯，总建筑面积3750平方米，还有1000平方米的内部标准停车场。宾馆集客房、餐饮、娱乐、购物、会议、旅游于一体，拥有豪华套间和普通标准间28套，宴会厅可容纳600人同时进餐，多功能会场能容纳200人同时与会。宾馆还有大堂吧、商务中心、康乐中心、桑拿、美容等配套接待服务项目，是全国旅游星级饭店评定委员会授牌的二星级旅游饭店。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>（四）嘉鱼县山湖温泉酒店</b></span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">嘉鱼山湖温泉地处嘉鱼县的三湖连江、牛头山风景区内，离县城约2公里路程。景区北依武汉中心城区80公里；南临三国古赤壁景区25公里；东距中山舰爱国主义教育示范基地28公里；西与荆洲洪湖生态园区隔江相望。景区的周边还有吕蒙城遗址、吴王行祠、孔明取箭所、鲁肃夫人墓等三国古迹；南宋的文化遗址岳公亭、烟墩台；唐代诗人杜牧&ldquo;东风不予周朗便，铜雀春深锁二乔&rdquo;的系列人文景观等。还有万里长江第一湾&ldquo;簰洲湾&rdquo;、现代黄金城、仙人洞群和全国第一组&ldquo;官桥八组&rdquo;等。而且，景区的区位优越，交通十分便利，距离武汉天河机场126公里，长江黄金水道3公里，距离京珠高速20公里，距京广铁路107国道30公里。嘉鱼山湖温泉一旦建成，将成为距离武汉城区最近的温泉景区。 </span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">嘉鱼山湖温泉因水而名，藉水而兴，占地面积为2400亩，总投资6亿元人民币。其中，景区第一期的占地400亩，景观水面22000亩，风景区森林公园4600亩，建筑面积3万平方米以上，建设项目投资2亿元人民币。主要建设有温泉度假村、温泉中心酒店、别墅区、露天温泉池和健身及水上游乐等设施。同时，整合山、林、水、石等天然生态资源，修缮古建筑文物，使之成为一个集温泉沐浴、休闲保健、水上乐园、度假观光、科考探险于一体，具备完善的住、游、餐、娱、购配套设施的综合类风景区。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">2009年10月，嘉鱼山湖温泉建成以后，拥有500个床位的高标准客房，可以年接待游客60万人次以上，具备承接大型会议和餐饮的接待能力。嘉鱼山湖温泉以温泉概念为底蕴，前瞻性的建设理念，再结合优美的自然景观特色，建设湖光山水相映成趣的世界一流度假休闲景区。为湖北省尽快进入全国温泉休闲旅游强省，作出一份贡献。</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">山湖温泉总机：0715 6668888</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>（五）嘉鱼县官桥八组田野山庄</b></span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">地址：官桥镇田野大道；电话：0715-6719999</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>（六）嘉晟国际酒店</b></span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">酒店总机：0715-6367888；地址：嘉鱼县迎宾大道38号</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>（七）龙潭大酒店</b></span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">订房电话：0715-6668558；地址：嘉鱼县迎宾大道（国土局对面）</span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px"><b>（八）湖畔商务宾馆等</b></span></span></div>
+<div><span style="font-family: 宋体"><span style="font-size: 14px">订房热线：0715-6668899；地址：嘉鱼县湖滨路</span></span></div>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>对印制有本单位名称的发票审批</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="对印制有本单位名称的发票审批" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','/');
+
+	document.getElementById("weathercustomize").src="/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="/skin/jy/images/web_03.gif" width="306" height="25" /></td>
+<td class="top1" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a><font color =#000000>|</font>
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a><font color =#000000>|</font> 
+<a href="/data/sitemap.html" target="_blank">网站导航</a><font color =#000000>|</font>
+<a href="/">返回首页</a>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="/skin/jy/images/banner.swf" />
+      <param name="quality" value="high" />
+      <embed src="/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<div class="nav">
+<img src="/skin/jy/images/web_15.gif" width="11" height="47" style="float:left" />
+<font size=3px><a href="/" class="indes" target='_blank'>首页</a></font>
+<font size=3px><a href="/jiayuzhengwu/" target='_blank'>嘉鱼政务</a></font><font size=3px><a href="/banshidating/" target='_blank'>办事大厅</a></font><font size=3px><a href="/zhaoshangyinzi/" target='_blank'>招商引资</a></font></div>
+<div class="one">
+<div class="ej_l">
+<div class="nav_ej" id="p_navigator"><a href="/">首页</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/">嘉鱼县行政许可目录</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/zhujianju/">住建局</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">对印制有本单位名称的发票审批</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-26 22:26:43</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a></span></div>
+<table class="title" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td width="120">&nbsp;【字号 <a target="_blank" href="#" onclick="return doZoom(18)">大</a> <a href="#" onclick="return doZoom(16)">中</a> <a target="_blank" href="#" onclick="return doZoom(15)">小</a>】</td>
+    <td width="40"><a href="#"  onclick="doPrint()">打印</a></td>
+    <form action="" method=post name="to_friend" onSubmit='document.to_friend.action="mailto:" + document.to_friend.UserName22.value + "?subject=推荐新闻：" + document.to_friend.newstit.value + "&body=" + document.to_friend.newsid.value'>
+              <input type=hidden name=newsid value="/jiayuxianxingzhengxukemulu/zhujianju/2011-10-26/310.html" />
+              <input type=hidden name=newstit value="对印制有本单位名称的发票审批" />
+      <td>E-mail推荐:&nbsp;<input type="text" name="UserName22" size="17" class="a22" />&nbsp;<input type="submit" name="Submit4" value="提交" class="a22" /></td>
+    </form>
+  </tr>
+</table>
+<div class="wenzi"></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p>
+<table border="0" cellspacing="0" cellpadding="0" width="663" x:str="" style="width: 499pt; border-collapse: collapse">
+    <tbody>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" width="111" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 83pt; height: 24.95pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">事项名称</td>
+            <td width="475" colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; width: 358pt; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">对印制有本单位名称的发票审批</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">受理机构</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">湖北省嘉鱼县国家税务局办税服务厅</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">办公时间</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">周一至周五上午8：00-12：00，下午14：30-17：30夏时下午：15：00-18：00</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">办理起点</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">湖北省嘉鱼县人民大道35号</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">联系方式</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">0715-6359490</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">服务内容概述</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">略</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">政策法规依据</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">《中华人民共和国行政许可法》、《关于实施税务行政许可若干问题的通知》（国税发[2004]73号、《发票管理办法实施细则》（国税发[1993]157号）第7条规定</td>
+        </tr>
+        <tr height="33" style="height: 24.75pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.75pt; border-right: windowtext 0.5pt solid">事项申办条件</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">1、有固定的生产经营场所；2、财务和发票管理制度健全；3、发票使用量较大或统一发票式样不能满足业务需要。</td>
+        </tr>
+        <tr height="56" style="height: 42pt">
+            <td height="56" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 42pt; border-right: windowtext 0.5pt solid">申报材料</td>
+            <td width="475" colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; width: 358pt; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">1、《税务行政许可申请表》；2、《税务登记证》副本及复印件；3、《企业衔头发票的印制申请审批表》、4、申请人根椐规定设计印制发票的式样、联式及数量。</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">办理处理流程</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">纳税人提出申请----省国家税务局征收管理处受理审查-----省国家税务局下达决定</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">服务办理时限</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">除当场可以作出税务行许可决定的外，国税机关应当自受理行政许可申请之日起二十日内作出行政许可决定；二十日内不能作出决定，经本级机关负责人批准，可以延长十日。</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">收费标准</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">不收费</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">表格下载</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">　</td>
+        </tr>
+        <tr height="33" style="height: 24.95pt">
+            <td height="33" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 24.95pt; border-right: windowtext 0.5pt solid">备&nbsp;注</td>
+            <td colspan="7" style="border-bottom: windowtext 0.5pt solid; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">　</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        <div class="o_r">
+        <div class="o_ra">
+        <div class="r_a"><a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l1.jpg" /></a> <a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l2.jpg" /></a> <a target="_blank" href="/jiayuxianxingzhengxukemulu/"><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l3.jpg" /></a> <a target="_blank" href="/baijianshishiwangshangban/"><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l4.jpg" /></a> <a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l5.jpg" /></a></div>
+        <div class="r_b"></div>
+        <div class="r_tit"><a target="_blank" href="http://www.zzdjw.com/GB/165573/index.html">中直领导面对面</a></div>
+        <div class="r_c">        <ul></li>
+        </ul>
+        </div>
+        <div class="r_tit"><a target="_blank" href="http://www.zzdjw.com/GB/165259/index.html">思想交流</a></div>
+        <div class="r_c">
+        <ul></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>&nbsp;</div>
+        <div class="copyright">
+Copyright 2000-2010 Jiayu China All Rights Reserved.<br/>
+中国·嘉鱼　嘉鱼县人民政府门户网站 嘉鱼县人民政府主办 嘉鱼县信息中心承办 版权所有 未经许可,不得转载<br/>
+版权所有:嘉鱼县人民政府　邮编:437200　政务邮箱:88888888@qq.com　政务热线:0715-88888888<br/>
+管理员电话:0715-6355801　鄂ICP备05015679号
+</div>
+
+    </body>
+</html>

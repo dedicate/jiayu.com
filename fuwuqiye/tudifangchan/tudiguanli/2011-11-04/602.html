@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title> 转让土地使用权审批 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content=" 转让土地使用权审批" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwuqiye/">服务企业</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwuqiye/tudifangchan/">土地房产</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwuqiye/tudifangchan/tudiguanli/">土地管理</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title"> 转让土地使用权审批</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-11-04</span>&nbsp;&nbsp;<span id="p_origin">来源：国土局&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p>
+<table class="MsoTableGrid" cellspacing="0" cellpadding="0" width="572" border="1" style="border-right: medium none; border-top: medium none; border-left: medium none; width: 428.9pt; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext">
+    <tbody>
+        <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">事项名称<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让土地使用权审批<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 1">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">受理机构<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">嘉鱼县行政服务中心国土资源窗口<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 2">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">办公时间<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">上午<span lang="EN-US">8:00-12:00;</span>下午<span lang="EN-US">3:00-18:00<o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 29.25pt; mso-yfti-irow: 3">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 29.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">办理地点<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 29.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">嘉鱼县行政服务中心<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 30pt; mso-yfti-irow: 4">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">联系方式<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体">6363346</span><span style="font-size: 12pt; font-family: 宋体">、<span lang="EN-US">6363347<o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 5">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">服务内容概述<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">国有土地使用权（含划拨国有土地使用权补办出让手续）转让的用地审批。<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 6">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">政策法规依据<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">《中华人民共和国城镇国有土地使用权出让和转让暂行条例》，《协议出让国有土地使用权规范》<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 7">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">事项申办条件<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">资料齐全，符合条件者到国土资源窗口上报。<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 8">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">申<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">报<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">材<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">料<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体">1</span><span style="font-size: 12pt; font-family: 宋体">、出让国有土地使用权呈报表（如转让需国有土地使用权转让审批表）；<span lang="EN-US">2</span>、个人用地申请（如转让需双方申请）；<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体">3</span><span style="font-size: 12pt; font-family: 宋体">、身份证复印件（如转让需双方身份证复印件）；<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体">4</span><span style="font-size: 12pt; font-family: 宋体">、原国有土地使用证及复印件（如转让需过户后的房产证及复印件）；<span lang="EN-US">5</span>、土地估价报告；<span lang="EN-US">6</span>、出让审批红线图；<span lang="EN-US">7</span>、计划生育证明。<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体">8</span><span style="font-size: 12pt; font-family: 宋体">、国有土地出让合同；<span lang="EN-US">9</span>、规费及土地出让金缴纳凭证。<span lang="EN-US">10</span>、办证所需要的其他资料。<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">以上资料一式二份<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 9">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">办理处理流程<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">申请&mdash;&mdash;用地户将申请所需资料备齐由县行政服务中心国土窗口受理&mdash;&mdash;县国土资源局审核&mdash;&mdash;县政府审批&mdash;&mdash;颁发建设用地批准书<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 10">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">服务办理时限<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">在申报材料齐全的情况下<span lang="EN-US">20</span>个工作日内<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 11">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">收费依据<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">国土资源部<span lang="EN-US">21</span>号令国土资发［<span lang="EN-US">2006</span>］<span lang="EN-US">307</span>号、鄂价房地字［<span lang="EN-US">2001</span>］<span lang="EN-US">300</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 12; mso-yfti-lastrow: yes">
+            <td valign="top" width="151" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 113.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">表格下载<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="421" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 315.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">附后<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="margin: 0cm 0cm 0pt; text-align: center"><span style="font-size: 12pt; font-family: 宋体">嘉鱼县国有土地使用权转让审批表<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">（<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span>国有［<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>］字<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>号）<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让方（申请人）： <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">受让方（申请人）： <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>地<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>座<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>落 ： <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p>
+<table class="MsoTableGrid" cellspacing="0" cellpadding="0" border="1" style="border-right: medium none; border-top: medium none; border-left: medium none; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext">
+    <tbody>
+        <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">项<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>目<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>让<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>方<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">受<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>让<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>方<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 30.75pt; mso-yfti-irow: 1">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">单位名称<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 31.5pt; mso-yfti-irow: 2">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 31.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">法定代表人<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 31.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 31.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 3">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">通信地址<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 4">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">联系电话<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 5">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">联 系 人<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="240" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 180pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="214" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 160.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 6">
+            <td valign="top" width="581" colspan="7" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 436pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>地<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>状<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>况<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 7">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地使用权证号<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土 地 座 落<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: #ece9d8; background-color: transparent; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 8">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">使用权类型<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">终 止 日 期<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-left-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 9">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地等级<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">基 准 地 价<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 10">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地总面积㎡<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">建筑总面积㎡<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 11">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让土地面积㎡<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让建筑面积㎡<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 12">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让前土地用途<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让后土地用途<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 13">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地转让金额<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">规 划 条 件<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 14">
+            <td valign="top" width="127" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 95.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让后剩余年限<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="156" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 117pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+            <td valign="top" width="132" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 99pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">申请延长年限<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 15">
+            <td valign="top" width="67" rowspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 50.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">评估<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">摘要<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="348" colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 261pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土地评估报告编号<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 16">
+            <td valign="top" width="60" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 45pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">土 地评 估结 果<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="288" colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 216pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">原土地利用条件下土地使用权价格<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 17">
+            <td valign="top" width="288" colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 216pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">现土地利用条件下土地使用权价格<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="166" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 124.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 18">
+            <td valign="top" width="67" rowspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 50.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">转让后受让方用<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>地<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">方<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>式<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="120" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 90pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">保留划拨方式<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="394" colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 295.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">面积：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>平方米<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 19">
+            <td valign="top" width="120" colspan="2" rowspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 90pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">补办出让手续<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="394" colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 295.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">面积：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>平方米<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 20">
+            <td valign="top" width="96" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 72pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">出让年限<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="298" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 223.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 21; mso-yfti-lastrow: yes">
+            <td valign="top" width="96" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 72pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">补交出让金<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="298" colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 223.75pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="67" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="60" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="60" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="96" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="84" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="48" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+            <td width="166" style="border-right: #ece9d8; border-top: #ece9d8; border-left: #ece9d8; border-bottom: #ece9d8; background-color: transparent">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<table class="MsoNormalTable" cellspacing="0" cellpadding="0" width="588" border="1" style="border-right: medium none; border-top: medium none; margin: auto auto auto 5.4pt; border-left: medium none; width: 441pt; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext">
+    <tbody>
+        <tr style="height: 630.75pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+            <td valign="top" width="588" colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 441pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 630.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">附图：<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 23.25pt; mso-yfti-irow: 1">
+            <td valign="top" width="300" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 225pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">比例尺：<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="288" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 216pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">调查人：<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 21.75pt; mso-yfti-irow: 2; mso-yfti-lastrow: yes">
+            <td valign="top" width="300" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 225pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">绘图：<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="288" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 216pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">调查时间：<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p>
+<table class="MsoNormalTable" cellspacing="0" cellpadding="0" width="612" border="1" style="border-right: medium none; border-top: medium none; margin: auto auto auto -12.6pt; border-left: medium none; width: 459pt; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext">
+    <tbody>
+        <tr style="height: 195pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+            <td valign="top" width="60" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 45pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 195pt; background-color: transparent; mso-border-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">初<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">审<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">意<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">见<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="552" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 414pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 195pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">经办人：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</span></span>负责人：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span></span>年<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>月<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>日<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 108pt; mso-yfti-irow: 1">
+            <td valign="top" width="60" rowspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 45pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 108pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">审<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">核<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">意<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">见<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="552" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 414pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 108pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">经办人：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>负责人：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span></span>年<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>月<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>日<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 117pt; mso-yfti-irow: 2">
+            <td valign="top" width="552" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 414pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 117pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">分管局长：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span>年<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>月<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>日<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 99.75pt; mso-yfti-irow: 3">
+            <td valign="top" width="552" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 414pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 99.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">局<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>长：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span></span>年<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>月<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>日<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+        <tr style="height: 145.65pt; mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+            <td valign="top" width="60" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 45pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 145.65pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">县<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">政<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">府<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">审<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">批<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">意<span lang="EN-US"><o:p></o:p></span></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">见<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+            <td valign="top" width="552" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #ece9d8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #ece9d8; width: 414pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 145.65pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span style="font-size: 12pt; font-family: 宋体">主管领导：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span></span>年<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>月<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span></span>日<span lang="EN-US"><o:p></o:p></span></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-size: 12pt; font-family: 宋体"><o:p></o:p></span></p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

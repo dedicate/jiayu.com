@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>嘉鱼县2010年政府信息公开年度工作报告 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="嘉鱼县2010年政府信息公开年度工作报告" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">嘉鱼县2010年政府信息公开年度工作报告</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-25</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">本年度报告根据《中华人民共和国政府信息公开条例》（以下简称《条例》）和《湖北省政府信息公开规定》（以下简称《规定》）要求，由嘉鱼县人民政府办公室编制。全文包括概述、政府信息主动公开情况、政府信息依申请公开情况、因政府信息公开申请行政复议、诉讼和申诉情况、政府信息公开工作中存在的问题和改进措施。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">一、概述<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 14pt">2010</span><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">年，嘉鱼县委、县政府高度重视政府信息公开工作，多次召开会议研究部署安排，认真贯彻落实《中华人民共和国政府信息公开条例》（以下简称《条例》）和《湖北省政府信息公开规定》（以下简称《规定》）及国家、省、市政府有关文件精神，坚持为民服务、便民生活的工作思路，坚持以全面推进政府信息公开，建设公开高效服务政府为目标，精心组织，周密部署，从完善机制入手，严格检查考核，使全县政府信息公开工作扎实向前推进。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">（一）认真贯彻《条例》和《规定》精神，加强工作交流和指导检查。 年初，市政府办公室对全市政府信息公开的实施情况进行了检查，我县编制并公开了《政府信息公开工作年度报告》。同时针对信息公开工作中存在的问题和薄弱环节，通过召开政府信息公开工作交流会、座谈会等形式，加大工作交流，强化业务指导，进一步规范和推进了我县的政府信息公开工作，进一步提高了政府信息公开工作质量。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">（二）及时编制和更新政府信息公开《指南》和《目录》。 我县根据全市统一部署，按照 &ldquo; 谁提供、谁审核、谁负责 &rdquo; 的原则，认真做好《指南》和《目录》的填报工作，全面更新了《指南》和《目录》，并在政府门户网站上向社会公开。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">（三）及时澄清虚假或不完整信息。 针对突发事件，我县及时在第一时间内通过政府门户网站、广播、电视等多渠道及时向市民发布最新权威信息，澄清在市民中流传的一些虚假、不完整的信息，发挥了良好的舆论导向作用。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">（四）进一步加强政务信息公开平台建设。县政府多次召开会议对相关工作进行安排和部署。一是增加投入，加强政府门户网站群建设。县财政列支<span lang="EN-US">5 </span>万元用于县政府门户网站服务器等相关设备和软件的更新，增加政府门户网站日常工作经费并纳入财政预算。二是整合资源，加强政情民情工作的组织领导。目前县政府门户网站建设形成了政府办牵头、信息管理科主办、部门参与的工作机制，日更新信息量日渐增多。各相关部门实行信息共享、部门联动、上线沟通、及时反馈的工作机制，着力打造服务型政府。市政府将政情民情工作纳入了政府工作重要议事日程，统一进行安排部署。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">（五）积极拓宽政府信息公开渠道。 在以政府门户网站为政府信息公开主渠道的同时，还通过广播、电视、报刊、政务公开栏等方式多渠道公开，确保了公众快捷、方便的获取政府信息。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">二、政府信息主动公开工作情况<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">按照以公开为原则、以不公开为例外，主动公开各类政府信息，并妥善处理公开与保密的关系，合理界定信息公开范围，做到积极稳妥，及时准确，公开、公正、便民。重点公开了以下政府信息：机构职能、政策法规、政府文件、计划报告、统计数据和分析；嘉鱼县政府信息公开指南和政府信息公开目录、政府信息公开工作年度报告等内容。截止<span lang="EN-US">12</span>月<span lang="EN-US">31</span>日，通过县政府门户网站公开政府信息<span lang="EN-US">798</span>条；及时公开以县政府和县政府办公室名义下发的符合公开要求的文件<span lang="EN-US">94</span>个，其中以县政府名义下发文件<span lang="EN-US"> 17 </span>个，以县政府办公室名义下发文件<span lang="EN-US">77</span>个。市政府门户网站 &ldquo; 市长信箱 &rdquo; 栏目转交网民来信<span lang="EN-US">121 </span>件，按期转办<span lang="EN-US"> 121</span>件，按期转办率<span lang="EN-US"> 100% </span>；县政府门户网站 &ldquo; 县长信箱 &rdquo; 栏目共受理网民来信<span lang="EN-US"> 463</span>件，按期转办<span lang="EN-US"> 463</span>件，按期转办率为<span lang="EN-US"> 100% </span>。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">三、政府信息依申请公开情况<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 14pt">2010</span><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">年县政府办公室未收到政府信息公开申请。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">四、因政府信息公开申请行政复议、诉讼和申诉的情况<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 14pt">2010 </span><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">年，我县严格按照《条例》的规定公开政府信息，没有因政府信息公开申请行政复议、诉讼和申诉的情况发生。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">五、政府信息公开工作中存在的问题及改进措施<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-char-indent-count: 2.0; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 14pt">虽然我们在政府信息公开工作方面作了大量的工作，也进行了一些有益的探索，取得了一定成绩，但对照《条例》和《规定》，我县的政府信息公开工作还存在机制不够完善，个别单位重视不够，主动公开意识不强，信息公开不及时等问题。今后，我县将按照省、市政府的有关要求，进一步完善工作制度和工作机制，加强政府信息公开平台及查阅场所建设，加大培训、交流和指导力度，严格监督检查，切实提高全县政府信息公开工作质量和水平。<span lang="EN-US"><br />
+&nbsp;<o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US"><font size="3" face="Times New Roman">&nbsp;</font></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US"><o:p><font size="3" face="Times New Roman">&nbsp;</font></o:p></span></p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

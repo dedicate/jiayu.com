@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta content="all" name="robots" />
+<meta name="author" content=" " />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>档案局</title>
+<!-- 调用样式表 -->
+<link href="/skin/jy/css.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','/');
+
+	document.getElementById("weathercustomize").src="/";
+	//location.reload();
+}
+</script>
+<!--检索-->
+</head>
+
+<body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="/skin/jy/images/web_03.gif" width="306" height="25" /></td>
+<td class="top1" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a><font color =#000000>|</font>
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a><font color =#000000>|</font> 
+<a href="/data/sitemap.html" target="_blank">网站导航</a><font color =#000000>|</font>
+<a href="/">返回首页</a>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="/skin/jy/images/banner.swf" />
+      <param name="quality" value="high" />
+      <embed src="/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<div class="nav">
+<img src="/skin/jy/images/web_15.gif" width="11" height="47" style="float:left" />
+<font size=3px><a href="/" class="indes" target='_blank'>首页</a></font>
+<font size=3px><a href="/jiayuzhengwu/" target='_blank'>嘉鱼政务</a></font><font size=3px><a href="/banshidating/" target='_blank'>办事大厅</a></font><font size=3px><a href="/zhaoshangyinzi/" target='_blank'>招商引资</a></font></div>
+
+<div class="one">
+<div class="ej_l">
+<div class="nav_ej"><a href="/">首页</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/">嘉鱼县行政许可目录</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/danganju/">档案局</a></div>
+
+<div style="margin:15px;text-align:center">
+<table width='100%' border='0'>
+<tr>
+<td class='t14l12redb'> </td>
+<td> </td>
+<!--all page-->
+<!--PageNo=4-->
+<td align='right' nowrap  ><a title="Total record">&nbsp;<b>28</b> </a>&nbsp;&nbsp;<a href="/jiayuxianxingzhengxukemulu/danganju/index.html">首页</a>&nbsp;<a href="/jiayuxianxingzhengxukemulu/danganju/index.html">上一页</a>&nbsp;<a href="/jiayuxianxingzhengxukemulu/danganju/index.html">1</a>&nbsp;<b>2</b></td>
+</tr>
+</table>
+</div>
+
+
+<ul>
+<li>·<a href='/jiayuxianxingzhengxukemulu/danganju/2011-10-26/316.html' target=_blank>企业名称预先核准</a></li>
+<li>·<a href='/jiayuxianxingzhengxukemulu/danganju/2011-10-26/315.html' target=_blank>重点建设项目竣工前档案验收审批</a></li>
+<li>·<a href='/jiayuxianxingzhengxukemulu/danganju/2011-10-26/314.html' target=_blank>出卖、转让、赠送集体所有、个人所有以及其他不属于国家所有的对国家和社会具有保存价值或者应当保密的档案审批</a></li>
+<!--list.var4-->
+<!--list.var5-->
+<div class="line">&nbsp;</div>
+</ul>
+
+
+</div>
+  <div class="o_r">
+  <div class="o_ra">
+<div class="r_a">
+
+<a href=" " target="_blank"><img src="/skin/jy/images/l1.jpg" width="230" height="60" border="0"></a>
+<a href=" " target="_blank"><img src="/skin/jy/images/l2.jpg" width="230" height="60" border="0"></a>
+<a href="/jiayuxianxingzhengxukemulu/" target="_blank"><img src="/skin/jy/images/l3.jpg" width="230" height="60" border="0"></a>
+<a href="/baijianshishiwangshangban/" target="_blank"><img src="/skin/jy/images/l4.jpg" width="230" height="60" border="0"></a>
+<a href=" " target="_blank"><img src="/skin/jy/images/l5.jpg" width="230" height="60" border="0"></a>
+
+</div>
+<div class="r_b">
+  </div>
+
+<div class="r_tit">
+<a href=" " target="_blank">中直领导面对面</a></div>
+<div class="r_c">
+  <ul>
+</ul>
+</div>
+<div class="r_tit"><a href=" " target='_blank'>思想交流</a></div>
+<div class="r_c">
+<ul>
+
+</ul>
+</div>
+  </div>
+</div>
+</div>
+</div>
+<div class="copyright">
+Copyright 2000-2010 Jiayu China All Rights Reserved.<br/>
+中国·嘉鱼　嘉鱼县人民政府门户网站 嘉鱼县人民政府主办 嘉鱼县信息中心承办 版权所有 未经许可,不得转载<br/>
+版权所有:嘉鱼县人民政府　邮编:437200　政务邮箱:88888888@qq.com　政务热线:0715-88888888<br/>
+管理员电话:0715-6355801　鄂ICP备05015679号
+</div>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府关于实施市场主体增量行动推进县域经济跨域式发展的通知 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府关于实施市场主体增量行动推进县域经济跨域式发展的通知" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府关于实施市场主体增量行动推进县域经济跨域式发展的通知</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-04-26</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p style="text-align: center"><span style="font-size: medium">嘉政发[2011]10号</span><span style="font-size: medium">&nbsp;</span></p>
+<p><span style="font-size: medium">&nbsp;</span></p>
+<p><span style="font-size: medium">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：</span></p>
+<p><span style="font-size: medium">　　为了全面贯彻落实湖北省《政府工作报告》和《中共湖北省委关于制定湖北省经济和社会发展第十二个五年规划的建议》精神，县委、县政府决定在全县实施&ldquo;市场主体增量行动&rdquo;。现将有关事项通知如下：</span></p>
+<p><span style="font-size: medium">一、充分认识实施&ldquo;市场主体增量行动&rdquo;的意义</span></p>
+<p><span style="font-size: medium">（一）实施&ldquo;市场主体增量行动&rdquo;是落实省委、省政府&ldquo;跨越式&rdquo;发展的战略要求</span></p>
+<p><span style="font-size: medium">2011年是&ldquo;十二五&rdquo;规划开局之年，也是嘉鱼实现跨越发展的拼搏之年。省委九届九次全会一致通过了《中共湖北省委关于制定湖北省经济和社会发展第十二个五年规划的建议》，《建议》在准确把握世情、国情、省情的深刻变化和湖北发展的阶段性特征基础上，明确提出&ldquo;十二五&rdquo;时期，&ldquo;我省要在新的历史起点上抢抓机遇，应对挑战，更加奋发有为地推进经济社会跨越式发展。&rdquo;跨越式发展，就意味着突破常规，意味着弯道超越，意味着大干快上。而市场主体是发展市场经济、积累社会财富的基本力量，是市场经济发展的前提，是一个地区经济实力和竞争力的决定因素，也是就业、民生、稳定的依托，财政收入的增长、重大项目的建设、就业岗位的增加、社会福利的保障、居民收入和生活水平的提高，无一不依赖于经济的发展、依赖于市场主体的发展，市场主体的发展状态决定了全县经济未来的发展方向。深化改革，实施&ldquo;市场主体增量行动&rdquo;，加快培育市场主体，对于提升我县综合实力、竞争力和影响力至关重要，是落实省委、省政府发展战略和实现我县跨越式发展的现实要求。</span></p>
+<p><span style="font-size: medium">（二）实施&ldquo;市场主体增量行动&rdquo;是实现我县&ldquo;农业强县、工业大县、旅游新县&rdquo;战略目标的重要途径</span></p>
+<p><span style="font-size: medium">全县三级干部会议明确提出了&ldquo;以加快转变经济发展方式为主线，加快推进县域经济社会跨越式发展，为早日建成鄂南明珠、临港新城打下坚实的基础&rdquo;的全县经济社会发展的指导思想，以及2011年&ldquo;一确保、双百亿、三领先&rdquo;全县经济社会发展总体目标。实施&ldquo;市场主体增量行动&rdquo;，着力促进市场主体数量做多、规模做大、实力做强，是实现我县&ldquo;农业强县、工业大县、旅游新县&rdquo;战略目标的重要途径，我们必须把壮大市场主体作为经济社会发展的重要任务。</span></p>
+<p><span style="font-size: medium">（三）实施&ldquo;市场主体增量行动&rdquo;是我县市场主体发展现状的客观需要</span></p>
+<p><span style="font-size: medium">近几年来，县委、县政府创新发展理念，坚定不移地推进全面协调可持续发展，全县经济社会发展和各方面工作都取得了显著成绩，各项主要经济指标连续增长，社会各项事业全面进步。但是，与其他发达地区相比，我县市场主体总数和质量都有待进一步提高，市场主体发展不快、发展不够、发展不优等问题仍很突出，全面实施&ldquo;市场主体增量行动&rdquo;，是我县市场主体发展现状的客观需要。在我县加快发展、跨越式发展的关键时期，全县各镇各部门要进一步强化发展意识、大局意识，切实增强促进市场主体又好又快发展的责任感和使命感，以科学发展观为指导，牢固树立可持续发展理念，按照&ldquo;盘活存量、引入增量、做大总量、提高质量、增强能量&rdquo;的思路，开展&ldquo;市场主体增量&rdquo;行动，积极促进各类市场主体做多、做大、做强、做好，增强全县经济发展活力，努力把嘉鱼建设成为全省市场主体准入环境最优的地区之一，促进嘉鱼经济社会跨越式发展。</span></p>
+<p><span style="font-size: medium">二、加大工作力度，认真实施&ldquo;市场主体增量行动&rdquo;</span></p>
+<p><span style="font-size: medium">（一）明确目标促增量</span></p>
+<p><span style="font-size: medium">县政府决定将市场主体增量工作纳入年度政府综合目标考核，构建政府主导、工商主抓、部门联责、上下联动的工作格局。具体目标如下：　　</span></p>
+<p><span style="font-size: medium">1、坚持以&ldquo;增加总量、增大规模、增强实力&rdquo;为着力点，通过多种形式的大宣传、大服务，大力推进我县各类市场主体突破性发展，确保实现&ldquo;2011年度新登记市场主体（内资企业、私营企业、个体、农民专业合作社）户数同比增长15%以上、年末私营企业总户数同比增加15%以上、年末市场主体总量同比增长10%以上、年度企业注册资本增幅高于企业户数的增幅&rdquo;的&ldquo;三增一高&rdquo;发展目标，促进市场主体做大做强。</span></p>
+<p><span style="font-size: medium">2、大力实施中小企业&ldquo;成长工程&rdquo;。 根据市场主体不同成长周期的不同需求，提供创业引导、登记指导、成长扶持全过程服务，按照&ldquo;扶持创业发展一批、个体转型升级一批、中小企业壮大一批&rdquo;的思路，推进县域个体私营经济大发展。积极开展创业指导进乡镇、进社区、进乡村活动，努力把潜在的创业群体变成现实的市场主体。鼓励、引导经营规模较大的个体工商户转型升级为私营企业，努力把微型的市场主体变成规模的市场主体。支持引导符合国家产业政策，具有技术、资金、品牌和市场等优势的民营企业组建跨行业、跨地区、跨所有制的大企业大集团，努力把成型的市场主体变成集约的市场主体。年末个体、私营企业实现转型升级不低于本地区个体、私营企业总数的5%。</span></p>
+<p><span style="font-size: medium">3、以提升产业经营水平为重点，积极支持农村市场主体发展。积极拓展农业产业功能，鼓励农村个体、私营企业发展特色农业、生态农业、绿色农业，并引导其向深度发展。支持发展休闲农业和乡村文化旅游。鼓励和支持农民以专业合作社为纽带，以特色农产品、特色农业为龙头，实现集约化、产业化、特色化经营。年末农民专业合作社总户数比上年同比增长30%以上。大力实施农村市场主体发展&ldquo;七有&rdquo;工程，实现1000人以上行政村村村有农民专业合作社、农产品经纪人队伍、农资规范经营店、农产品注册商标、订单农业项目、食品安全示范店和农村消费维权站。</span></p>
+<p><span style="font-size: medium">4、指导和鼓励各类市场主体申请注册商标，运用商标战略开拓市场。新申请商标注册量、涉农商标申请注册量比上年有增加，积极组织申报驰名及著名商标、申请地理标志或集体商标。确保全县新申请注册商标及农产品商标年均增长10％以上。</span></p>
+<p><span style="font-size: medium">（二）政策激励促增量</span></p>
+<p><span style="font-size: medium">进一步解放思想，全心全意为市场主体发展提供政策支持，在法律法规和职责范围内，凡是有利于提高服务效能的体制机制都可以&ldquo;创&rdquo;，有利于科学发展的政策措施都可以&ldquo;试&rdquo;，努力促进民间投资活力释放，积极营造全民创业、&ldquo;草根经济&rdquo;蓬勃发展的土壤和气候。各镇和部门要按照&ldquo;非禁即入、只设路标不设路障和先行先试、能宽则宽&rdquo;的原则，积极支持市场主体的发展。</span></p>
+<p><span style="font-size: medium">1、鼓励投资创业。按照&ldquo;非禁即入&rdquo;原则，着力营造地位平等、规则公平、标准统一、机会均等、退出有序的市场主体准入环境。工商、卫生、质量技术监督等部门要进一步放宽准入门槛，引导更多的社会资源成为创业资本，鼓励更多的自然人及社会组织成为市场主体。</span></p>
+<p><span style="font-size: medium">2、搭建融资平台，支持各类市场主体融资发展。银行、人社等部门要加强协调，实现银行和企业充分联动，降低融资门槛，要继续加大小额贷款发放力度，有效缓解个私企业融资难的问题。加大股权出质、出资和动产抵押登记、商标专用权质押等融资政策的宣传力度，增强全县市场主体融资功能。</span></p>
+<p><span style="font-size: medium">3、依法保证用地。在符合用地政策、土地利用规划、城乡规划的前提下，最大限度地满足各类市场主体发展用地。尤其在城市用地和新区规划方面，要为中小企业和个体户发展提供支持。</span></p>
+<p><span style="font-size: medium">4、落实税收优惠政策。要落实税收优惠政策。在国家税收法律、法规范围内，用活用足税收优惠政策，特别是要对个体、私营企业转型升级进行税收政策指导，给予政策倾斜，大力支持中小企业和个体户发展壮大。</span></p>
+<p><span style="font-size: medium">5、依法维护经营者的合法权益。公安部门要依法保护经营者的合法权益，为各类市场主体发展提供安全保障。</span></p>
+<p><span style="font-size: medium">（三）一区多园促增量</span></p>
+<p><span style="font-size: medium">要进一步推进&ldquo;一区多园&rdquo;建设，坚持经济服务化和工业化与城市化相结合，引导各级各部门在明晰规划思路、搞好功能定位的基础上，抓紧编制开发区总体规划、各镇级工业园规划和城市服务业聚集区专项规划，认真组织并切实抓好城市服务业聚集区、重点功能区和特色园区的建设，对潘家湾畈湖工业园、高铁临港产业园、牌洲湾化工工业园以及鱼岳、官桥、渡普、陆溪、新街等工业园区进行科学定位和功能分区，推进形成各具特色的&ldquo;块状经济&rdquo;，走上园区化、集聚化、规模化、特色化发展轨道，提高辐射带动能力。</span></p>
+<p><span style="font-size: medium">各镇要充分结合特色&ldquo;块状经济&rdquo;的布局，围绕我县纺织、建材、冶金、化工、特钢、水泥、船舶和制造业等重点行业，有选择、有重点扶持一批优势产业，以带动相关企业相对集聚，并鼓励发展以优势产业为主的配套企业，形成大中小企业有机组合的产业组织体系和产业集群，抱团发展，从而构建起不可复制的区域产业核心竞争力，并以点带面，带动相关产业发展。</span></p>
+<p><span style="font-size: medium">各镇和部门要将扶持中小企业发展放到与招商引资同等重要的位置，在抓好大企业的培育壮大、做强工业发展支柱的同时，要抓好量大面广的民营中小企业发展，扩大推动工业增长的企业群体，努力培育新的经济增长点。要更多地关注中小企业的发展，引导中小企业向园区聚集，帮助企业树立信心，把握发展机遇，要发挥政府导向作用，在高新技术企业认定、相关资格认证、提升劳动力素质培训等方面提供便利，帮助企业适应市场变化和调控目标方向，逐步把中小企业做大做强，为我县的经济可持续发展提供坚强而有力的后盾。</span></p>
+<p><span style="font-size: medium">（四）科学准入促增量</span></p>
+<p><span style="font-size: medium">政府相关部门要引导各类投资者、创业者从事优先发展的先进产业，支持发展低耗、清洁、低碳产业和企业。依法做好产能过剩、技术落后、破坏资源、污染环境等企业的变更登记和注销登记工作，促进全县经济结构调整和发展方式转变。与园区经济对接，引导投资者、创业者和规模市场主体向工业园区聚集，向优势企业集中，鼓励发展高新技术产业、先进制造业、农产品精深加工业、现代服务业，推动能源集约、产业集聚；与旅游新县对接，突出休闲旅游，推动绿色生态旅游，促进服务于旅游市场的吃、住、行、游、购、娱六大环节市场主体发展。</span></p>
+<p><span style="font-size: medium">（五）推进创业促增量</span></p>
+<p><span style="font-size: medium">各镇和部门要进一步加大创业促就业工作力度，充分利用我县建设&ldquo;临港新城&rdquo;的契机，在全县掀起新一轮全民创业热潮，进一步放宽政策、改善环境，动员和鼓励全县上下积极投身创业活动。积极培育创业主体，鼓励城乡劳动者自主创业；鼓励广大农民开拓创业，鼓励科技人员积极创业，鼓励返乡农民工、高校毕业生、下岗从业人员、转业退伍军人、残疾人等&ldquo;六类人员&rdquo;主动创业，形成百姓创家业、能人办企业的局面。坚持社会化、专业化、市场化以及突出服务性的原则，为创业和企业发展提供规范的政策引导、资金融通、信息获取、人力支持、法律支援、管理咨询、科技开发、市场准入、教育培训等一系列的综合配套服务。重点推动融资担保、信用评价、信息网络、人才培训、创业辅导、行业协会建设等&ldquo;六大体系&rdquo;实现新突破。</span></p>
+<p><span style="font-size: medium">（六）破解难题促增量</span></p>
+<p><span style="font-size: medium">要建立政府领导、工商牵头、明确治理规范无照经营相关部门的职责与分工的联席会议制度，完善疏堵结合的无照经营分类治理机制。通过引导登记一批、引摊入市一批、疏导规范一批、依法整治一批，形成有效遏制危害社会的无照经营行为的合力，营造有利于促进个体私营经济健康发展的环境，把无照经营群体变为合法创业主体。</span></p>
+<p><span style="font-size: medium">（七）商标战略促增量</span></p>
+<p><span style="font-size: medium">大力推进商标发展战略和质量兴县战略，组织开展全县商标使用情况普查调研，将实施商标发展战略工作列入全县经济指标考核体系；以县政府名义对获得中国驰名商标、湖北省著名商标、咸宁市知名商标的市场主体实行奖励，积极营造商标兴县、兴企、兴农氛围。根据企业特点，实行&ldquo;一企一策&rdquo;，筛选一批发展潜力大、带动力强的企业，指导争创国家驰名商标、省级著名商标和市级知名商标。加大商标专用权保护力度，与知名企业建立联手打假机制，建立知名商标、著名商标、驰名商标企业保护网络。积极组织开展商标专用权专项执法行动，重点打击侵犯商标专用权行为。大力支持和促进广告业发展。因地制宜，制定具有前瞻性和指导意义的广告业发展规划，规范广告行为，增强行业自律，促进广告业又好又快发展。</span></p>
+<p><span style="font-size: medium">（八）树立典型促增量</span></p>
+<p><span style="font-size: medium">各镇和部门要发挥典型的示范效应，重视和培养人才，把&ldquo;人才强县战略&rdquo;落到实处，构建引人、用人、留人的新机制，为各类市场主体的发展与长期生存提供必备的人才资源。进一步加大各类市场主体典型的宣传力度，大张旗鼓地表彰艰苦创业、勤劳致富的创业能人，树立一批富有典型、成功效应的示范群体，发挥其示范、辐射和带动作用。</span></p>
+<p><span style="font-size: medium">三、完善组织领导机制，优化服务环境</span></p>
+<p><span style="font-size: medium">（一）加强组织领导</span></p>
+<p><span style="font-size: medium">县政府成立嘉鱼县&ldquo;市场主体增量行动&rdquo;工作领导小组，领导小组办公室设在县工商局，具体负责&ldquo;市场主体增量行动&rdquo;的指导、协调和督查，定期通报工作进展情况，研究制订工作措施，确定发展目标。实行增量业绩每月通报、分季排序、年终考评。各镇和部门要把实施&ldquo;市场主体增量行动&rdquo;列入重要议事日程，定期分析研究，加强指导协调，真正做到常规服务出精品、重点服务出亮点、创新服务出经验、服务发展上水平。</span></p>
+<p><span style="font-size: medium">（二）大造宣传声势</span></p>
+<p><span style="font-size: medium">各镇和部门要以开展&ldquo;市场主体增量&rdquo;行动为契机，在全县开展推进市场主体增量行动的大宣传、大讨论、大发动。在嘉鱼政务网、嘉鱼热线和嘉鱼电视台等媒体开辟&ldquo;市场主体增量行动&rdquo;专栏，编发发展动态，总结推广典型，并适时召开实施&ldquo;市场主体增量行动&rdquo;现场会，交流工作经验。</span></p>
+<p><span style="font-size: medium">（三）强化目标考评</span></p>
+<p><span style="font-size: medium">县政府将&ldquo;市场主体增量行动&rdquo;实施情况纳入对各镇、部门重点工作进行考核，年终考核以县工商局提供的数据为依据。各乡镇和部门要按照确责、履责、问责三个环节，将工作目标分级细化、分解到人、分步督办，使人人身上有担子，个个肩上有责任，确保既定目标圆满完成。</span></p>
+<p><span style="font-size: medium">（四）严明纪律保障</span></p>
+<p><span style="font-size: medium">服务市场主体增量是全县经济社会发展长期的课题和永恒的主题，各级、各部门服务窗口要主动接受市场主体的评判，要以市场主体满意不满意、市场主体发展快不快为标准，不断提升服务质量和服务效能；对在&ldquo;市场主体增量&rdquo;行动中成绩突出的单位，予以表彰；对在&ldquo;市场主体增量&rdquo;行动中工作进展不大、效果不明显的单位予以通报批评；对发现乱收费、乱罚款、乱摊派，影响&ldquo;市场主体增量&rdquo;行动顺利实施的单位和个人，进行责任追究，情节严重的给予党纪、政纪处分。</span></p>
+<p><span style="font-size: medium">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二0一一年四月二十五日</span></p>
+<p><span style="font-size: medium"><br />
+</span>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>嘉鱼旅游景点：湖北第一组官桥八组 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="嘉鱼旅游景点：湖北第一组官桥八组" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/">服务旅游者</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">嘉鱼旅游景点：湖北第一组官桥八组</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-26</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<center><font class="f12">
+<table border="0" cellspacing="4" cellpadding="1" align="center">
+    <tbody>
+        <tr>
+            <td valign="top" align="center"><img border="1" alt="图文：官桥八组" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/93890708ac94b5aa1d608616756f59fe.jpg" /></td>
+        </tr>
+        <tr>
+            <td valign="top" align="center">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</font></center><center><font class="f12">
+<table border="0" cellspacing="4" cellpadding="1" align="center">
+    <tbody>
+        <tr>
+            <td valign="top" align="center"><img border="1" alt="图文：官桥八组" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/15ee6d0fa7b2678b2df6af62d05a8f23.jpg" /></td>
+        </tr>
+        <tr>
+            <td valign="top" align="center">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</font></center><center><font class="f12">
+<table border="0" cellspacing="4" cellpadding="1" align="center">
+    <tbody>
+        <tr>
+            <td valign="top" align="center"><img border="1" alt="图文：官桥八组" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/78499d63e5776a1283b33029e4cf0db9.jpg" /></td>
+        </tr>
+        <tr>
+            <td valign="top" align="center">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</font></center>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font size="4">&nbsp;&nbsp;&nbsp; 1986年，嘉鱼县官桥八组的周宝生正在组里砖瓦厂前规划新的发展思路（图一）。建成后的砖厂生产的新产品得到市场的认可（图二）。2002年，从空中拍到的照片显示，当年的砖瓦厂已被现代化的厂房取代（图三），旁边建起一栋栋别墅式的农家小院落（图四）。官桥八组在周宝生一班人的带领下，率先跨入小康行列。</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center">一块仅有3平方公里的土地，一个曾靠土里刨食的村民小组，一群洗脚上田的农民，屡屡带给人们意想不到的惊喜。</p>
+<p>这里，昔日打粮晒场之地建起了洗脚屋、娱乐室、小超市。眼下的官桥八组，生机勃发，正在向新的起点跨越。</p>
+<p>无缝钢管与中石化&ldquo;无缝对接&rdquo;，周宝生说，这个企业要争取上市</p>
+<p>湖北中石特种钢管有限公司高大气派的门楼矗立在官桥八组入口处的路旁。上面&ldquo;湖北博士后产业基地&rdquo;几个大字格外醒目。</p>
+<p>这是官桥八组2006年引进的一家高科技企业，一期年产15万吨高精度特种无缝钢管生产线已投产，它将成为官桥八组高科技产业的领军者。</p>
+<p>做 大 企业，找大买家，周宝生谋定即动。上月19日，他到武汉拜见中石化总裁王天普，带去中石特种钢管的资料。王天普爽快答应：&ldquo;你们的产品价格低，质量好，我马上叫装备部长去看一下。&rdquo;</p>
+<p>攀上中石化这个巨头，产品销售不愁。周宝生告诉记者，今年6月，投资4000万元的二期深加工项目将投产。</p>
+<p>届时，现在每吨卖5000元的钢管可以升值到每吨9000多元，每年新增销售收入5亿元。</p>
+<p>&ldquo;这个企业要争取上市，千方百计做大。&rdquo;叩击市场的脚步还远未停歇，周宝生仍在酝酿新的扩产计划，将来再投入5至6亿元，把特种钢管系列产品做齐，形成年产50万吨、收入40亿元的生产规模。</p>
+<p>近几年，官桥八组就是凭借永不止步的创新冲动，先后创办长江合金厂、长江缆索公司、钎钢钎具公司、神农制药等一批高科技企业，实现了由资源型向科技型的转身。</p>
+<p>&ldquo;生产发展了，我们用积累的资本反哺农业，在更高的层次上描绘新农村图景。&rdquo;周宝生说。</p>
+<p>一步一景，田野处处有亮色，周宝生说，每一寸土地都要认真规划</p>
+<p>上月底在官桥八组采访，恰遇几位特殊的客人。省旅游局组织专家，对八组申报&ldquo;全国工农业旅游示范点&rdquo;进行验收。告别时，咸宁市旅游局局长杭莺对记者说：&ldquo;这事已经定了。&rdquo;</p>
+<p>常来官桥八组的人都会赞叹这里漂亮的小洋楼，别致的专家公寓，笔直伸展的田野大道，气势不凡的办公楼。如今有了这块金字招牌，再看八组风光，那草木掩映中的湖光山色，正在展现别样的韵味。</p>
+<p>&ldquo;我们一边走一边说吧。&rdquo;周宝生带着记者漫步田野，向我们一一介绍将要开工的新农村建设项目。</p>
+<p>占地100亩的温室精品茶园工地，土地已平整完毕。按周宝生设想，这里将建成一块高效优质茶园，配套建一个古色古香的茶坊，游客来此采茶、制茶、品茶，感受传统手工茶艺之趣，在茶香翠绿丛中放松身心。</p>
+<p>与茶园隔湖相望，投资500多万元的高尔夫练习场已经动工。练习场周围，昔日的荒山荒坡平整一新，数十种名贵树苗间杂栽植，依山延伸的水泥路边，仿古亭台座座为景。&ldquo;发展观光旅游，这里的每一寸土地都要认真规划。&rdquo;周宝生还有一个庞大的计划，投资1000万元，在原来办砖瓦厂的280亩地上建一个别墅区。房型已经设计好，每栋280平方米，房前屋后种花植草，每户预留3间客房，今年准备动工，观湖望月，此为至景。</p>
+<p>周宝生似乎总有想不尽的新点子，田野集团因此不断孕育着新的生机。在他心里，乾坤之大与草芥之微，都浓缩在这一块和谐安宁的土地上。</p>
+<p>我们算了一笔账，投资这些项目，经济收益未必很高，但周宝生却另有一笔效益账。他说：&ldquo;这些休闲娱乐设施，可以吸引游客，也能提升八组人的生活质量，提高农民的品位，让大家享受发展的成果。&rdquo;</p>
+<p>官桥八组以经商办厂起家，在工业筋骨不断强壮时，又看到了都市人对休闲旅游的巨大渴求。他们以精雕细琢之功，把原本朴素的家园打扮得更具乡村风情，更显开放气度。</p>
+<p><br />
+--------------------------------------------------------------------------------</p>
+<p><br />
+嘉鱼县官桥八组地处江南丘陵地区，是一个仅有农户57户，人口234人，版土面积2平方公里的普通小山村。改革开放前，官桥八组以种粮为生，集体经济长期负债，农民人均年收入仅50元，村民吃的是返销粮，住的是土砖房。就是这样一个贫穷落后的小山村，经过30年的艰苦创业，如今已发展成为拥有多家高科技企业，集科研、开发、生产、经营及教育于一体的大型企业集团，村民人均年收入达1。3万元。今日官桥八组，青山绿水，鸟语花香，一座座村民别野掩映在绿树红花之中，乡村道路四通八达，行道树郁郁葱葱，绿草如茵，人工湖碧波荡漾，杨柳依依。村庄城镇化，工厂园林化，农民现代化是官桥八组的真实写照。官桥八组田野集团先后多次荣获全国精神文明建设先进单位、全国村镇建设文明村庄、全国工农业旅游示范点、全国先进基层党组织、湖北省最佳文明单位等多项荣誉称号。中央、省、市前来视察的领导同志称赞官桥八组是&quot;引领共同富裕的楷模、建设新农村的典范&quot;。</p>
+<p>一、抓经济发展，培育致富型农民</p>
+<p>官桥八组始终把经济发展放在新农村建设的首位，坚持强基固本，紧抓发展第一要务，让农民生财有道，致富有方。30年来，官桥八组的经济发展经历了四个阶段的跨越。从1979年至1982年，通过积极推行家庭联产承包责任制，农村粮食和经济作物喜获丰收，解决了村民吃粮难的问题；同时，组织富余劳力&quot;洗脚上田&quot;开店经商，实现了由贫困到温饱的跨越。从1982年至1993年，依托本组资源，因地制宜，用滚雪球的办法，先后办起了小煤窑、铸造厂、家俱厂、砖瓦厂等10多个资源型和劳动密集型企业，实现了由农业经济为主向工业经济为主的跨越。从1993年至2003年，适时果断关停了&quot;五小&quot;企业和资源加工型企业，通过引进人才、技术和项目，创办了合金厂、焊丝厂、缆索公司、钎钢钎具公司、神农制药公司等一批高新技术企业，兴建了&quot;中国博士后田野高科技工业园&quot;，实现了由资源加工型厂矿到高科技产业的跨越。从2003年开始，与武汉大学合作创办了武汉大学东湖分校，合资兴建了中石特种钢管生产项目，配套建设了田野山庄和田野生态园，发展生态观光旅游农业，实现了由传统的二元结构向生态农业、高科技工业、高等教育、生物医药、生态旅游等多元化发展的跨越。2007年，官桥八组生产总值达6。5亿元，集体资产11亿元，村民人均年收入1。3万元。分别是1978年的1。7万倍、3。9万倍和260倍。集团企业每年上缴国家税收500多万元。官桥八组经济的跨越式发展，给村民致富提供了稳定的增收渠道。全组140名在业人员在本组企业就业的达122人，农户年收入中95%来源于工资收入和企业分工。这些年来，农户还享受了集体经济提供的许多补贴和福利待遇。上世纪八十年代，官桥八组按人均50平方米的标准，由集体补贴为村民建起了农家小洋楼。前几年又给每户补贴5万多元，用于村民住房装修和购置家俱。从1998年开始，每户村民每年都可以从集体经济中领到1万元的年终分红。同时还建立了农民子女上学学费补助制度、村民重病住院医疗费资助制度、全体村民和企业员工养老保险制度等等。实现了人有所居，少有所学，老有所养，病有所医。如今58户村民，户均拥有财产22万多元，人均拥有家庭财产5万多元。每百户拥有自行车91辆、摩托车71辆、汽车7辆，洗衣机91台，电冰箱104台，饮水机93台，煤气灶107台，电风扇267台，空调机120台，彩色电视机178台，移动电话247部。每百户拥有耐用消费品数量远远高于全国平均水平。昔日&quot;楼上楼下，电灯电话，墙上冒水，壁子说话&quot;的梦想，而今已完全变成了现实。官桥八组的村民过上了令城里居民都羡慕的富裕生活。</p>
+<p>二、抓教育培训，培育学习型农民</p>
+<p>在新农村建设过程中，官桥八组把教育培训作为&quot;农民素质提升工程&quot;的关键来抓。一是加强思想政治教育和形势政策宣传，不断增强村民的政策意识、发展意识和大局意识。上世纪八十年代，一部分富裕起来的农民，面对集体经济的快速发展和财富的迅速聚集，产生了私分财产、各奔前程的想法，抹牌赌博、贪图享受、大操大办之风日渐抬头。针对村民的种种议论和生活中的不正之风，身为共产党员、八组组长周宝生一方面认真学习党的农村政策，一方面深入思考解决问题的办法。通过学习和思考，周宝生认识到，要实现村民长久富裕、共同富裕，集体资产不仅不能分，而且还要扩大再生产。他召开群众大会，深入耐心宣讲党的富民政策，号召大家树立过紧日子、苦日子的思想，集中精力发展壮大集体经济。此后，官桥八组坚持以农民文化中心为阵地，定期组织党员干部开展政治理论学习，不断开展解放思想大讨论，在全体村民和企业员工中大力倡导&quot;求是、创新、发展、和谐&quot;的田野精神，鼓励群众为八组和田野集团的发展出谋献策，形成人心思齐、人心思进的良好社会氛围。为加强政治理论学习，官桥八组将全体村民和企业员工分成若干学习小组，每月集中学习两次，每月学习时间不少于4小时，每人每月写学习心得不少于1篇，并建立学习考勤、考评制度，将学习效果与经济效益挂钩。此外，还采取请专家讲课，利用公司电子显示屏、政治理论学习专栏和广播等阵地，不断加大形势政策的宣讲力度，努力提高村民的政治思想素质。二是大力开展岗位培训，不断提高村民和企业员工的实用技能。根据工作需要，官桥八组对管理人员、在职员工和新招员工采取岗前培训、在岗培训、专业工作培训和待岗培训等形式，不断加大公共知识、专业知识和经营管理知识的培训力度。为鼓励员工立足岗位自学成才，公司对以半脱产形式攻读硕士、博士学位者，予以报销学费、交通费，并设立了科学技术创新专项奖，每年评选发奖一次。通过岗位培训，全体村民和员工爱岗敬业，争创一流的意识大大增强，工作质量、服务水平以及自主创新能力大大提高。周宝生原来学历并不高，通过刻苦钻研，不仅取得了法学硕士学位和研究员职称，而且成为享受国务院特殊津贴的专家。八组先后有16人取得大专自修文凭，有9人取得中级技术职称。三是加强法制宣传，增强村民和企业员工的法制意识和自我管理的能力。官桥八组每年聘请法律专家及司法实践工作者讲课2-3场，引导村民及企业员工学法、懂法、守法、用法。为调动广大员工村民参政议政的积极性，推进民主管理，集团公司还开通了董事长信箱，方便群众向企业高层提出建议、表达心声，反映情况，每年采纳职工建议上百条，促进了企业的科学发展。</p>
+<p>三、抓乡风建设，培育文明型农民</p>
+<p>加强村民思想道德建设，提高村民文明素质是官桥八组推进新农村建设的一项重要内容。为了把官桥八组打造成一方净土，他们坚持以良好的乡风来塑造人影响人。一是大力开展社会主义荣辱观系列宣传，以正确的舆论引导人。利用农民文化中心、村广播、宣传栏、电子显示屏以及固定宣传标语，广泛宣传公民道德&quot;二十字规范&quot;和&quot;八荣八耻&quot;的社会主义荣辱观，让村民及员工明荣知耻、褒荣鄙耻。二是积极开展文明创建系列创评活动，以丰富的活动影响人。广泛开展&quot;五好文明家庭&quot;、&quot;美德进农家&quot;、&quot;平安家庭&quot;等群众性创评活动。形成学常识、讲卫生，学礼仪、讲文明，学法律、讲道德，学科学、讲易俗，学文化、讲修养的良好氛围，形成家庭和睦、人际关系和谐的社会主义新风尚。官桥八组57户农户中&quot;五好文明家庭&quot;占53户，被授予&quot;咸宁市美德进农家示范村&quot;。三是狠刹歪风邪气，以严厉的惩处警示人。对抹牌赌博、大操大办、封建迷信以及各种与村规民约相违背的歪风邪气，坚持露头就打，严惩重罚。一名职工因家庭小事骂人，扣了工资福利；一位婆婆无端生事与媳妇发生口角，停发了半年养老金；一名食堂炊事员拿了点剩菜回家，被罚款并停职三个月；一名干部的父亲去世，暗里土葬，被挖起来烧了，并予以重罚；一户村民生活垃圾不入桶，被罚款200元；一名退下来的老干部，与人不带彩打牌被罚款200元；一名职工，随地吐痰被罚款2000元。在官桥八组，只要违反了村规民约，都要按规定处罚到位。罚字当头，教育为重是官桥八组的一贯做法。每次处罚，八组都要召开群众大会或以通报的形式公之于众，达到处罚一人，教育一片的目的。四是认真制订和落实村规民约，以健全的制度约束人。为了规范本组村民及企业员工的行为，官桥八组制订了一系列规章制度、文明公约以及各项评比制度等等，把公民道德建设和新农民的基本要求渗透到农村管理的各项制度中，融入到农民的日常生产生活中，规范村民行为，增强村民的社会公德、职业道德、家庭美德意识，形成了崇尚科学、崇尚文明、健康向上的良好社会氛围。对各项规章制度，村民和企业员工人人学习、人人签字、人人承诺。做到按制度办事，用制度管人。</p>
+<p>四、抓环境整治，培育城市型农民</p>
+<p>官桥八组坚持把加强村庄建设，改善人居环境作为社会主义新农村建设的重要基础性工作来抓。一是按照&quot;生态田野、绿色田野、和谐田野&quot;的总体要求，认真抓好村庄规划建设。上世纪八十年代中期，官桥八组按照&quot;统一规划设计，分户组织施工，统一补助标准&quot;的办法，户户建起了二层小洋楼，客厅、餐厅、书房、健身房、厨房、浴室、标准卫生间等设计合理，布局精巧。房前屋后栽花种果，植树种草，环境优雅，景致怡然。进入九十年代和新千年，官桥八组又陆续建起了农民文化中心、田野山庄和行政办公大楼。在建设中，坚持突出田园风光和山水景致，弘扬生态魅力，彰显个性特色，做到整体布局显山露水，房屋建设依山傍水，资源利用保山护水，形成了自然与人和谐相处的生态文明。二是高标准抓好基础设施建设，不断改善村民的生产生活环境。组里投资160万元，统一铺设了电力线、电话线、闭路电视线，投资31万元，完善了供水设施，投资279万元，铺柏油路面1。2公里，建水泥路13。6公里。投资800万元，先后建成人工湖2处，面积250亩。投资74万元建成了森林公园，建楼台亭阁10多处，投资770万元，建成了高科技农业示范园和有机水果生产基地。投资60万元，建绿化带草坪8万平方米。投资10万元，购置洒水车1辆，购置垃圾桶60个。官桥八组已基本实现了日常生活公用设施到位，村庄绿化、亮化到位。每条道路都有树木夹道，绿树成荫，并安装配置了路灯、草坪灯。每到夜晚，流光溢彩，灯火辉煌。八组农民可以像城里人一样享受生活、享受文明。三是大力开展乡村清洁工程，不断优化人居环境。将农户房前屋后、道路、草坪及各类建筑物周围合理划分清洁责任区，责任落实到农户到人头。并制定村民庭院和个人卫生标准，庭院和个人卫生不达标的农户，扣减甚至撤消年终福利补助。村民庭院卫生要求做到室内无鼠、无蚊、无蝇；室外无乱搭乱建，无杂草杂物，无散放牲畜、家禽。村民个人卫生要求做到不随地吐痰，不乱扔垃圾。通过加强村民庭院和个人卫生管理，促进了村民良好卫生习惯的养成，改善了农户居家环境和个人卫生健康状况。在官桥八组，无论是田边地头，还是房前屋后，看不到猪、鸡、鸭、鹅；宽敞的马路上，看不到烟头、纸屑。官桥八组被授予&quot;湖北省乡村清洁工程示范村&quot;。四是组建卫生保洁专班，形成长效机制。官桥八组成立了由9人组成的绿化保洁队伍，常年负责绿化保洁工作。对农户庭院及卫生责任区每月集中检查三次，凡不合格的农户和个人都按规定予以处罚并通报。</p>
+<p>五、抓文化建设，培育自律型农民</p>
+<p>实行文化跟进战略，让先进文化长入文明新村，不仅有利于丰富农民群众的文化生活，而有利于培养农民健康文明的生活方式。在新农村建设过程中，官桥八组坚持把文化建设放在突出位置，做到以文化育人，不断增强农村文化软实力。一是加大农村文化基础设施建设投入的力度。1990年，八组投资上百万元，建起了600平方米的集球艺室、健身房、阅览室、多功能厅于一体的农民文化中心。球艺室有台球、乒乓球、羽毛球等活动室；阅览室有图书2万余册，报刊杂志上百种；多功能厅既能唱歌、跳舞，又能开展各种棋类比赛。2006年，八组又投资60多万元，建起了1200平方米的室外塑胶运动场，可同时进行篮球、网球比赛，运动场还配备了各类健身器材。农民文化中心每逢周二、四、六、日晚免费向全体村民及企业员工开放。功能完善的硬件设施为开展丰富多彩的群众文化奠定了坚实的基础。官桥八组成为精神文化资源富庶的一片乐土。二是大力开展各种群众文化活动。官桥八组每年定期组织开展一系列健康有益、形式多样、业余为主、参与面广的文体活动。如&quot;钎钢杯&quot;职工篮球赛、&quot;合金杯&quot;乒乓球、台球、羽毛球比赛，&quot;神农杯&quot;棋类比赛，&quot;七一&quot;歌咏比赛，&quot;三八妇女节&quot;大型联欢晚会及健身舞舞蹈比赛等。八组还购置了电影放映设备，每年夏秋两季，为村民每月免费放映2场电影。各类文体活动的举办，不仅活跃了田野的文化氛围，丰富了村民的文化生活，而且增进了友谊，凝聚了人心，弘扬了正气。村民们说：&quot;文化活动真是好，唱歌跳舞消疲劳，共育新风树正气，致富路上乐陶陶&quot;。通过各种文化活动的熏陶和带动，八组村民改变了传统的生活习惯，开始追求高雅的精神生活和健康的生活情趣。早上晨炼，晚上健身，已成为八组村民的生活常态。闲时或养花种草，或下棋对弈；乏时或流连于人工湖畔，或拾级于森林公园；想乐就去文化中心参加各种活动，想学就去农民学校参加各种知识讲座。学文化、学技术、学法律、学管理、学时事在官桥八组已蔚然成风。</p>
+<p>&nbsp;</p>
+<p align="center"><img border="0" alt="" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/a6e27dd9f6281bedc5eb9d12993a919b.jpg" /></p>
+<p align="center">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center>
+<table border="0" cellspacing="4" cellpadding="1" align="center">
+    <tbody>
+        <tr>
+            <td valign="top" align="center"><img border="1" alt="图文：官桥八组" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/f5baefc13377fcc87b0e206dfafaa323.jpg" /></td>
+        </tr>
+        <tr>
+            <td valign="top" align="center">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</center><center><a title="点击图片看全图" target="_blank" href="http://jiayu123.w2.dns131.com/uploads/allimg/110821/1R03962B-4.jpg">
+<p align="center"><img border="0" alt="" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/1115247cb2eb2668fbdf1eec23142060.jpg" /></p>
+</a><a title="点击图片看全图" target="_blank" href="http://jiayu123.w2.dns131.com/uploads/allimg/110821/1R0392337-5.jpg">
+<p align="center"><img border="0" alt="" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/9a1df6b5d69e86df6e781bf8e3d20e30.jpg" />&nbsp;</p>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="点击图片看全图" target="_blank" href="http://jiayu123.w2.dns131.com/uploads/allimg/110821/1R0393160-6.jpg"><img border="0" alt="" style="width: 300px; height: 226px" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/7fe5ef5ff6aaf860587295ceda08bed0.jpg" /></a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="点击图片看全图" target="_blank" href="http://jiayu123.w2.dns131.com/uploads/allimg/110821/1R0392528-7.jpg"><img border="0" alt="" src="/d/file/fuwulvyouzhe/lvyoujingdian/2011-10-26/a77bfec89e990cb476b982a080e1d6d7.jpg" /></a></center>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

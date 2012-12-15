@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>气象行政许可及行政审批</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="气象行政许可及行政审批" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','/');
+
+	document.getElementById("weathercustomize").src="/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="/skin/jy/images/web_03.gif" width="306" height="25" /></td>
+<td class="top1" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a><font color =#000000>|</font>
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a><font color =#000000>|</font> 
+<a href="/data/sitemap.html" target="_blank">网站导航</a><font color =#000000>|</font>
+<a href="/">返回首页</a>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="/skin/jy/images/banner.swf" />
+      <param name="quality" value="high" />
+      <embed src="/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<div class="nav">
+<img src="/skin/jy/images/web_15.gif" width="11" height="47" style="float:left" />
+<font size=3px><a href="/" class="indes" target='_blank'>首页</a></font>
+<font size=3px><a href="/jiayuzhengwu/" target='_blank'>嘉鱼政务</a></font><font size=3px><a href="/banshidating/" target='_blank'>办事大厅</a></font><font size=3px><a href="/zhaoshangyinzi/" target='_blank'>招商引资</a></font></div>
+<div class="one">
+<div class="ej_l">
+<div class="nav_ej" id="p_navigator"><a href="/">首页</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/">嘉鱼县行政许可目录</a>&nbsp;>&nbsp;<a href="/jiayuxianxingzhengxukemulu/nongyeju/">农业局</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">气象行政许可及行政审批</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-26 22:47:51</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a></span></div>
+<table class="title" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td width="120">&nbsp;【字号 <a target="_blank" href="#" onclick="return doZoom(18)">大</a> <a href="#" onclick="return doZoom(16)">中</a> <a target="_blank" href="#" onclick="return doZoom(15)">小</a>】</td>
+    <td width="40"><a href="#"  onclick="doPrint()">打印</a></td>
+    <form action="" method=post name="to_friend" onSubmit='document.to_friend.action="mailto:" + document.to_friend.UserName22.value + "?subject=推荐新闻：" + document.to_friend.newstit.value + "&body=" + document.to_friend.newsid.value'>
+              <input type=hidden name=newsid value="/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/372.html" />
+              <input type=hidden name=newstit value="气象行政许可及行政审批" />
+      <td>E-mail推荐:&nbsp;<input type="text" name="UserName22" size="17" class="a22" />&nbsp;<input type="submit" name="Submit4" value="提交" class="a22" /></td>
+    </form>
+  </tr>
+</table>
+<div class="wenzi"></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<div style="text-align: center; line-height: 300%" align="center"><b><span style="line-height: 300%; letter-spacing: 3pt; font-size: 26pt">气象行政许可及行政审批</span></b></div>
+<div style="text-align: center; line-height: 300%" align="center"><b><span style="line-height: 300%; letter-spacing: 3pt; font-size: 26pt">办事指南</span></b></div>
+<div align="center"><b>&nbsp;</b></div>
+<div align="center"><b>&nbsp;</b></div>
+<div align="center"><b><span style="letter-spacing: 3pt; font-size: 22pt">嘉鱼县气象局</span></b></div>
+<div align="center"><b>&nbsp;</b></div>
+<div align="center"><b><span style="letter-spacing: 3pt; font-size: 22pt">办事指南</span></b></div>
+<div align="center"><b>&nbsp;</b></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">一、气象</span></b><b><span style="line-height: 150%; font-size: 15pt">行政许可</span></b><b><span style="line-height: 150%; font-size: 15pt">项目名称</span></b></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; font-size: 15pt">1</span><span style="line-height: 150%; font-size: 15pt">、</span><span style="line-height: 150%; color: black; font-size: 15pt">防雷装置设计审核和竣工验收</span></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; color: black; font-size: 15pt">2</span><span style="line-height: 150%; color: black; font-size: 15pt">、升放无人驾驶自由气球或者系留气球活动审批</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">二、受理机构</span></b></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">&nbsp;&nbsp;&nbsp; </span></b><span style="line-height: 150%; font-size: 15pt">嘉鱼县气象局行政审批办公室</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">三、办公时间</span></b></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; color: black; font-size: 15pt">星期一至星期五上午8点&mdash;12点，下午3点&mdash;6点。</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">四、办公地点</span></b></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; font-size: 15pt">嘉鱼县行政服务中心</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">五、联系方式</span></b></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; font-size: 15pt">行政服务中心：</span></div>
+<div style="line-height: 150%; text-indent: 32.25pt"><span style="line-height: 150%; font-size: 15pt">县气象局行政审批办公室：0715-6323343</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">六、服务内容：</span></b></div>
+<div style="line-height: 150%; text-indent: 22.05pt"><span style="line-height: 150%; font-size: 15pt">1</span><span style="line-height: 150%; font-size: 15pt">、防雷工程设计图纸审核。</span></div>
+<div style="line-height: 150%; text-indent: 22.05pt"><span style="line-height: 150%; font-size: 15pt">2</span><span style="line-height: 150%; font-size: 15pt">、防雷工程施工跟综检测。</span></div>
+<div style="line-height: 150%; text-indent: 22.05pt"><span style="line-height: 150%; font-size: 15pt">3</span><span style="line-height: 150%; font-size: 15pt">、防雷工程竣工验收。</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; font-size: 15pt">七、气象</span></b><b><span style="line-height: 150%; font-size: 15pt">行政许可</span></b><b><span style="line-height: 150%; font-size: 15pt">项目、政策法规依据</span></b></div>
+<div style="line-height: 150%; text-indent: 22.05pt"><span style="line-height: 150%; font-size: 15pt">1</span><span style="line-height: 150%; font-size: 15pt">、</span><span style="line-height: 150%; color: black; font-size: 15pt">通用航空飞行管制条例(国务院令第371号)。</span></div>
+<div style="line-height: 150%; text-indent: 22.5pt"><span style="line-height: 150%; color: black; font-size: 15pt">2</span><span style="line-height: 150%; color: black; font-size: 15pt">、中华人民共和国气象法。</span></div>
+<div style="line-height: 150%; text-indent: 22.5pt"><span style="line-height: 150%; color: black; font-size: 15pt">3</span><span style="line-height: 150%; color: black; font-size: 15pt">、湖北省雷电灾害防御条例</span></div>
+<div style="line-height: 150%"><b><span style="line-height: 150%; color: black; font-size: 15pt">八、申报材料：</span></b></div>
+<div style="line-height: 150%; text-indent: 22.15pt"><b><span style="line-height: 150%; color: black; font-size: 15pt">1</span></b><b><span style="line-height: 150%; color: black; font-size: 15pt">、</span></b><b><span style="line-height: 150%; font-size: 15pt">升放无人驾驶自由气球（简称自由气球）或都系留气球活动：</span></b></div>
+<div style="line-height: 150%; text-indent: 30pt"><span style="line-height: 150%; font-size: 15pt">提供《施放气球资质证》、人员《施放气球资格证》原件及复印件。2、施放单位、个人和联系方法。3、气球的类型、数量、用途和识别标志。4、施放地点和回收区。5、施放和回收的时间。6、预计飘移方向、上升的速度和最大高度。</span></div>
+<div style="line-height: 150%; text-indent: 30.1pt"><b><span style="line-height: 150%; font-size: 15pt">2</span></b><b><span style="line-height: 150%; font-size: 15pt">、防雷装置设计审核和竣工验收：</span></b></div>
+<div style="line-height: 150%; text-indent: 30pt"><span style="line-height: 150%; font-size: 15pt">1</span><span style="line-height: 150%; font-size: 15pt">、申请防雷装置施工图设计审核的提交：（1）、《防雷装置设计审核申请书》。（2）防雷工程专业设计单位和人员的资质证和资格证书。（3）防雷装置施工图设计说明书、施工图设计图纸及相关资料。（4）设计中所采用的防雷产品相关资料。（5）经当地气象主管机械认可的防雷专业技术机械出具的有关技术评价意见。（6）防雷装置未经过初步设计的，应当提交总体规划平面冬；经过初步设计的，应当提交《防雷装置初步设计核书》。</span></div>
+<div style="line-height: 150%; text-indent: 30pt"><span style="line-height: 150%; font-size: 15pt">2</span><span style="line-height: 150%; font-size: 15pt">、防雷装置竣工验收的提交：（1）、《防雷装置竣工验收申请书》（2）、《防雷装置设计核准书》。（3）防雷工程专业施工单位和人员的资质和资格证；(4)、由气象主管机构认定防雷装置检测资质的检测机构出具的《防雷装置检测报告》。（5）防雷装置竣工图等技术资料。（6）、防雷产品出厂合格证、安装记录和由国家认可防雷产品测试机构出具的测验报告。</span></div>
+<div style="line-height: 150%"><b>&nbsp;</b></div>
+<div style="line-height: 24pt"><b><span style="font-size: 18pt">九、办事处理流程及服务办理时限</span></b></div>
+<p>&nbsp;</p>
+<div><img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/0700ac1e486b922ca06a0ff77f0224ee.jpg" width="693" height="861" style="cursor: pointer" /><br />
+<img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/6435e6cbd37732d635827e0ee11e3bcf.jpg" width="724" height="888" style="cursor: pointer" /><br />
+<img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/532282d9deec2adef423868761a9001f.jpg" width="693" height="859" style="cursor: pointer" /><br />
+<img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/d0fbe4b8d87a61528686664bb78232a5.jpg" width="644" height="861" style="cursor: pointer" /><br />
+<div style="line-height: 24pt"><b><span style="font-size: 18pt">十、表格下载：</span></b></div>
+<div style="line-height: 24pt">&nbsp;</div>
+<div style="line-height: 24pt"><b><span style="font-size: 18pt">
+<table width="450">
+    <tbody>
+        <tr>
+            <td>
+            <p><a href="http://jiayu123.w2.dns131.com/uploads/soft/110914/2-1109141P643.doc" target="_blank"><img border="0" alt="" align="center" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/5d74b7b0059a4aab922442f1b920cc1c.gif" /></a>&nbsp; <a href="http://jiayu123.w2.dns131.com/uploads/soft/110914/2-1109141P643.doc" target="_blank"><u>防雷装置竣工验收申请书</u></a></p>
+            <p><img border="0" alt="" align="center" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/5d74b7b0059a4aab922442f1b920cc1c.gif" />&nbsp; <a href="http://jiayu123.w2.dns131.com/uploads/soft/110914/2-1109141PG5.doc" target="_blank"><u>防雷装置设计审核申请书</u></a></p>
+            <p>&nbsp;</p>
+            <p><img border="0" alt="" align="center" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/5d74b7b0059a4aab922442f1b920cc1c.gif" />&nbsp;<a href="http://jiayu123.w2.dns131.com/uploads/soft/110914/2-1109141PK7.doc" target="_blank"><u>施放气球作业申报表</u></a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</span></b></div>
+<p>
+<table width="450">
+    <tbody>
+        <tr>
+            <td height="30" width="20">
+            <p>&nbsp;</p>
+            <div><img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/899793039fd408dcafcf1a5dd742d300.jpg" width="693" height="451" style="cursor: pointer" /><br />
+            &nbsp;</div>
+            <div><img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/af65f0ff092fc9f5a478b3c1f069d506.jpg" width="646" height="449" style="cursor: pointer" /><br />
+            &nbsp;</div>
+            <div><br />
+            <img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/1316320a5083ce917c090de02363abeb.jpg" width="654" height="806" style="cursor: pointer" /><br />
+            <img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/cbfa5120247527f31323f9982f8253c6.jpg" width="642" height="642" style="cursor: pointer" /><br />
+            &nbsp;</div>
+            <div><img border="0" alt="" src="/d/file/jiayuxianxingzhengxukemulu/nongyeju/2011-10-26/7b092db6659d8c7cdc28c920fd2f51ac.jpg" width="645" height="367" style="cursor: pointer" /><br />
+            &nbsp;</div>
+            <div>&nbsp;</div>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+</div>
+<div style="line-height: 24pt; text-indent: 29.8pt"><b><span style="font-size: 15pt">(</span></b><b><span style="font-size: 15pt">二)重新申报</span></b></div>
+<div style="line-height: 24pt"><span style="font-size: 15pt">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 15pt">对防雷装置设计审核或竣工验收不合格的申请单位，出具《防雷装置设计修改意见书》或《防雷装置整改意见书》，申请单位到原设计院进行设计修改或进行整改，再重新按以上程序申报。</span></div>
+<div style="line-height: 24pt; text-indent: 30.1pt"><b><span style="font-size: 15pt">(</span></b><b><span style="font-size: 15pt">三)承诺时限</span></b></div>
+<div style="line-height: 24pt; text-indent: 30pt"><span style="font-size: 15pt">设计审核(<span style="color: red">20</span><span style="color: red">个工作日</span>)、竣工验收均为5个工作日。</span></div>
+<div style="line-height: 24pt; text-indent: 30pt"><span style="font-size: 15pt">工作日是指正常上班的时间，不包括法定节假日、双休日。</span></div>
+<div style="line-height: 24pt; text-indent: 30.1pt"><b><span style="font-size: 15pt">(</span></b><b><span style="font-size: 15pt">四)收费标准</span></b></div>
+<div style="line-height: 24pt; text-indent: 37.5pt"><span style="font-size: 15pt">许可项目不收费。</span></div>
+<div style="line-height: 24pt; text-indent: 37.5pt">&nbsp;</div>
+<div style="line-height: 24pt; text-indent: 37.5pt">&nbsp;</div>
+<div style="line-height: 24pt; text-indent: 37.5pt">&nbsp;</div>
+<div style="line-height: 24pt; text-indent: 37.5pt">&nbsp;</div>
+<div style="text-align: center; line-height: 24pt; text-indent: 37.5pt" align="center"><span style="font-size: 15pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 15pt">嘉鱼县气象局</span></div>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        <div class="o_r">
+        <div class="o_ra">
+        <div class="r_a"><a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l1.jpg" /></a> <a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l2.jpg" /></a> <a target="_blank" href="/jiayuxianxingzhengxukemulu/"><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l3.jpg" /></a> <a target="_blank" href="/baijianshishiwangshangban/"><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l4.jpg" /></a> <a target="_blank" href=" "><img height="60" width="230" border="0" alt="" src="/skin/jy/images/l5.jpg" /></a></div>
+        <div class="r_b"></div>
+        <div class="r_tit"><a target="_blank" href="http://www.zzdjw.com/GB/165573/index.html">中直领导面对面</a></div>
+        <div class="r_c">        <ul></li>
+        </ul>
+        </div>
+        <div class="r_tit"><a target="_blank" href="http://www.zzdjw.com/GB/165259/index.html">思想交流</a></div>
+        <div class="r_c">
+        <ul></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>&nbsp;</div>
+        <div class="copyright">
+Copyright 2000-2010 Jiayu China All Rights Reserved.<br/>
+中国·嘉鱼　嘉鱼县人民政府门户网站 嘉鱼县人民政府主办 嘉鱼县信息中心承办 版权所有 未经许可,不得转载<br/>
+版权所有:嘉鱼县人民政府　邮编:437200　政务邮箱:88888888@qq.com　政务热线:0715-88888888<br/>
+管理员电话:0715-6355801　鄂ICP备05015679号
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于转发县地方志办公室《湖北乡镇大全》嘉鱼组稿方案的通知 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于转发县地方志办公室《湖北乡镇大全》嘉鱼组稿方案的通知" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于转发县地方志办公室《湖北乡镇大全》嘉鱼组稿方案的通知</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-03-30</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p></o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 仿宋_GB2312; font-size: 15pt">嘉政办发<span lang="EN-US">[2012]31</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">为了按时高质量地完成《湖北乡镇大全》嘉鱼县组稿工作任务，经县人民政府同意，现将县地方志办公室《湖北乡镇大全嘉鱼组稿方案》印发给你们，请认真遵照执行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">0</span>一二年三月二十八日<span lang="EN-US"><o:p></o:p></span></span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 1.0pt; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><br clear="all" style="page-break-before: always" />
+</span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 200%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 黑体; font-size: 15pt">《湖北乡镇大全》嘉鱼县组稿方案<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 黑体; font-size: 15pt">县地方志办公室<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">为完整反映全省各乡镇风貌，更好地开发利用省情资源，经省政府同意，省地方志办公室决定编纂出版《湖北乡镇大全》一书。为完成《湖北乡镇大全》嘉鱼县组稿任务，特制定具体方案如下：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">《湖北乡镇大全》嘉鱼县各镇组稿材料，要以马列主义、毛泽东思想、邓小平理论、&ldquo;三个代表&rdquo;重要思想和科学发展观为指导，坚持实事求是原则，坚持历史唯物主义和辩证唯物主义相结合的观点，突出时代特色、地方特色和历史文化特色。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">二、目标任务<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">《湖北乡镇大全》嘉鱼县各镇组稿材料，要全面系统、客观真实、丰富正确地记载各镇的自然、经济、政治、文化、社会概况，凸显区位优势、资源优势、地域特色等，充分展示各镇经济社会发展成就。通过组稿的编写，形成各镇权威性、科学性、综合性和资料性于一体的地情资料，为领导决策提供基础信息；为各方面专家学者研究地情和开发项目提供最基础、最可靠的地情信息和参考资料；为来嘉鱼县考察、投资的客商提供全面翔实的资料；为扩大各镇的知名度，实现湖北经济强县、长江临港新城的目标创造更好的软环境。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">三、主要内容<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">《湖北乡镇大全》嘉鱼县各镇组稿材料，控制字数为<span lang="EN-US">3500</span>－<span lang="EN-US">4000</span>字，图片控制在<span lang="EN-US">6</span>－<span lang="EN-US">8</span>幅，主要反映镇域自然、经济、政治、文化、社会各方面的基本情况，采用条目体的形式记述。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">各镇组稿材料按如下层次分述：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（一）镇概况&mdash;&mdash;镇名称来历、地理位置、自然条件、政府驻地、建置沿革、行政区划、人口面积、镇荣誉、著名人物、重大事件等；<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 21pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（二）村镇建设&mdash;&mdash;基本情况、村镇总体规划、道路、交通、公共设施、供水、排水、燃气、园林绿化、道路照明、污水处理、垃圾处理等；<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（三）经济发展&mdash;&mdash;农业、水利、工业、财政金融、商业、邮政电信、服务行业、招商引资、企业推介等；<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 21pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（四）社会事业&mdash;&mdash;教育、文化艺术、医疗卫生、体育、精神文明建设、广播电视、社会保障、环境保护等；<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 21pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（五）地域特色&mdash;&mdash;风土人情、名特产品、文化遗迹、风景名胜。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">（六）图片宣传&mdash;&mdash;注明时间、地点、人物（重要领导或重要投资者要介绍职务、位置）、事项、摄影者等要素。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">四、工作要求<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、加强工作领导。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">县地方志办公室成立审稿小组，明确责任人员及分管负责人，负责与各镇的联系和稿件审核工作；各镇要成立编写小组，明确完成文字材料及图片的责任人员以及分管领导。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、提高撰稿质量。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">县地方志办公室审稿小组以及各镇要认真履行职责，始终把质量意识贯穿于工作的全过程。①把好政治关。坚持科学发展观和实事求是的原则，全面收集镇各方面工作资料，充分反映镇的基本情况。②把好编写关。要求文字精练、通畅，数字准确，使用法定计量单位，各类目总字数应控制在本方案规定范围之内。做到资料翔实，内容精练，统计数据真实、准确，杜绝常识性差错。③把好审稿关。坚持分管领导审稿制度，上报文稿和随文图片须经镇长审核签字，并加盖公章。县地方志办公室上报省地方志办公室的各镇材料及图片资料需经县政府办公室审核、盖章。④把好保密关。严格遵守国家有关保密制度，防止保密数据泄密。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、按时报送稿件。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">《湖北乡镇大全》嘉鱼县组稿工作涉及面广，工作量大，时间紧，任务重。为确保《湖北乡镇大全》嘉鱼县编纂任务的顺利完成，各镇要在<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="30" month="4" year="2012"><span lang="EN-US">4</span>月<span lang="EN-US">30</span>日</st1:chsdate>前将随文图片及纸质、电子文稿报送至县地方志办公室（县档案局四楼）。县地方志办公室工作专班人员要及时审稿，针对组稿中存在的问题等情况及时与各镇联系并沟通，确保组稿文字部分和图片质量，按时完成《湖北乡镇大全》嘉鱼县的组稿任务。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="font-family: 仿宋_GB2312; font-size: 14pt">附：《湖北乡镇大全》（乡镇篇）模板</span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><br clear="all" style="page-break-before: always" />
+</span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0">&nbsp;</p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0">&nbsp;</p>
+<p class="MsoNormal" style="text-align: center; line-height: 200%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="font-family: 黑体; font-size: 15pt">《湖北乡镇大全》（乡镇篇）模板<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（一）乡镇概况<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;乡（镇）位于县（市）域&times;&times;角，&times;&times;交界处。地处东径&times;&times;&deg;至&times;&times;&deg;，北纬&deg;&times;&times;&deg;至&times;&times;&deg;，东与&times;&times;交界，南与&times;&times;相连，西与&times;&times;相望，北与&times;&times;毗邻。乡（镇）政府驻地为&times;&times;，归&times;&times;居委会（社区）管辖，距县（市）城&times;&times;公里，因&times;&times;而得名。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;年&times;&times;月，域内设有&times;&times;、&times;&times;等&times;&times;个小乡（镇）。&times;&times;年&times;&times;月，&times;&times;乡（镇）与&times;&times;乡（镇）合并为&times;&times;乡（镇）。&times;&times;年&times;&times;月，全乡（镇）调整合并为&times;&times;个行政村&times;&times;个社区，&times;&times;个村（居）民小组，&times;&times;户，总人口&times;&times;人，其中，农村人口&times;&times;人，劳动力&times;&times;人。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">全乡（镇）国土面积&times;&times;平方公里，耕地面积&times;&times;公顷，水域&times;&times;公顷，林地&times;&times;公顷。森林覆盖率&times;&times;％。矿产资源有&times;&times;等矿藏。其中&times;&times;主要分布在&times;&times;一带，地质储量&times;&times;万吨。主要植物有&times;&times;等。主要动物有&times;&times;等。主要自然灾害有&times;&times;等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;属半&times;&times;地带，地势&times;&times;，地形以&times;&times;为主，气候&times;&times;，年平均气温&times;&times;&deg;<span lang="EN-US">C</span>。年均降雨量&times;&times;毫米。境内港溪&times;&times;条。<span lang="EN-US"> <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">乡镇荣誉。&times;&times;年被评为全国&times;&times;；&times;&times;年被评为全省&times;&times;。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">发生过&times;&times;、&times;&times;等历史事件；建国以后，发生过&times;&times;、&times;&times;等重大事件。&times;&times;人杰地灵，&times;&times;、&times;&times;等历史名人均诞生于此；在革命战争时期，有&times;&times;、&times;&times;等革命先烈；在社会主义建设时期涌现出&times;&times;、&times;&times;等先进人物。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（二）村镇建设<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;乡（镇）现有中心集镇&times;&times;处，分别为：&times;&times;等；小型村级集镇&times;&times;个，分别为：&times;&times;等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;集镇是&times;&times;乡（镇）政府所在地，集镇面积&times;&times;平方公里，总人口&times;&times;人，其中非农人口&times;&times;人，常住人口&times;&times;人，流动人口&times;&times;人，城镇化率&times;&times;<span lang="EN-US">%</span>；集镇有&times;&times;条街道，分别为：&times;&times;。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">&times;&times;年&times;&times;月，对集镇进行总体规划，规划期限：近期&times;&times;&mdash;&times;&times;年，远期&times;&times;&mdash;&times;&times;年。集镇性质：&times;&times;。发展规模：&times;&times;。规划内容为：&times;&times;。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">集镇道路长度&times;&times;公里，其中水泥硬化车行道&times;&times;米，。人行道&times;&times;米，总面积&times;&times;平方米；下水道&times;&times;米；绿化带&times;&times;平方米；&times;&times;年，建立&times;&times;自来水厂，铺设自来水管道&times;&times;米，日供水&times;&times;吨，供水&times;&times;户，供水普及率&times;&times;<span lang="EN-US">%</span>；开挖下水道&times;&times;米；液化气站&times;&times;个；园林绿化&times;&times;处，面积达&times;&times;平方米；安装街道照明路灯&times;&times;盏；配置垃圾桶&times;&times;个，&times;&times;个垃圾池，垃圾处理场&times;&times;个。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">乡（镇）内建有码头&times;&times;个，分别为：&times;&times;等；客运站有&times;&times;个，分别为：&times;&times;；过境铁路&times;&times;公里，有无站点；陆路国道&times;&times;公里，省道&times;&times;公里，县道&times;&times;公里，乡（镇）道&times;&times;公里，通村公路&times;&times;公里，可通&times;&times;％的自然村，村组公路硬化里程&times;&times;公里，硬化率达&times;&times;<span lang="EN-US">%</span>。桥梁&times;&times;座，分别为：&times;&times;，其中新修&times;&times;座大桥。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（三）经济发展<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">2011</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">年，全乡（镇）社会生产总值达到&times;&times;万元，财政收入&times;&times;万元，国税&times;&times;万元，地税&times;&times;万元，农民年人均纯收入&times;&times;元。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">全域农业以&times;&times;为主，兼而&times;&times;业，农业生产总值&times;&times;万元。主要农特产有：&times;&times;；<span lang="EN-US">2011</span>年，全域粮食播种面积&times;&times;公顷，总产&times;&times;万吨，每公顷单产&times;&times;公斤；油料播种面积&times;&times;公顷，总产&times;&times;吨；生猪出栏&times;&times;头；其他经济作物面积&times;&times;公顷，总产&times;&times;吨。农村经济总收人&times;&times;元；<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">域内工业以&times;&times;为主。<span lang="EN-US">2011</span>年，全镇工业总产值&times;&times;万元。工业企业&times;&times;个，其中县级规模企业&times;&times;个，个体工商户&times;&times;户，从业人员&times;&times;人，主要工业门类有：&times;&times;等。主要工业产品有：&times;&times;等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">域内建成水库&times;&times;座，总库容为&times;&times;立方米；开挖水库干、支渠&times;&times;条，总长&times;&times;千米，埋设管道&times;&times;米；共建成电灌站&times;&times;处，装机容量&times;&times;千瓦；农田有效灌溉面积&times;&times;公顷，有效灌溉率达&times;&times;<span lang="EN-US">%</span>。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">域内金融网点有&times;&times;个，<span lang="EN-US">2011</span>年末存款余额&times;&times;元，贷款额&times;&times;元；邮政储蓄余额&times;&times;元，函件业务&times;&times;件。截至<span lang="EN-US">2011</span>年底，开通程控电话&times;&times;部，宽带用户&times;&times;户，有移动、联通手机&times;&times;部，有线电视接入&times;&times;户，电视综合覆盖率达&times;&times;<span lang="EN-US">%</span>。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">商业。网点&times;&times;个，营业面积&times;&times;平方米，商业零售额&times;&times;元。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">服务行业。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示：介绍乡镇饮食业、旅馆业、理发业、修理生活日用品的行业等第三产业的情况。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">招商引资。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示：介绍乡镇招商引资的优势项目、优惠政策及重大成果等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">企业推介。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示：介绍乡镇县级以上的规模企业和大型在建企业。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（四）社会事业<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">教育。全乡（镇）现有初中&times;&times;所，小学&times;&times;所，教学点&times;&times;处，幼儿园&times;&times;所，在职教师&times;&times;人，在校学生&times;&times;人，其中初中&times;&times;人，小学&times;&times;人，在园幼儿&times;&times;人，适龄儿童入学率&times;&times;<span lang="EN-US">%</span>，小升初比例&times;&times;<span lang="EN-US">%</span>。初中适龄人口入学率达&times;&times;<span lang="EN-US">%</span>，初中升学率达&times;&times;<span lang="EN-US">%</span>，<span lang="EN-US">9</span>年义务教育覆盖率达&times;&times;<span lang="EN-US">%</span>。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">文化艺术。传统艺术形式有：&times;&times;等；艺术团体有：&times;&times;等；获得主要荣誉有：&times;&times;等；文化活动场所有：&times;&times;等；农家书屋&times;&times;个。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">医疗卫生。域内有中心卫生院&times;&times;个、卫生院职工&times;&times;人，医疗点&times;&times;个，医务人员&times;&times;人，能开展&times;&times;业务等，下设&times;&times;个卫生室，从业乡村医生&times;&times;人。全年参加新农村合作医疗保险&times;&times;户，&times;&times;人，参保率&times;&times;<span lang="EN-US">%</span>。计划生育率达&times;&times;<span lang="EN-US">%</span>，人口出生率控制在&times;&times;&permil;，出生性别比&times;&times;<span lang="EN-US">:100</span>。地方病的防治情况：&times;&times;。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">传统体育项目有：&times;&times;等；获得主要荣誉有：&times;&times;等；主要活动场所有：&times;&times;等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">社会保障。<span lang="EN-US">2011</span>年，域内落实农村低保&times;&times;户，&times;&times;人，发放低保金&times;&times;万元。五保老人&times;&times;人，其中集中供养的&times;&times;人，分散供养&times;&times;人，年人均补助生活费&times;&times;元。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">环境保护。&times;&times;个村建有农村饮水工程&times;&times;处，受益村民&times;&times;人；沼气池&times;&times;个；太阳能&times;&times;户；农村公厕&times;&times;座。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（五）地域特色<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 35pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">风土人情。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂内容：当地特有的自然环境和民俗、方言、宗教、等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">名特产品。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 35pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂内容：具有地域性的名优土特产品名称、来历与特点。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 35pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示<span lang="EN-US">1</span>：土特产品的概念为：一是具有地域性特色的；二是符合&ldquo;特殊的生态环境，特优的品种，特殊的种养方式或特殊的加工方式&rdquo;的先决条件。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 7.8pt 0cm 7.8pt 31.9pt; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 3.04gd"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示<span lang="EN-US">2:</span>编纂在市（州）范围以上有影响的土特产品。文化遗迹、风景名胜。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂内容：旅游业概况，主要特色和主要景点；文化遗迹、风景区名称、地理位置、历史、环境特点与享有等级称号等；重点名胜古迹的地点、由来、历史以及历史与现实的地位等。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">编纂提示：可适当介绍在全省有影响的红色旅游线路和景点。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">域内旅游资源丰富。有&times;&times;等自然景观；有&times;&times;等古遗址、遗迹；有&times;&times;等人文景观。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">（六）图片宣传<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">图片<span lang="EN-US">6-8</span>幅。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

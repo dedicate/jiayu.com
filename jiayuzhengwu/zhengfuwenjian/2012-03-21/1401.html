@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府关于进一步加快供销合作社改革发展的实施意见 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府关于进一步加快供销合作社改革发展的实施意见" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府关于进一步加快供销合作社改革发展的实施意见</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-03-15</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p></o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 仿宋_GB2312; font-size: 15pt">嘉政发<span lang="EN-US">[2012]5</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p>&nbsp;</o:p></span><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　为认真贯彻落实《国务院关于加快供销合作社改革发展的若干意见》（国发<span lang="EN-US">[2009]40</span>号）和《湖北省人民政府关于加快供销合作社改革发展的实施意见》（鄂政发<span lang="EN-US">[2010]75</span>号）及《咸宁市人民政府关于进一步加快供销合作社改革发展的实施意见》（咸政发<span lang="EN-US">[2012]2</span>号）精神，进一步加快我县供销合作社改革发展，现结合我县实际，提出如下实施意见。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">一、加快供销合作社改革发展的重大意义和总体要求<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">充分认识加快供销合作社改革发展的重大意义。</b>供销合作社是为农服务的合作经济组织，是推动农村经济发展和社会进步的重要力量。近年来，全县供销合作社系统认真贯彻县委、县政府的决策部署，始终坚持为农服务宗旨，不断深化体制改革、创新经营机制、拓展服务领域，为促进全县农业发展、农民增收、农村繁荣做出了一定贡献。在新形势下，党中央、国务院对供销合作社改革发展提出了更高要求，赋予供销合作社新的使命。加快供销合作社改革发展，对于活跃农村市场，完善流通体系，建设现代农业，拉动农村需求，推进社会主义新农村建设，促进城乡经济社会发展一体化，具有重大意义。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">准确把握加快供销合作社改革发展的总体要求。</b>新形势下推进供销合作社改革发展，要坚持为农服务宗旨，坚持合作制基本原则，大力推进经营创新、组织创新、服务创新，加快构建新农村现代流通网络体系、新农村综合服务体系、新型农民合作经济组织体系。到&ldquo;十二五&rdquo;期末，全县供销合作社系统基本形成新农村现代流通网络，构建布局合理、功能完备、经营性服务与公益性服务相结合的农村社区综合服务平台，全面提升供销合作社经济实力和服务水平，努力把供销合作社建设成为农业社会化服务的骨干力量、农村现代流通的主导力量、农民专业合作的带动力量，为促进全县农村经济社会又好又快发展作出新贡献。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">二、大力推进供销合作社现代流通网络体系建设<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快发展农业生产资料现代经营服务网络。</b>依托供销合作社推动农资网络资源整合，加快推进连锁经营，大力发展统一配送、统一价格、统一标识、统一服务的农资放心店。各级政府要加大对农资企业完善农资仓储物流基础设施、建设区域性农资配送中心的投入，支持供销合作社从事种子、化肥、农药、农膜、农机具、成品油、饲料、兽药等商品经营，办好庄稼医院，为农开展各种技术服务。支持供销合作社农资经营企业利用现有设施开展化肥、农药等物资的商业储备和救灾储备。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快发展农村日用消费品现代经营服务网络。</b>培育壮大供销合作社日用消费品连锁骨干企业，加快传统经营网络改造升级。扶持区域物流配送中心、县级配送中心和农村超市、便利店等农村零售终端建设，加快构建以县为主体、镇为骨干、村店为基础的新型农村日用消费品经营服务体系。鼓励供销合作社发挥&ldquo;一店多能、一网多用&rdquo;优势，依法开展家电、图书、药品、通讯器材、烟花爆竹、食盐、建材等连锁经营业务，发改、财政、商务、工商等部门要按照支持日用消费品下乡的有关政策予以支持。进一步发挥供销合作社在烟花爆竹经营中的主渠道作用，加强烟花爆竹经营活动的管理，建立规范、有序、安全的烟花爆竹经营管理体系。供销合作社要积极配合安监、工商、公安等相关部门搞好社有企业烟花爆竹经营活动的管理，完善烟花爆竹安全经营网络。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快发展农副产品现代购销服务网络。</b>支持供销合作社兴建、领办农副产品批发市场和农产品流通加工企业，培育一批集农副产品生产、加工、储运、配送等为一体的产供销一体化骨干企业。加快推进供销合作社农产品仓储运输、冷链物流设施建设。创新农产品流通方式，鼓励供销合作社开展农产品冷藏保鲜、卫生、质量安全可追溯、检验检测项目建设。鼓励供销合作社承担边销茶、农副产品等储备和经营任务。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快发展再生资源回收利用服务网络。</b>鼓励供销合作社参与再生资源回收利用体系建设，加快建设社区和村镇回收网点、专业化分拣中心、区域集散交易市场和综合利用处理基地。支持供销合作社企业开发循环经济项目，依法开展废旧家电、报废汽车、废旧电池等回收拆解业务，形成回收、分拣和加工利用一体化经营的再生资源回收利用体系。对供销合作社再生资源回收利用龙头企业培育、技术与产品开发项目在立项和经费上给予支持。对社有龙头企业建设专业化分拣中心、区域集散交易市场和综合利用处理基地，发展绿色文明回收加工网点，给予资金、项目、用地、信贷、财政税收等方面的支持。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">三、着力强化供销合作社农村综合服务功能<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">创办村级综合服务社。</b>按照政府引导、多方参与、整合资源、市场运作的原则，大力支持供销合作社参与建设主体多元、功能完备、便民实用的村级综合服务社。按照农民生产生活实际需要，进一步拓展服务领域，创新服务方式，在继续搞好农资、日用消费品、农副产品等经营性服务的基础上，积极开展文体娱乐、图书音像、医疗卫生、邮电通信、养老幼教、劳动就业、科技信息等农村公益性服务。县财政对村级综合服务社建设要安排专项资金给予补贴。发改、财政、农业、卫生、文体和新闻出版等部门要在政策、资金等方面给予支持，调动社会各方面力量，共同打造农村社区综合服务平台。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">兴办农民专业合作社。</b>支持供销合作社领办农民专业合作社，培育一批服务能力强、助农增收效果明显的示范性专业合作社，县财政根据实际情况，给予必要的项目和经费支持。带动农民专业合作社开展信息、营销、技术、农产品加工储运等服务，推进规模化种养、标准化生产、品牌化经营。帮助农民专业合作社开拓市场，开辟合作社产品进超市、进社区、进交易市场的便捷通道。积极探索农民土地经营权流转方式，引导农民以土地经营权入股创办专业合作社。支持供销合作社兴办消费、信贷、担保、保险等专业合作组织。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加强行业协会建设。</b>支持县供销合作社组建的农村合作经济组织联合会、农产品经纪人协会、农业生产资料协会、烟花爆竹协会和各类农产品行业协会。发挥协会与政府部门信息沟通桥梁作用，积极开展信息、维权、交流、咨询、培训等服务。完善协会内部管理制度，规范协会运行机制，拓展服务功能，反映行业诉求，促进行业诚信建设。在农资、棉花、烟花爆竹、再生资源和农副产品等传统领域，重视供销合作社系统行业协会在制定有关产业政策、行业规划、产品标准等方面的意见和要求，积极探索行业协会承接政府职能的新途径、新办法。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">四、切实加强供销合作社组织建设<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快重构基层社建设。</b>按照县域经济发展特点和城镇建设规划要求，调整建制，优化布局，推进基层社股份制、合作制和股权多元化改造，重构基层社。工商部门要按照有关规定，对新建（恢复重建）或改造的基层社按有关法律法规予以登记注册。凡按照《中华人民共和国农民专业合作社法》的相关规定创办和重组的基层供销合作社以及由供销合作社参办和领办的农民专业合作社，均可享受农民专业合作社的各项扶持政策。建立和完善基层社社员代表大会制度，密切与农民社员的经济联系，推进与农民建成经济利益共同体。基层社改制后的剩余资产，由县联社代为行使所有权和管理权。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快推进县级联社建设。</b>县供销合作社要认真履行指导、协调、监督、服务和教育培训职能，全面推进供销合作事业发展。支持供销合作社牵头组建的农村合作经济组织联合会，积极吸引和接纳农村各类经济组织和社会各类涉农企业、组织加入供销合作社各级联合社。县财政要对供销合作社组建的农村合作经济组织联合会给予必要的经费支持。健全社有资产经营管理机构，履行社有资产监督管理职责，强化社有资产监管。支持供销合作社每年招录一批高校毕业生或安排选调生到供销合作社工作，以解决供销合作社人员结构问题。发挥供销合作社优势，将可以由供销合作社承担的任务和职能委托或赋予供销合作社。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快推进社有企业发展壮大。</b>以产权制度改革为核心，加快社有企业股份制改造，推进社有企业建立现代企业制度。对为农服务骨干龙头企业，支持供销合作社控股、企业经营者和职工参股，对一般企业和完全市场竞争的行业，实行供销合作社参股、企业经营者持大股、职工参股，扩大经营者自主权，调动职工积极性，增强企业发展活力。调整优化社有资本布局，加快资产、业务、人力资源整合，着力在农资、农副产品、日用消费品、再生资源等优势主导业务领域打造品牌产品，培育龙头企业。支持供销合作社企业参与农业产业化、标准化示范、农业技术推广、农业综合开发等项目。对供销合作社控股、参股的农业产业化龙头企业，按有关政策列入当地农业产业化整体规划和龙头企业名单，在项目开发以及农业产业化资金、支农资金、市场建设资金、贴息贷款等方面给予支持。供销合作社兴办特色农产品基地所需经费，在农业优势板块发展专项资金中统筹安排。支持符合条件的社有企业参与&ldquo;万村千乡&rdquo;和&ldquo;双百&rdquo;市场工程以及农超对接、家电下乡、以旧换新等工作，鼓励社有企业开拓农村市场。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">五、加大对供销合作社改革发展的组织领导和政策扶持<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">强力支持供销合作社现代流通网络体系建设。</b>建设新农村现代流通服务网络（简称&ldquo;新网工程&rdquo;），是国务院明确赋予供销社的一项战略任务，要将&ldquo;新网工程&rdquo;纳入社会主义新农村建设总体规划，加大建设资金扶持力度，相应配套资金列入年度财政预算，确保&ldquo;新网工程&rdquo;和改革发展顺利推进。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快解决供销社财务挂账问题。</b>要尽快采取有效措施，研究解决供销合作社系统地方政策性财务挂账问题。支持供销合作社多渠道消化经营性财务挂账，有关金融机构要加快处置供销合作社拖欠的金融债务，相关资产管理公司对历史形成的债务要优先供销合作社及所属企业回购，政府和有关部门要帮助做好协调落实工作。对县联社机关的连带担保债务，不采取强制手段查封资产。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">在解决供销社使用土地问题上给予支持</b>。认真落实《国土资源部、中华全国供销合作总社关于加快供销合作社土地确权登记工作的通知》（国土资发〔<span lang="EN-US">2009</span>〕<span lang="EN-US">173</span>号）精神，对供销合作社企业使用的原国有划拨土地，经批准可以采取出让、租赁方式处置，土地出让收益实行&ldquo;收支两条线&rdquo;，优先用于安置困难企业职工、改善农村流通基础设施和供销合作事业发展。对供销社建设农村现代经营服务新体系的项目用地<span lang="EN-US">,</span>应纳入用地计划<span lang="EN-US">,</span>给予重点支持。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加快解决供销社改制企业职工问题。</b>要认真贯彻《人力资源社会保障部、财政部和中华全国供销合作总社关于供销合作社企业职工参加企业职工基本养老保险有关问题的通知》（人社部发<span lang="EN-US">[2009]12</span>号）精神，解决好供销合作社企业职工基本养老保险及相关政策落实问题。尚未参保的供销合作社企业及其在册正式职工和退休人员应当参加企业职工基本养老保险，执行国家统一的企业职工基本养老保险政策。已参保的供销合作社企业和未参保的在册正式职工（含已达到法定年龄的职工）因生产经营困难等原因欠缴的基本养老保险费，应与社会保险经办机构协商，制定补缴计划，并及时补缴；对确实无力缴纳的，由同级政府采取有效措施帮助解决。供销合作社企业依法出售自有产权公房、建筑物收入和处置企业使用的划拨土地收入，优先用于缴纳社会保险费和安置职工，确保职工享受社会保险待遇。供销合作社改制企业解除劳动关系职工的户籍、组织关系等划转其本人所在社区统一管理，社区不应收取相关费用。政府各部门在制定和落实有关政策时，应充分考虑供销合作社的特殊性以及长期以来所做的历史贡献，把供销合作社职工与国有企业职工同等对待。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">维护供销合作社合法权益。</b>县级供销合作社是本级社集体财产和所属企事业单位财产的所有权代表，行使本级社委托的社有资产出资人职能，并按出资额依法享有所有者的资产收益、处置、重大决策和投资办企业的权利。任何部门和单位不得随意侵占、挪用、平调、无偿划拨其财产，不得随意改变供销合作社及其所属企事业单位的隶属关系，要保持供销合作社组织体系的完整性。改制后基层供销合作社和县级供销合作社直属企业剩余资产，归县级供销合作社理事会所有，用于发展合作经济。在城镇改造中，供销合作社经营网点和服务设施确需拆迁的，要严格按照有关政策规定做好补偿安置工作。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加大税务工商政策扶持。</b>对供销合作社系统所属全资公司之间，因改制、重组调整或划拨发生土地房屋权属转移，按照《财政部、国家税务总局关于企业改制重组若干契税政策的通知》（财税<span lang="EN-US">[2008]175</span>号）规定，免交契税；对社有全资公司之间重组取得的所得或发生的损失，按《财政部、国家税务总局关于企业重组业务企业所得税处理若干问题的通知》（财税<span lang="EN-US">[2009]59</span>号）规定办理。对供销合作社系统缴纳城镇土地使用税和房产税确有困难的社有企业，应按照税收审批权限申请税收减免。允许供销合作社全资企业及其改制后剩余资产以更名形式过户到供销合作社社有资产经营管理机构，在办理变更手续时，有关部门只收取工本费。落实连锁经营政策，简化连锁企业设立分支机构的注册手续，除国家规定的前置行政许可外，连锁企业可持总部出具的文件，直接到设立机构所在地的工商行政管理机关申请登记注册和办理年审。对供销合作社领办的农村综合服务社，在办理注册登记手续等方面提供便利。供销社系统社属企业改革要比照国有企业改革有关政策执行。各级政府出台的支持国有企业改革的优惠政策，同样适用于供销合作社企业。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加大金融保险扶持力度。</b>鼓励供销合作社的企业法人按照市场准入条件参与组建村镇银行。支持供销合作社领办的农民专业合作社开展农村资金互助社和互助合作保险试点。支持县供销合作社组建融资性担保机构，为农民专业合作社、基层社和农民开展资金担保服务。银行业金融机构要加强与供销合作社系统企业的业务合作，积极探索发展适合当地农村特点的金融产品和服务方式，努力提高金融服务质量。要在坚持贷款原则的前提下，加大对农村合作经济组织的信贷支持力度，积极解决好供销合作社及其领办的农民专业合作社生产经营的信贷资金需求。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　加大对供销合作社拓展重要商品经营和公益性服务的支持。建立重要农资商品的储备和救灾储备制度，委托供销合作社符合条件的企业承担储备任务，由财政、供销合作社共同制定储备资金贷款贴息和储备补贴办法。支持供销合作社开展农民专业合作组织负责人、农产品经纪人和农民技能培训以及农村劳动力转移培训。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加强供销合作社领导班子和职工队伍建设。</b>完善供销合作社理事会、监事会机构设置，保持领导班子相对稳定。实施人才兴社战略，大力培养和引进各类经营管理与专业技术人才，增强供销合作社可持续发展能力。要注重供销合作社干部的培养、锻炼和交流使用，不断优化干部职工的知识和年龄结构，培育一支甘于奉献、勇于创新、善于开拓的高素质干部职工队伍。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal">加强对供销合作社工作的领导。</b>要认真贯彻落实中央、省和市已经明确适用供销合作社改革发展的各项政策，进一步加强对供销合作社改革发展的领导，把供销合作社改革发展工作纳入新农村建设和城乡统筹发展的总体部署，纳入全县经济社会发展的总体规划和政府目标考核，及时解决供销合作社改革发展中的困难和问题。发改、财政、税务、农业、商务、建设、金融、工商、国土资源、人力资源社会保障等部门要对供销合作社的改革发展给予配合和支持，研究制定和认真落实有关扶持政策。凡国家、省和市对农业、国有商业、乡镇企业的优惠政策，除有特别规定外，都适用于供销合作社社有企业。供销合作社要紧紧抓住历史机遇，进一步增强加快改革发展的紧迫感和责任感，解放思想，开拓创新，推动全县供销合作事业又好又快发展。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">0</span>一二年三月十二日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt; mso-bidi-font-size: 10.0pt; mso-hansi-font-family: 仿宋_GB2312"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt">&nbsp;</p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

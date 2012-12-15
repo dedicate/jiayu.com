@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于建立查处取缔无证无照经营综合治理工作机制的意见 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于建立查处取缔无证无照经营综合治理工作机制的意见" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于建立查处取缔无证无照经营综合治理工作机制的意见</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-04-27</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p>&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 宋体">嘉政办发<span lang="EN-US">[2011]33</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">为深入推进查处取缔无证无照经营工作，切实维护市场经济秩序，促进公平竞争，保护经营者和消费者的合法权益，根据《无照经营查处取缔办法》（国务院令第<span lang="EN-US">370</span>号）等有关法律法规规定和省人民政府办公厅《关于建立查处取缔无证无照经营综合治理工作机制的意见》（鄂政发〔<span lang="EN-US">2011</span>〕<span lang="EN-US">5</span>号）精神，经县人民政府同意，现就建立查处取缔无证无照经营综合治理工作机制，提出如下意见。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">以邓小平理论和&ldquo;三个代表&rdquo;重要思想为指导，以构建社会主义和谐社会、维护社会稳定为目标，深入贯彻落实科学发展观，</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 'Verdana,&#718;&#805;'">树立执政为民的执法理念，</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">按照&ldquo;谁发证（照）、谁<span class="ttag">监管</span>，谁<span class="ttag">审批</span>、谁负责&rdquo;的原则，严厉查处取缔各类无证无照经营<span class="ttag">行为</span>，</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 'Verdana,&#718;&#805;'">建立由政府统一领导，职能部门分工合作，齐抓共管的工作机制，</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">维护市场经济秩序，</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 'Verdana,&#718;&#805;'">综合治理无证无照经营行为，整顿和规范市场经济秩序，为加快发展、科学发展、又好又快发展提供良好市场环境。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">二、工作目标和重点<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（一）工作目标<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span lang="EN-US" style="font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;</font></span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-hansi-font-family: 'Verdana,&#718;&#805;'">认真贯彻实施国务院颁布的《无照经营查处取缔办法》，突出重点，标本兼治，全面清理各种无证无照经营行为。建立完善查处取缔无证无照经营工作机制，推动查处取缔无证无照经营工作的制度化、规范化建设，有效制止无证无照经营行为，保护经营者和<span lang="EN-US"><a href="http://www.chinaacc.com/web/lc_sh_5" target="_blank"><span lang="EN-US"><span lang="EN-US"><font color="#363636">消费</font></span></span></a></span>者的合法权益，创造公平竞争、守法诚信的市场环境，推动全县经济更好更快地发展。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二）工作重点<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">严格依照国家<span class="ttag">法律法规</span>的规定，依法坚决查处取缔危害人体健康、存在重大安全隐患、威胁公共安全、破坏环境资源的无证无照经营行为。尤其要把涉及人民群众身心健康和生命财产安全的非煤矿山、危险<span class="ttag">化学品</span>、烟花爆竹、民爆器材、加油站、液化气站和储存点以及<span class="ttag">食品</span>、餐饮、烟草专卖品、交通运输、网吧、公共娱乐场所等作为综合治理工作的重点。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">三、工作机制<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">查处取缔无证无照经营是一项综合执法工作。各级政府要建立由政府统一组织领导，工商部门牵头协调，有关职能部门各负其责、齐抓共管的综合治理工作机制，确保查处取缔无证无照经营工作落到实处，取得实效。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">（一）落实职责分工<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">各镇（开发区）及县直</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">有关职能部门</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">要按照</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&ldquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">统一领导、各司其职、条块结合，通力协作</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&rdquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">和</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&ldquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">谁主管、谁审批、谁许可、谁负责</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&rdquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">的原则，统一组织、协调、落实本级本单位开展查处取缔无证无照经营工作。</span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二）建立联席会议制度<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">县政府建立查处取缔无证无照经营联席会议制度。联席会议成员单位由县综治办、工商、经济和信息化、公安、财政、人力资源和社会保障、国土资源、环境保护、住房和城乡建设、交通运输、农业、商务、文化（新闻出版）、卫生、广播电影电视、质量技术监督、旅游、安全生产监管、食品药品监管、烟草专卖、通信管理等部门组成。联席会议办公室设在县工商局，各成员单位确定专人负责与联席会议办公室的日常联系。联席会议由联席会议办公室根据成员单位提议，报经县政府同意后召开。联席会议的主要职责是通报查处取缔无证无照经营工作情况，研究制定工作措施，协调解决重大问题，组织联合执法行动，指导、督促查处取缔无证无照经营工作。联席会议各成员单位要认真落实联席会议决定的事项并及时向联席会议办公室反馈有关情况。各镇政府要相应建立联席会议制度。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（三）建立信息通报、案件移送制度<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">有关行政许可审批部门在依法吊销、撤销、注销经营者行政许可证或其他批准文件，或者经营者行政许可证、其他批准文件有效期届满的，应在吊销、撤销、注销或届满之日起<span lang="EN-US">5</span>个工作日内，及时将有关情况告知同级后续相关行政许可审批部门和工商行政管理部门。同级后续相关行政许可审批部门在接到告知后应依法作出相应处理，同级工商行政管理部门在接到告知后应依法办理变更登记或注销登记。政府各职能部门在日常监督检查中，发现无证无照经营行为涉及其他职能部门监管职责范围的，应及时将违法事项移送或通报相关职能部门。对违法情节严重、涉嫌犯罪的无证无照经营行为，依法移送司法机关追究责任。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">（四）建立综治目标考核机制<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">各镇（开发区）要将查处无证无照经营工作列入本年度的综治目标考核，通过督办检查和目</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">标考核机制，严肃责任追究，以责任考核目标和约束机制推动查处无证无照经营工作，将查处无证无照经营各项工作任务真正落到实处。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">（五）建立责任追究制度<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">行政许可审批部门及其工作人员滥用职权、玩忽职守、徇私舞弊，未依照法律法规规定核发营业执照、许可证或者其他批准文件，未依照法律、法规的规定吊销营业执照、撤销注册登记、许可证或其他批准文件，或者发现无证无照经营行为不予查处，甚至支持、包庇、纵容无证无照经营行为的，要依纪依规追究当事人、直接负责人的失职、渎职责任；触犯刑律的，依法追究刑事责任。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">联席会议各成员单位未依照法定职责查处无证无照经营行为，或者发现无证无照经营行为不予查处，要依法依纪依规追究当事人、直接负责人的失职、渎职责任。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">社会基层组织及公共企事业等单位不履行责任和义务，知道或者应当知道属于无证无照经营行为，还为其提供生产经营场所、运输、保管、仓储等条件的，根据《无照经营查处取缔办法》的规定予以处罚；供水、供电、电信等服务行业，在接到政府职能部门对违法企业停水、停电及停止互联网接入服务等协助执行通知后，不予执行，仍然为无证无照经营活动提供服务的，依法从严予以处罚。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">四、工作原则<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">各镇（开发区）</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">和相关职能部门要坚持查处与引导相结合、处罚与教育相结合的原则，强化以人为本的工作理念，突出重点，区别对待，疏堵结合，分类治理无证无照经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">对经营条件、经营范围、经营项目符合法律法规规定的无证无照经营行为，应当督促、引导其依法办理有关手续，合法经营。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">对下岗失业人员、残疾人、无生活来源人员等社会弱势群体，以个体经营为基本谋生手段、无恶意违法和社会危害的无证无照经营行为，要积极疏导，为经营者办证办照创造条件，鼓励其合法经营。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">对农民在集贸市场或者地方政府制定的区域内销售自产农副产品等法律法规和政策规定可免于登记的经营活动，不作为无照经营行为查处。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">对危害人体健康、存在重大安全隐患、威胁公共利益和安全、破坏环境资源的无证无照经营行为，坚决依法查处取缔、绝不姑息。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">五、工作职责<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">根据《行政许可法》、《无照经营查处取缔办法》和有关法律法规规定，各职能部门在查处取缔无证无照经营中的工作职责如下：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（一）工商行政管理部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">查处无须取得许可证或已经取得许可证，但未依法取得营业执照，或已经办理注销登记或被吊销营业执照，以及营业执照有效期届满后未按规定重新办理登记手续，擅自从事经营活动的行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依照法律法规规定的职责，查处未取得有效许可证和营业执照，擅自从事食品经营、广告经营、粮食收购、烟草制品零售、拍卖、互联网上网服务等经营活动的行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依照法律法规规定的职责，会同或协助有关职能部门查处取缔未取得有效许可证擅自从事经营活动的行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二）经济和信息化部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理煤炭经营、供电营业、第二类监控化学品经营等须经经济和信息化部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（三）公安（消防）部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理旅馆业、公章刻制业、典当业、因私出入境中介服务、爆破作业、烟花爆竹运输、剧毒化学品和易制毒化学品运输<span lang="EN-US">,</span>以及涉及消防安全等须经公安部门许可方可从事的经营活动。依照法定职责查处未经许可或已被依法吊销、撤销许可证或许可证有效期届满后，未按规定重新办理行政许可手续，擅自从事上述相关经营活动的行为（以下简称&ldquo;相关无证经营行为&rdquo;）。在查处治安、刑事案件时，发现擅自从事娱乐场所经营活动的，应当依法予以取缔。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（四）财政部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理会计代理记账、注册会计师业务、资产评估师业务等须经财政部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.6pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;</span></span></b><span style="font-family: 仿宋_GB2312; font-size: 14pt">（五）人力资源和社会保障部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理人才中介服务、职业介绍、职业技能培训、职业技能考核鉴定等须经人力资源和社会保障部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（六）国土资源部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理矿产资源勘查、开采等须经国土资源管理部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（七）环境保护部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理危险废物、固体废物、环境影响评价、建设项目竣工环保设施验收、排放污染物、核与辐射安全等须经环境保护部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（八）住房和城乡建设部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理建筑施工、工程勘察设计、工程监理、工程招标代理、房地产开发、商品房预售、物业管理等须经住房和城乡建设部门许可或备案方可从事的生产经营活动；依照法定职责查处相关无证经营行为。实施相对集中处罚权的城市管理部门，依法查处擅自在城市道路范围内和公共场地摆摊设点，及流动摊点等无照商贩的经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（九）交通运输部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理道路运输、水路运输、运输站<span lang="EN-US">(</span>场<span lang="EN-US">)</span>经营、机动车维修经营、机动车驾驶员培训等须经交通运输部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十）农业部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理农作物种子、肥料、兽药、种畜禽、饲料及饲料添加剂的生产经营，以及动物检疫诊疗等须经农业（畜牧、渔业）部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十一）商务部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理生猪屠宰、鲜茧收购、缫丝绢纺企业生产经营、外派劳务、典当、拍卖<span lang="EN-US">,</span>成品油批发、仓储、零售<span lang="EN-US">,</span>旧机动车鉴定评估等须经商务部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十二）文化部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理娱乐场所、营业性演出、文艺表演团体演出经纪机构等须经文化部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十三）卫生部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理涉及饮用水卫生安全、消毒产品、公共场所、医疗机构等须经卫生部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十四）广播电影电视部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理制作电视剧及其他广播电视节目、卫星电视广播地面接收设施使用安装、信息网络传播视听节目等须经广播电影电视部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十五）新闻出版部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理音像制品经营，出版物出版、发行、进口、印刷复制，包装装潢和其他印刷品印刷等须经新闻出版部门许可方可从事的经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十六）质量技术监督部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理实行生产许可证管理的工业产品，以及特种设备、计量器具、强制性认证、认可等须经质量技术监督部门许可方可从事的生产经营活动；查处未取得行政许可或超出核准登记的许可事项范围，擅自从事生产经营的行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十七）旅游部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理从事旅行社业务、导游活动等须经旅游部门许可方可从事的经营活动；依法查处取缔相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十八）安全生产监督管理部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理非煤矿山生产、烟花爆竹、危险化学品生产经营、储存等须经安全生产监督管理部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为；依照法定职责查处煤矿相关无证生产经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（十九）食品药品监管部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">按照省政府有关文件做好化妆品卫生、餐饮服务环节的监督管理工作，依法监督管理药品和医疗器械生产经营等须经食品药品监管部门许可方可从事的生产经营活动；依照法定职责查处相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二十）烟草专卖部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">依法监督管理烟草专卖品生产、批发、零售、进出口等须经烟草专卖部门许可方可从事的生产经营活动；依据法定职责查处取缔相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二十一）其他相关部门<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">负责对须经本部门许可方可从事的经营活动进行监督管理。依据法律法规规定的职责查处取缔相关无证经营行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">各镇</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">（开发区）</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">要积极配合各职能部门查处取缔无证无照经营，发现辖区内的无证无照经营或为无证无照经营提供生产经营场所、保管、仓储等条件的，要及时报告相关职能部门进行查处。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">供水、供电、电信等公共服务行业，在接到相关职能部门下达的对违法经营场所停水、停电、停止互联网接入服务等协助执行通知后，应立即予以执行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 黑体; font-size: 14pt">六、工作要求<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（一）认清形势，提高认识</span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">自《无照经营查处取缔办法》（国务令第<span lang="EN-US">370</span>号）颁布实施以来，我县在坚持依法查处取缔的同时，注意引导合法经营，不断加大监督执法力度，完善查处取缔无证无照经营行为工作机制，取得了阶段性成果，对于维护市场经济秩序和社会稳定发挥了重要作用。但由于无证无照经营情况复杂，且在一些行业、区域不同程度地长期存在，屡禁不止，已成为损害人民利益、扰乱市场经济秩序、威胁社会和谐稳定的突出隐患。为此，有关部门应提高认识，认真贯彻落实《中央社会治安综合治理委员会办公室</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">、</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">国家工商行政管理总局关于做好将查处取缔无照经营纳入社会治安综合治理目标考评工作的意见》（综治办〔</span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">2010</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">〕</span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">44</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">号）、</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">《省人民政府办公厅关于建立查处取缔无证无照经营综合治理工作机制的意见》（鄂政发〔<span lang="EN-US">2011</span>〕<span lang="EN-US">5</span>号）</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">精神，从全县社会治安综合治理的高度，充分认识查处无证无照经营工作是落实科学发展观、维护人民群众的根本利益、促进嘉鱼经济社会又好又快发展的根本要求；是提升产业层次、整顿和规范市场经济秩序、创建卫生城市、文明城市以及开展社会治安综合治理、构建</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&ldquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">和谐嘉鱼</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: 宋体; mso-bidi-font-family: 宋体">&rdquo;</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">的有效措施。</span><span style="font-family: 仿宋_GB2312; font-size: 14pt">各部门</span><span style="font-family: 仿宋_GB2312; font-size: 14pt; mso-font-kerning: 0pt; mso-hansi-font-family: '&rsquo;Times New Roman&rsquo;'; mso-bidi-font-family: 宋体">要按照县政府的统一工作部署，以更加清晰的认识，更加坚决的态度，更加务实的作风，更加有力的措施，充分发挥查处取缔无证无照经营综合治理工作机制的优势，将这项工作纳入年度工作计划，扎实有效地开展查处无证无照经营工作。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（二）加强领导，落实责任<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">各镇政府要切实把查处取缔无证无照经营作为整顿和规范市场经济秩序的一项重要任务，作为保障人民群众生命财产安全的重要措施，加强组织领导，认真协调解决查处取缔无证无照经营工作中遇到的困难和问题，在人员、经费等方面予以保障，积极支持相关职能部门依法开展工作。各职能部门要在当地政府的统一领导下，各司其职，各负其责，既分头把关，又协同作战。要认真履行法定职责，全面落实属地监管责任，加强对本部门和所属下级单位开展查处取缔无证无照经营工作情况的监督检查，严格执行责任追究制度。对不依法履行监管职责，或者发现无证无照经营不按规定职责和程序查处的，依法依规给予行政处分；对因失职、渎职和包庇袒护等造成严重后果的，按照有关规定严肃追究相关人员的责任。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（三）依法行政，文明执法<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">在查处取缔工作中，各职能部门要严格执法办案程序，坚持依法行政、秉公执法、廉洁执法、文明执法。对拒绝、阻碍依法查处取缔无证无照经营行为的，要做好说服教育工作；对情况复杂、影响较大或群体性的无证无照经营行为，要注意综合治理；需要进行联合执法的，相关部门要积极参与，密切协调合作；需要公安部门配合的，要及时向公安部门通报情况，公安部门接到协同执法请求后，积极支持配合，依法惩处阻碍国家机关工作人员执行职务的违法行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（四）摸清底数，建立台帐<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">从即日起到<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="30" month="6" year="2011"><span lang="EN-US">6</span>月<span lang="EN-US">30</span>日</st1:chsdate>，各镇各职能部门要对辖区内经营主体展开拉网式排查，不留死角，彻底摸清辖区内各类经营主体底数。并根据行业分布、区域分布及证照发放等情况建立台帐，结合实际分析无证无照违法经营成因，针对特点追根溯源，做到标本兼治。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（五）帮扶结合，规范主体<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">查处取缔无证无照经营是政策性很强的工作，关系到广大人民群众切身利益。各镇各职能部门要强化大局意识和服务意识，始终坚持&ldquo;教育在先、查处在后&rdquo;、&ldquo;疏导为主、取缔为辅&rdquo;的工作方针，区别对待，加强引导、扶持和规范。对下岗失业人员、残疾人等弱势群体从事经营的经营条件和范围符合法律法规规定的，应积极帮助和引导其依法办理相关手续，使其合法经营；对涉及专项审批的项目，行政许可审批部门要在法定时间内给予审核答复，不得拖延推迟；对法律法规未明确规定应登记的经营活动，或按照相关政策规定应免于登记的经营活动，依法管理，不作为无照经营查处取缔。对危害人民群众身体健康、存在重大安全隐患、威胁公共安全、破坏环境资源的无证无照经营行为，坚决查处取缔。发现违法情节严重，涉嫌犯罪的，要依法移送司法部门追究刑事责任。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">（六）加强宣传，营造氛围<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; text-indent: 31.5pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.25; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">要加大宣传力度，通过电视、广播、报纸、网络等传媒工具，加大相关法律法规宣传力度，努力提高打击无证无照经营行为的公众意识；要通过新闻媒体公布无证无照经营举报电话，发动群众广泛参与，适时曝光无证无照经营典型违法案例，在全社会形成抵制、打击无证无照违法经营活动的良好氛围。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><u><span lang="EN-US" style="font-family: 黑体; font-size: 14pt"><o:p><span style="text-decoration: none">&nbsp;</span></o:p></span></u></p>
+<p class="MsoNormal" style="line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><u><span lang="EN-US" style="font-family: 黑体; font-size: 14pt"><o:p><span style="text-decoration: none">&nbsp;</span></o:p></span></u></p>
+<p class="MsoNormal" align="right" style="text-align: right; line-height: 30pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">0</span>一一年四月二十五日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

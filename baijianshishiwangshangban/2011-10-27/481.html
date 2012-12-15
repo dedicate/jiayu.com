@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>城市生活无着的流浪乞讨人员救助 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="城市生活无着的流浪乞讨人员救助" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/">百件实事网上办</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">城市生活无着的流浪乞讨人员救助</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-27</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p></o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 200%; text-indent: 24.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">城市生活无着的流浪乞讨人员救助管理办法<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第一条 为了对在城市生活无着的流浪、乞讨人员（以下简称流浪乞讨人员）实行救助，保障其基本生活权益，完善社会救助制度，制定本办法。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二条 县级以上城市人民政府应当根据需要设立流浪乞讨人员救助站。救助站对流浪乞讨人员的救助是一项临时性社会救助措施。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第三条 县级以上城市人民政府应当采取积极措施及时救助流浪乞讨人员，并应当将救助工作所需经费列入财政预算，予以保障。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">国家鼓励、支持社会组织和个人救助流浪乞讨人员。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第四条 县级以上人民政府民政部门负责流浪乞讨人员的救助工作，并对救助站进行指导、监督。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">公安、卫生、交通、铁道、城管等部门应当在各自的职责范围内做好相关工作。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第五条 公安机关和其他有关行政机关的工作人员在执行职务时发现流浪乞讨人员的，应当告知其向救助站求助；对其中的残疾人、未成年人、老年人和行动不便的其他人员，还应当引导、护送到救助站。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第六条 向救助站求助的流浪乞讨人员，应当如实提供本人的姓名等基本情况并将随身携带物品在救助站登记，向救助站提出求助需求。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">救助站对属于救助对象的求助人员，应当及时提供救助，不得拒绝；对不属于救助对象的求助人员，应当说明不予救助的理由。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第七条 救助站应当根据受助人员的需要提供下列救助： <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（一）提供符合食品卫生要求的食物； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（二）提供符合基本条件的住处； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（三）对在站内突发急病的，及时送医院救治； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（四）帮助与其亲属或者所在单位联系； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（五）对没有交通费返回其住所地或者所在单位的，提供乘车凭证。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第八条 救助站为受助人员提供的住处，应当按性别分室住宿，女性受助人员应当由女性工作人员管理。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第九条 救助站应当保障受助人员在站内的人身安全和随身携带物品的安全，维护站内秩序。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十条 救助站不得向受助人员、其亲属或者所在单位收取费用，不得以任何借口组织受助人员从事生产劳动。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十一条 救助站应当劝导受助人员返回其住所地或者所在单位，不得限制受助人员离开救助站。救助站对受助的残疾人、未成年人、老年人应当给予照顾；对查明住址的，及时通知其亲属或者所在单位领回；对无家可归的，由其户籍所在地人民政府妥善安置。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十二条 受助人员住所地的县级人民政府应当采取措施，帮助受助人员解决生产、生活困难，教育遗弃残疾人、未成年人、老年人的近亲属或者其他监护人履行抚养、赡养义务。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十三条 救助站应当建立、健全站内管理的各项制度，实行规范化管理。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十四条 县级以上人民政府民政部门应当加强对救助站工作人员的教育、培训和监督。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">救助站工作人员应当自觉遵守国家的法律法规、政策和有关规章制度，不准拘禁或者变相拘禁受助人员；不准打骂、体罚、虐待受助人员或者唆使他人打骂、体罚、虐待受助人员；不准敲诈、勒索、侵吞受助人员的财物；不准克扣受助人员的生活供应品；不准扣压受助人员的证件、申诉控告材料；不准任用受助人员担任管理工作；不准使用受助人员为工作人员干私活；不准调戏妇女。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">违反前款规定，构成犯罪的，依法追究刑事责任；尚不构成犯罪的，依法给予纪律处分。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十五条 救助站不履行救助职责的，求助人员可以向当地民政部门举报；民政部门经查证属实的，应当责令救助站及时提供救助，并对直接责任人员依法给予纪律处分。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十六条 受助人员应当遵守法律法规。受助人员违反法律法规的，应当依法处理。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">受助人员应当遵守救助站的各项规章制度。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十七条 本办法的实施细则由国务院民政部门制定。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十八条 本办法自<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="1" month="8" year="2003"><span lang="EN-US">2003</span>年<span lang="EN-US">8</span>月<span lang="EN-US">1</span>日</st1:chsdate>起施行。<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="12" month="5" year="1982"><span lang="EN-US">1982</span>年<span lang="EN-US">5</span>月<span lang="EN-US">12</span>日</st1:chsdate>国务院发布的《城市流浪乞讨人员收容遣送办法》同时废止。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 200%; text-indent: 24.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">城市生活无着的流浪乞讨人员救助管理办法实施细则<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第一条 根据《城市生活无着的流浪乞讨人员救助管理办法》（以下简称《救助管理办法》）的规定，制定本实施细则。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二条 《救助管理办法》规定的<span lang="EN-US">&ldquo;</span>城市生活无着的流浪乞讨人员<span lang="EN-US">&rdquo;</span>是指因自身无力解决食宿，无亲友投靠，又不享受城市最低生活保障或者农村五保供养，正在城市流浪乞讨度日的人员。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">虽有流浪乞讨行为，但不具备前款规定情形的，不属于救助对象。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第三条 流浪乞讨人员向救助站求助时，应当如实提供本人的下列情况： <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（一）姓名、年龄、性别、居民身份证或者能够证明身份的其他证件、本人户口所在地、住所地； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（二）是否享受城市最低生活保障或者农村五保供养<span lang="EN-US">; <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（三）流浪乞讨的原因、时间、经过<span lang="EN-US">; <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（四）近亲属和其他关系密切亲戚的姓名、住址、联系方式； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（五）随身物品的情况。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第四条 救助站应当向求助的流浪乞讨人员告知救助对象的范围和实施救助的内容，询问与求助需求有关的情况，并对其个人情况予以登记。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第五条 救助站对属于救助对象的，应当及时安排救助；不属于救助对象的，不予救助并告知其理由。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">对因年老、年幼、残疾等原因无法提供个人情况的，救助站应当先提供救助，再查明情况。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">对拒不如实提供个人情况的，不予救助。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第六条 受助人员不得携带危险物品进入救助站，随身携带的物品，除生活必需品外，由救助站保管，待该受助人员离站时归还。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第七条 省、自治区、直辖市人民政府民政部门应当制定救助站受助人员的作息、卫生、学习等制度。受助人员应当遵守救助站的规章制度。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第八条 救助站为受助人员提供的食物和住处，应当能够满足受助人员的基本健康和安全需要。受助人员食宿定额定量的标准，由省级人民政府民政部门商财政部门具体规定。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第九条 受助人员在站内突发急病的，救助站应当及时送医疗机构治疗。救助站发现受助人员在站内患传染病或者为疑似传染病病人的，救助站应当送当地具有传染病收治条件的医疗机构治疗，并向当地疾病预防控制机构报告，采取必要的消毒隔离措施。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十条 救助站应当根据受助人员提供的有关情况，及时与受助人员的家属以及受助人员常住户口所在地或者住所地的乡（镇）人民政府、城市街道办事处、该地的公安、民政部门取得联系，核实情况。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">救助站发现受助人员故意提供虚假个人情况的，应当终止救助。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十一条 受助人员返回常住户口所在地、住所地或者所在单位时没有交通费的，由救助站发给乘车（船）凭证，铁道、公路、水运等运输单位验证后准予搭乘相应的公共交通工具。救助站应当将有关情况通知受助人员的亲属及前往地的有关组织、所在单位。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十二条 救助站应当根据受助人员的情况确定救助期限，一般不超过<span lang="EN-US">10</span>天；因特殊情况需要延长的，报上级民政主管部门备案。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十三条 对受助人员中的残疾人、未成年人或者其他行动不便的人，救助站应当通知其亲属或者所在单位接回；亲属或者所在单位拒不接回的，省内的由流入地人民政府民政部门通知流出地人民政府民政部门接回，送其亲属或者所在单位；跨省的由流入地省级人民政府民政部门通知流出地省级人民政府民政部门接回，送其亲属或者所在单位。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十四条 对无法查明其亲属或者所在单位，但可以查明其户口所在地、住所地的受助残疾人、未成年人及其他行动不便的人，省内的由流入地人民政府民政部门通知流出地人民政府民政部门接回，送户口所在地、住所地安置；跨省的由流入地省级人民政府民政部门通知流出地省级人民政府民政部门接回，送户口所在地、住所地安置。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十五条 对因年老、年幼或者残疾无法认知自己行为、无表达能力，因而无法查明其亲属或者所在单位，也无法查明其户口所在地或者住所地的，由救助站上级民政主管部门提出安置方案，报同级人民政府给予安置。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十六条 受助人员自愿放弃救助离开救助站的，应当事先告知，救助站不得限制。未成年人及其他无民事行为能力人和限制民事行为能力人离开救助站，须经救助站同意。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">受助人员擅自离开救助站的，视同放弃救助，救助站应当终止救助。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十七条 救助站已经实施救助或者救助期满，受助人员应当离开救助站。对无正当理由不愿离站的受助人员，救助站应当终止救助。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十八条 受助人员户口所在地、住所地的乡级、县级人民政府应当帮助返回的受助人员解决生产、生活困难，避免其再次外出流浪乞讨；对遗弃残疾人、未成年人、老年人的近亲属或者其他监护人，责令其履行抚养、赡养义务；对确实无家可归的残疾人、未成年人、老年人应当给予安置。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第十九条 受助人员在救助站期间应当遵纪守法，不得辱骂、殴打救助站工作人员或者其他受助人员，不得破坏救助设施，不得毁坏、盗窃公私财物，不得无理取闹、扰乱救助工作秩序。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">对受助人员的违法行为，救助站工作人员应当及时制止；受助人员违规违纪情节严重的，或者发现受助人员有犯罪嫌疑的，应当及时报请公安机关依法处理。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二十条 救助站应当建立健全岗位责任制、安全责任制、工作人员行为规范等规章制度，实行规范化管理。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">救助站应当将受助人员入站、离站、获得救助等情况如实记载，制作档案妥善保管。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二十一条 救助站及其工作人员应当严格遵守《救助管理办法》第十条、第十四条第二款规定。对违反规定的，由该救助站的上级民政主管部门责令改正；情节较重的，对直接负责的主管人员和其他直接责任人给予纪律处分；构成犯罪的，依法追究刑事责任。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二十二条 县级以上地方人民政府民政部门应当加强对救助站的领导和监督管理，履行以下职责： <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（一）监督救助站落实救助措施和规章制度； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（二）指导检查救助工作情况<span lang="EN-US">; <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（三）对救助站工作人员进行教育、培训<span lang="EN-US">; <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（四）调查、处理救助站及其工作人员违法违纪问题； <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（五）帮助救助站解决困难，提供工作条件。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二十三条 救助站的上级民政主管部门不及时受理救助对象举报，不及时责令救助站履行职责，或者对应当安置的受助人员不报请当地人民政府予以安置的，对直接负责的主管人员和其他直接责任人员依法给予行政处分。 <span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">第二十四条 本实施细则自<span lang="EN-US">2003</span>年<span lang="EN-US">8</span>月<span lang="EN-US">1</span>日起施行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt"><o:p>&nbsp;</o:p></span></p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

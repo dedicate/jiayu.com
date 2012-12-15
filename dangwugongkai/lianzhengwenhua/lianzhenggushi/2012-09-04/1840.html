@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>廉政故事选（二） - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="廉政故事选（二）" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/dangwugongkai/">党务公开</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/lianzhenggushi/">廉政故事</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">廉政故事选（二）</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-09-04</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" align="center" style="margin: 0cm 0cm 0pt; line-height: 30pt; text-align: center; mso-line-height-rule: exactly"><span style="font-size: 22pt; font-family: 黑体">酌贪泉而觉爽，处涸辙以犹欢<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span lang="EN-US" style="font-size: 17pt; font-family: 仿宋_GB2312"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">石门，在广州城之西，距市中心十四公里。&ldquo;石门返照&rdquo;早在宋、元时期就已经成为羊城八景之一。不过，石门最出名的还是贪泉、沉香岛与东晋名臣吴隐之之间的故事。吴隐之（？一<span lang="EN-US">413</span>年），字处默，东晋濮阳鄄城（今山东省鄄城北）人，是东晋末年著名的清官廉吏。他历任辅国将军功曹、征虏将军参军、卫将军主簿、晋陵太守、秘书监、御史中丞、左卫将军、广州刺史、度支尚书、太常、中领军等官职。他一生廉洁俭朴，堪为清官楷模，关于他的故事，不少都传为千古佳话。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34.15pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><b style="mso-bidi-font-weight: normal"><span style="font-size: 17pt; font-family: 楷体_GB2312">（<span lang="EN-US">1</span>）酌饮&ldquo;贪泉&rdquo;明廉志<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">所谓&ldquo;贪泉&rdquo;，原是广州郊外二十里处石门镇的一股涌泉。过去，人们称之为石门水，又叫沉香浦或投香浦。据说，该泉水终年清澈见底，香气四溢，而且十分甜润。相传西晋时期，广州很多地方官都与商人勾结，贪污腐败成风，朝廷为此大伤脑筋。一个叫周清廉的人，长期在北方地区为官，向以清正廉明而著称，于是朝廷决定派他到广州担任刺史，希望他能以身作则，整顿广州的吏治。周清廉受命来到广州后，开始时确有大干一翻事业的气势。可是，一次偶然的机会，他喝了石门的泉水，觉得泉水甘甜清冽，入口滑顺，久久难以忘怀，从此天天派人专门到石门取泉水。结果，三年任满，周清廉已不再清正廉明，而是变成了一位巨贪。当他贪污行为东窗事发后，皇帝无限感慨，这么一个好官，怎么就这样成了贪官呢？周清廉受到查处后，广州当地人就将周清廉喝过的那眼泉水称为&ldquo;贪泉&rdquo;，而喝了贪泉水将使人产生无尽的贪心、贪欲的传闻也在当地不胫而走，传播开来，而且越传越玄。从此，凡是到广州任官的人，再也不敢饮此泉之水，哪怕路过时渴得口干舌燥也竭力忍着，以保自己的清廉。即便一些正直的人路过此地，也不敢造次，大都绕道而行。<span lang="EN-US"> <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">因吴隐之久负清名，朝廷也想一改广州吏治腐败的局面，元兴元年（<span lang="EN-US">402</span>年），吴隐之被调任广州刺史。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">吴隐之赴任时途经石门，他听随从说起关于&ldquo;贪泉&rdquo;的故事，便对随从说：&ldquo;美好的东西容易引起人的贪欲，越过五岭就丧失清白的原因，我现在知道了。&rdquo;决心前往一探&ldquo;贪泉&rdquo;的究竟。来到泉边，只见周围山清水秀，一股泉水从石岩中汩汩涌出，岩下有一泉眼，泉眼中的水清澈可人。吴隐之忍不住赞叹道：&ldquo;好泉水啊好泉水！&rdquo;忽见他蹲下身来，掬起一捧泉水畅饮，随从见后大惊失色，赶紧上前阻拦：&ldquo;老爷！这是贪泉水呀，千万饮不得！&rdquo;吴隐之听后哈哈大笑起来，对随从说道：&ldquo;什么贪泉不贪泉，我就不信这个邪。清廉的人饮了也不会变成贪浊之人，而贪浊的人饮不饮都是贪浊之人啊！&rdquo;说完环顾了一下四周，随着微微的山风，他略加思索，便赋诗一首，诗云：古人云此水，一歃怀千金。试使夷齐饮，终当不易心！这首诗的意思是说：许多年来，人们传说喝了&ldquo;贪泉&rdquo;的水便会贪得无厌，欲壑难填。我认为，假如品德高洁的伯夷、叔齐喝了它，一定不会改变初衷的！实际上，吴隐之是借赋诗的机会明确表达了自己的清白之志向，无异于他的就职誓言。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">吴隐之到任后，时时牢记自己在&ldquo;贪泉&rdquo;边的誓言，处处严格要求自己。平时，他不沾酒肉，吃的只是蔬菜、干鱼；穿的，仍是过去那些旧衣服。他还下令将前任太守使用过的豪华丝帐、帷幕以及各种贵重饰物统统撤除，一并归入国库中。其清廉俭朴令当地不少官员都难以相信，认为这些不过是他装出来的。一位属下发现他天天吃干鱼，误以为他喜欢吃鱼，便弄了些上等鱼来，还将鱼刺剔除，特地献给他。不料，吴隐之非但不领情，还狠狠地责罚了他，并严肃地警告其他下属不得再犯同样的错误。吴隐之在广州任上，除自己始终保持廉洁俭朴之外，还革旧布新，兴利除害，严惩了一大批贪官污吏和不法商人，使当地社会风气日渐好转，百姓安居乐业。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34.15pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><b style="mso-bidi-font-weight: normal"><span style="font-size: 17pt; font-family: 楷体_GB2312">（<span lang="EN-US">2</span>）&ldquo;沉香岛&rdquo;前留廉名<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">&ldquo;沉香岛&rdquo;位于广州市西北郊槎头，也在石门附近。相传吴隐之为官三年，两袖清风。上任时从北江乘船而过，风平浪静，离任时又从此江经过，他站立船头，心平气和，自以为在任时明镜高悬，无愧于广州的黎民百姓。岂不料，猛然间天昏地暗，狂风暴雨直摧桅杆。江中恶浪翻滚，危及船舸。吴隐之大惊失色，自省并无丝毫贪欲和劣行，不该受老天如此责罚，便转身问夫人：&ldquo;离去时是否受了什么人的馈赠？&rdquo;夫人沉思片刻，答曰：&ldquo;受领过一块沉香木。&rdquo;吴隐之大怒，连声喝道：&ldquo;扔了，扔了，别让一块沉香木毁我一生清白！&rdquo;沉香木被扔进了江中。少顷，就见风平浪静，雨停云散，江天一派清朗，大船得以扬帆顺行。<span lang="EN-US"> <o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">后来，这件事就演变成了《沉香岛》如何形成的美丽传说。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">吴隐之回到京城后，住在一个小宅院中，篱笆与院墙又矮又窄，内外只有六间房屋，妻子儿女同住一处，很是拥挤。朝廷要赐给他车马，为他修造住宅，但他坚决推辞。此后，吴隐之虽然步步高升，官至中领军，但他清廉俭朴之风不改。家里以竹篷作为屏风，坐的地方没有毡席。每月领到的俸禄，除了留下一小部分作为家庭的基本开销外，其余大都用来接济亲戚和族人。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">晋安帝义熙八年（<span lang="EN-US">413</span>年），吴隐之以年老为由请求退休，朝廷同意了他的请求，授予他光禄大夫，加金章紫绶，赐给钱十万，米三百斛。次年，吴隐之去世，朝廷追赠他为左光禄大夫，加散骑常侍。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">吴隐之一生为官，操守清廉，屡次受到朝廷褒奖，当时许多廉洁的士大夫们皆以他为荣。在他的熏陶下，他的子孙都能继承他的遗风。大儿子吴旷之战死沙场，二儿子吴延之任鄱阳太守，清廉有操守。延之的弟弟以及儿子都曾担任郡、县长官，常以廉洁谨慎作为家门传统。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">千百年来，在正史、方志和民间口碑传说中，有关吴隐之的清廉故事传承不绝。唐太宗李世民命贤相魏征等人编撰的《晋书》，在吴隐之的传记中，不仅勾勒了其廉洁自律的一生，而且作出了&ldquo;晋代良吏，吴隐之为第一&rdquo;的评价。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">唐初大才子王勃在其千古流传的名篇《滕王阁诗序》中，引据吴隐之酌饮&ldquo;贪泉&rdquo;的故事，写下了&ldquo;酌贪泉而觉爽，处涸辙以犹欢&rdquo;的名句，意为像吴隐之这样清廉的人，即使是酌饮了&ldquo;贪泉&rdquo;也不会因此变得贪浊，高度赞扬了吴隐之的人品。大诗人白居易也将吴隐之的故事写入《丘中有一士》一诗中，只不过他将&ldquo;贪泉&rdquo;换作了浊泉，诗曰：&ldquo;不饮浊泉水，不息曲木荫。所逢苟非义，粪土千万金。&rdquo;意为不在浊泉中饮水，不在弯木下歇凉。对于清廉正直的人来说，千万黄金不过是一堆粪土而已。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">&ldquo;贪泉&rdquo;在五代时已湮没，只剩下&ldquo;贪泉&rdquo;碑一方，原立于石门，后移到广州博物馆。在今日广州石门，还存有吴隐之祠、贪泉亭、贪泉碑和水月岩等古迹。在吴隐之的故乡山东省鄄城县以及鄄城县所在的菏泽地区，在编写《鄄城县志》和《曹州名人大典》时，也都将他那感人的事迹编入其中。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 34pt; line-height: 30pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span style="font-size: 17pt; font-family: 仿宋_GB2312">清廉正直的人，即便生前不得意，但终将被历史记住，为人民传颂；而贪浊邪佞的人，固然能一时骗得虚名，但终将被历史唾弃，遗臭万年。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US"><o:p><font face="Times New Roman" size="3">&nbsp;</font></o:p></span></p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><img src="http://www.jiayu.gov.cn/skin/jy/images/by.gif" width="168" height="230" border="0"></a></div>
+<div class="o_lb_41"><table>
+
+<tr><td height="25"></td></tr>
+<tr><td> |  <a href="http://www.jyjyw.net/" target="_blank">县教育局</a> | </td><td> <a href="http://www.jylr.gov.cn/" target="_blank">县国土局</a> | </td></tr>
+<tr><td> |  <a href="http://www.jyrkjs.com/" target="_blank">县计生局</a> | </td><td> <a href="http://www.jywjw.gov.cn/" target="_blank">县物价局</a> | </td></tr>
+<tr><td> |  <a href="http://www.guanqiao.gov.cn/Index.htm" target="_blank">官 桥 镇</a> | </td></tr>
+</table>
+
+
+</div>
+<div class="o_lb_42"><table>
+
+<tr><td height="25"></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/geyanjingju/" target="_blank">格言警句</a></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/lianzhenggushi/" target="_blank">廉政故事</a></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/lianzhengshuhua/" target="_blank">廉政书画</a></td></tr>
+<tr><td><!--list.var4--></td></tr>
+<tr><td><!--list.var5--></td></tr>
+</table>
+
+
+</div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l8.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

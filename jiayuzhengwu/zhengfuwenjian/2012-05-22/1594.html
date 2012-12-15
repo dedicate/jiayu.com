@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于印发嘉鱼县市场价格监管年活动实施方案的通知 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于印发嘉鱼县市场价格监管年活动实施方案的通知" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于印发嘉鱼县市场价格监管年活动实施方案的通知</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-05-18</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" align="center" style="text-align: center; line-height: 28pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">嘉政办发<span lang="EN-US">[2012]57</span>号<span lang="EN-US"><o:p></o:p></span></span><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 28pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">经县人民政府同意，现将《嘉鱼县市场价格监管年活动实施方案》印发给你们，请认真遵照执行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm">&nbsp;</p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm">&nbsp;</p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二<span lang="EN-US">0</span>一二年五月十六日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 28pt; text-indent: 227.7pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 16.5; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 28pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p></o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: 28pt; margin: 0cm 0cm 0pt; mso-line-height-rule: exactly"><span style="font-family: 黑体; letter-spacing: -0.1pt; font-size: 15pt">嘉鱼县市场价格监管年活动实施方案<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 28pt; text-indent: 31.6pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">为深入贯彻省委、省政府关于保持物价总水平基本稳定的工作要求，进一步加强全县价格监管，切实规范市场价格秩序，为县域经济发展营造良好的价格和消费环境，根据《省物价局关于深入开展市场价格监管年活动实施方案》精神，结合我县实际，制定本方案。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">&ldquo;市场价格监管年&rdquo;活动以科学发展观为指导，贯彻落实国家、省、市相关文件精神，以保供、稳价、惠民为目标，以商场菜场机场（含车站、码头）、药店酒店书店、房市油市银市（简称&ldquo;三场、三店、三市&rdquo;）为工作主阵地，以创建价格诚信单位为工作抓手，以查处重点价格违法行为、规范明码标价为工作切入点，辐射各行业，覆盖全市场，引导创建一批商业窗口行业价格诚信单位，全面引导和规范全县商业行业价格行为，努力为建设湖北经济强县、长江临港新城营造良好的消费环境和价格秩序。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt">二、工作目标<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">&ldquo;市场价格监管年&rdquo;活动以&ldquo;三场、三店、三市&rdquo;为重点，覆盖各行业，具体监管行业、监管内容、目标任务如下：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（一）商店</span></b><span style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt"> </span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;</span></span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;</span></span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经营面积小于<span lang="EN-US">30</span>平方米，且不采用电脑打票收费的零售门店。<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">销售商品或者提供服务实行明码标价；使用县物价局监制的标价签；一货一标，标示内容规范；降价、促销、打折不使用法律明令禁止的词汇语言。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">商家明码标价率达<span lang="EN-US">95%</span>，规范率不低于<span lang="EN-US">90%</span>，无明显价格违法行为发生。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">工商局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">中大型超市、商场<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">销售商品或提供服务实行明码标价；使用县物价局监制的标价方式；一货一标，标示内容规范；降价、让利、促销、打折明码标示，并使用专门的标价签。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率达<span lang="EN-US">100%</span>；消费者价格投诉渠道畅通，价格投诉及时查处；引导创建<span lang="EN-US">3</span>家价格诚信单位。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">工商局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（二）菜场</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"> <span lang="EN-US"><br />
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">对菜市场摊位费以及涉及菜市场的各项收费和价格进行清理，重点查处各种乱收费行为；在菜市场摊位推行明码标价制度；每个经营摊位设立一个价格公示牌，公示内容包括：经营摊位编号、业主信息、经营品种、产地、计价单位、单价、新鲜程度、货物存放天数等。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">落实国家价费政策、优惠政策；以北门湖菜市场和茶庵市场为试点，全面推进菜市场明码标价工作，力争今年标价率达<span lang="EN-US">85%</span>，规范率不低于<span lang="EN-US">80%</span>。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">商务局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">（三）车站</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">车站候车大厅内有醒目的标价公示牌，公示各路线票价；代售保险要在票价之外单独标明，并注明乘客自愿购买原则，不得强制搭售；寄存行李和代运行李收费项目和标准明码标示；车站内销售其他商品实行明码标价；客运班车内醒目位置明确公示本条营运线路各站点起止价目表，并公布价格投诉电话；出租车按计价器打表收费；城市公交车按物价部门核定标准执行。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">车站候车厅、站内零售商店、班车内明码标价率达<span lang="EN-US">100%</span>，规范率达<span lang="EN-US">100%</span>，无擅自提高客运票价、强制搭售保险行为发生，乘客监督投诉渠道畅通，发现问题及时有效查处。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管单位：县交通局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（四）</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">旅</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">店业</span></b><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">小规模旅社（馆）</span></b><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经营场所内住店及相关服务价格明码标示。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率不低于<span lang="EN-US">95%</span>。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县工商局、县公安局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、<span lang="EN-US">20</span>个床位以上规模酒店<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经营场所内相关商品和服务价格明码标价；有标价公示牌、有县物价局监制字样；公开价格投诉电话。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率不低于<span lang="EN-US">90%</span>。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县工商局、县公安局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、二星级及以上酒店<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">酒店大堂有县物价局监制的价格公示牌，公示牌制作规范，公开价格投诉电话；对不同的房间价格分别进行公示，当天实际执行的折扣、优惠、促销明确标示；对房价内包含的各种服务项目明确标示；房间内提供自选商品和服务的，要在醒目位置放置统一的价目表。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率达<span lang="EN-US">100%</span>，确保全年无价格欺诈行为发生，引导<span lang="EN-US">3</span>家以上企业争创价格诚信单位。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县旅游局、县公安局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（五）书店</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经营面积小于<span lang="EN-US">10</span>平方米的零售报刊、书刊（亭）点<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.3pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">有明码标价牌，对销售的书刊报纸进行明码标价。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.3pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率不低于<span lang="EN-US">80%</span>，规范率不低于<span lang="EN-US">75%</span>。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县文体新局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">大于<span lang="EN-US">10</span>平方米的书店<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经营场所有醒目的书店基础信息公示牌，要公示书店经营的批准文号、经营品种范围、标价形式、县物价局监制、价格投诉电话等内容；对不同类别的书目要分门别类摆放，同一类别的书目可统一公示一个计价形式；对折扣书、特价书要用专门的标价签进行标示；对于提供租书服务的书店，租书价格要一书一标，同一类别同一个价格的也可一类别一标；对于提供会员服务的书店，要明确标示入会条件和退会条件，普通顾客和会员实行差异价格的要明确公示相关具体条款，不得以各种理由诱导和强迫消费者入会。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率不低于<span lang="EN-US">90%</span>，无重大价格违法行为发生。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县文体新局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（六）药店</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">药店内所有药品实行明码标价，使用县物价局监制的标价方式，标示内容规范；销售药品要分别标示商品名和化学名，中草药要标明产地、等级、进货渠道等与价格相关的内容；提供药品加工服务收费的，要公示收费项目与标准；对药店药品销售进销差率实行实时监测，对药品进销差率明显偏高的药店实行提醒告诫，对所有医保药店销售的药品在县物价局网站进行对比式公示。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率、规范率达<span lang="EN-US">100%</span>，严厉查处以次充好、提高药品等级、超出国家规定最高零售价销售药品的行为；对县物价局网站进行扩容，与医保定点药店联网，对药店销售药品实施实时监测；出台规范性文件，对医保定点药店药品进销差率实行控制。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">县药监局、</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">县</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">人社局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">（七）加油站</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">各加油站点有规范醒目的价格公示牌；国家油价调整前后及时开展巡查工作；加油站开展促销活动明确公示活动范围和时限；加油站兼营其他销售业务，商品实行一货一标，并按规定使用县物价局监制的标价签；成品油价格出现&ldquo;批零倒挂&rdquo;时，确保供应，不价外加价。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率达<span lang="EN-US">100%</span>，无重大的价格违法行为发生。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管单位：县商务局、县石油公司、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（八）液化气站</span></b><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">加气站内有规范醒目的价格公示牌，明确公示液化气计价单位和价格；气价调整前及时到县物价局备案；严格执行市政府规定的进销差率；加气站开展促销活动要明确公示活动范围和时限；代办液化气钢瓶检测业务的要公示收费项目、标准、收费单位和批准文号；提供上门送气业务的要公示详细的收费标准。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">明码标价率达<span lang="EN-US">100%</span>，规范率达<span lang="EN-US">100%</span>，价格备案率<span lang="EN-US">100%</span>。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县质监局 、县物价局　<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（九）银行</span></b><span lang="EN-US" style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp; </span></span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">银行营业大厅内要有醒目的价格公示牌，对实行政府指导价的价格和收费项目明码公示，公示牌要有县物价局监制字样，并公布价格举报电话；对实行市场调节价的各项收费，要制作专门的标价册进行公示。标价册要明确标示收费项目、收费标准、收费方式、批准机关（文号）和业务流程，报经县物价局批准后公布；标价册要放置在银行营业场所醒目位置，在群众办理业务前，向其告知，方便群众查询。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">银行业明码标价率<span lang="EN-US">100%</span>，选择农行作为试点单位，先行试点，年前全面铺开。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">银监办、县各商业银行、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（十）房地产公司</span></b><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管内容：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">房地产销售企业在取得预售许可后<span lang="EN-US">10</span>日内须到县物价局进行价格备案；房地产销售企业在销售地点制作基础信息公示牌和销售价格公示牌，内容包括房地产企业的基本信息、开发楼盘信息、楼盘开发批准机关及文号、楼盘配套设施、代收代办收费、税费、房屋价格等内容；严格实行房屋销售&ldquo;一价清&rdquo;制度，严禁价外加价行为发生；对公示已售房屋价格的，要按实际成交价进行公示。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">目标任务：</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">价格备案率达<span lang="EN-US">100%</span>，公示率、规范率均达<span lang="EN-US">100%</span>，房屋销售&ldquo;一价清&rdquo;制度落实到位，无价格欺诈行为发生，引导<span lang="EN-US">2-3</span>家房地产企业争创价格诚信单位。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">监管单位：县房管局、县物价局<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt">三、方法步骤<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.6pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">&ldquo;市场价格监管年&rdquo;活动从<span lang="EN-US">4</span>月初开始，到<span lang="EN-US">12</span>月底结束，共分五个阶段。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（一）宣传发动阶段（<span lang="EN-US">4</span>月<span lang="EN-US">-5</span>月）。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">成立工作专班，建立部门联席会议制度；制订工作方案</span><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt; mso-ascii-font-family: 'Times New Roman'">。</span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">4</span><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">月份为市场价格监管年宣传月，在城区主要交通干道经营点醒目位置悬挂宣传标语，在县电视台、嘉鱼网、嘉鱼物价网开辟宣传专栏，通过手机发送宣传短信，在南嘉商业城布置&ldquo;市场价格监管年&rdquo;活动大型宣传栏。组织经营业主召开宣传动员大会。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（二）调查摸底阶段（<span lang="EN-US">5</span>月<span lang="EN-US">-6</span>月）</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">划分区域，分配任务，调查摸底。对辖区内酒店、书店、商店、菜场、车站、加油站、药店、液化气站、银行、房地产企业等单位情况进行摸底调查。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（三）日常巡查和责令整改阶段（<span lang="EN-US">6</span>月<span lang="EN-US">-7</span>月）</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">对调查摸底中发现的问题及时向经营业主反馈并进行分类指导，下达整改意见书；建立日常巡查制度，发现问题及时督促整改。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（四）监督检查和价格诚信评选实施阶段（<span lang="EN-US">7</span>月&mdash;<span lang="EN-US">11</span>月）</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">对巡查中发现的问题，经营者拒不改正或屡纠屡犯、造成社会影响的案件，依法从严从快查处并公布曝光；对价格信誉好、基础好、争先创优意识较强的经营业主，要适时进行引导、培育。争创一批价格诚信单位，充分发挥先进示范作用，以点带面，全面推进。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt">（五）建章立制和表彰阶段（<span lang="EN-US">11</span>月<span lang="EN-US">-12</span>月）</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">对全年活动进行系统归纳总结，建立长效工作机制；进一步健全市场价格监管日常巡查制度和价格违法提醒告诫制度；完备工作流程，确立考核机制，编印&ldquo;市场价格监管年&rdquo;活动的各项工作制度，以规范性文件形式确立下来，对价格诚信单位公开授牌表彰。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 楷体_GB2312; letter-spacing: -0.1pt; font-size: 14pt"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 黑体; letter-spacing: -0.1pt; font-size: 14pt">四、工作要求<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、提高思想认识，加强组织领导。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">开展&ldquo;市场价格监管年&rdquo;活动，是贯彻落实省委、省政府物价工作要求的一项重要举措，是健全市场经济体制、推动经济社会又好又快发展的迫切需要，物价部门和各相关行业主管部门要充分认识&ldquo;市场价格监管年&rdquo;活动的重要意义，不断增强工作责任感和紧迫感，统筹兼顾、科学安排，精心组织、分工确责，有始有终、抓好落实。为加强领导，县政府成立以常务副县长为组长，各相关职能主管部门为成员的领导小组。物价局、工商局、交通运输局、文体新局、旅游局、商务局、人社局、质监局、公安局、石油公司、房管局、银监办、药监局等部门要加强沟通联合，形成市场价格监管合力。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、突出活动重点，狠抓案件查处。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">&ldquo;市场价格监管年&rdquo;活动要紧紧抓住&ldquo;三场、三店、三市&rdquo;等检查重点，精心组织部署，切实把问题查准、查细、查实，查出成效。对重大复杂案件要及时向县政府报告。要加大监管力度，依法从严查处价格违法行为，对不服从监管，久劝无效、屡禁不止、屡教不改的，要根据相关法律规定给予重处，并公开曝光。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、服务监管并重，以查处促规范。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">要检查关口前移，将&ldquo;市场价格监管年&rdquo;活动与价格诚信建设活动有机结合起来，积极为企业提供法规宣传、人员培训、专业指导、提醒告诫等各项服务，引导企业价格自律；要畅通<span lang="EN-US">12358</span>价格举报渠道，及时受理群众举报投诉，妥善解决群众反映强烈的焦点、热点问题；要加强对行业协会等社会组织的监管，防范行业串通、操纵价格等价格垄断行为发生。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.7pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">4</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">、加强舆论宣传，营造良好氛围。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 14pt">要把舆论宣传作为&ldquo;市场价格监管年&rdquo;活动的重要环节，组织得力人员，投入必要的经费保障，认真抓好落实。要大张旗鼓地宣传&ldquo;市场价格监管年&rdquo;活动的目的意义，宣传活动的成果和收获，从严查处和及时曝光群众关注的热点难点方面的典型案例，努力争取群众最广泛的支持和配合，取得更好的社会效果。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 28pt; text-indent: 31.6pt; margin: 0cm 0cm 0pt; mso-char-indent-count: 2.0; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="right" style="text-align: right; line-height: 28pt; margin: 0cm 16pt 0pt 0cm; mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312; letter-spacing: -0.1pt; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

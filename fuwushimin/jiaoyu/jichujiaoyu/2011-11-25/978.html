@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>初中入学、转学、升学政策规定介绍 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="初中入学、转学、升学政策规定介绍" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwushimin/">服务市民</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwushimin/jiaoyu/">教育</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/fuwushimin/jiaoyu/jichujiaoyu/">基础教育</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">初中入学、转学、升学政策规定介绍</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-27</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<div style="text-align: center; line-height: 22pt" align="center"><b><span style="font-size: 18pt">关于印发《嘉鱼县九年义务教育阶段学生</span></b><b><span style="font-size: 18pt">学籍管理规定》的通知</span></b></div>
+<div style="line-height: 45pt"><b>&nbsp;</b></div>
+<div style="line-height: 45pt"><span style="font-size: 15pt">各镇中心学校、县直各中小学、各民办中小学：</span></div>
+<div style="line-height: 45pt; text-indent: 36.75pt"><span style="font-size: 15pt">现将《嘉鱼县九年义务教育阶段学生学籍管理规定》印发给你们，请组织学习，并认真贯彻执行。</span></div>
+<div style="line-height: 45pt; text-indent: 36.75pt">&nbsp;</div>
+<div style="line-height: 45pt; text-indent: 36.75pt">&nbsp;</div>
+<div style="line-height: 45pt; text-indent: 36.75pt">&nbsp;</div>
+<div style="line-height: 22pt; text-indent: 268.5pt"><span style="font-size: 15pt">二00九年四月七日</span></div>
+<div style="line-height: 22pt"><b>&nbsp;</b></div>
+<div style="line-height: 22pt"><b>&nbsp;</b></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 18pt">嘉鱼县九年义务教育阶段学生学籍管理规定</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第一章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">总</span><span style="font-size: 15pt">则</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第一条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">为全面贯彻国家教育方针，加强和规范义务教育阶段学生学籍管理，巩固和提高九年义务教育水平，根据《中华人民共和国义务教育法》及其他有关法律、法规，制定本规定。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第二条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">本规定适用于嘉鱼县境内在义务教育阶段学校接受义务教育的中小学生。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第三条&nbsp;义务教育阶段学生学籍以县教育局基础教育股管理为主。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第四条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">义务教育阶段学生学籍</span><span style="font-size: 15pt">实行网络管理。</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第二章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">入学和注册</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第五条&nbsp;全县义务教育年限为九年。小学和初中均实行秋季招生入学。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第六条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">全县接受义务教育的起始年龄为六周岁，</span><span style="font-size: 15pt">条件不具备的地区，可推迟到7周岁</span><span style="font-size: 15pt">。残疾儿童、少年入学年龄可适当放宽。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第七条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">小学、初中新生实行免试入学。公办学校新生实行免试就近入学。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　任何学校不得以任何名义分重点班和非重点班，新生原则上使用学籍管理系统随机均衡分班。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">第八条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">公办学校新生入学。</span></div>
+<div style="line-height: 30pt; text-indent: 30pt"><span style="font-size: 15pt">农村新生入学。地方政府或地方政府委托学校按照辖区内适龄儿童、少年名单，最迟在新学年开始前15天，向适龄儿童、法定监护人发放《义务教育入学通知书》（以下简称《入学通知书》），法定监护人持《入学通知书》和户口簿原件及复印件（上交学校）在规定时间送适龄子女到指定学校就读。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">城区新生入学。教育行政部门划定小学、初中的服务范围，由学校根据法定监护人及其适龄子女的户籍、住房等情况，并按照服务范围内适龄儿童、少年名单，最迟在新学年开始前15天，向适龄儿童、法定监护人发放《入学通知书》，法定监护人持《入学通知书》和户口簿原件及复印件（上交学校）在规定时间送适龄子女到指定学校就读。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">无《入学通知书》和户口簿的不得办理新生注册手续。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">第九条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">适龄儿童、少年与法定监护人不在同一户籍，或户籍与常住地不符的，由县教育局基础教育股根据实际情况统筹安排学校就读。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">进城务工经商人员子女在流入地学校接受义务教育的，由法定监护人向暂住地学校提出申请，暂住地学校凭相关手续安排就读，报县教育局基础教育股备案并给予学籍。流入地学校在新学年9月15日前将学生名册通知学生户籍所在地学校备案。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">符合下列条件之一的，适龄儿童、少年可以在其法定监护人户籍或常住地学校就读：⒈法定监护人中有现役军人（含武警）；⒉法定监护人中有公派出国工作的专家、技术人员；⒊烈士子女、孤残儿等。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第十条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">民办学校招生在县教育局管理下进行。</span><span style="font-size: 15pt">民办学校按照教育局确定的招生范围、标准和方式招收新生，具体招生参照公办学校的办法。新生名单需报县教育局基础教育股备案，跨地区招收的新生，由学校在新学年</span><span style="font-size: 15pt">9</span><span style="font-size: 15pt">月</span><span style="font-size: 15pt">15</span><span style="font-size: 15pt">日前</span><span style="font-size: 15pt">报学生户籍所在地学校备案。学生由县教育局基础教育股统一纳入学籍管理系统。9月15日以后接收学生按转学办理。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 33.15pt" align="left"><span style="font-size: 15pt">第十一条&nbsp;适龄儿童、少年，因故未及时上学或在外地上学要求转回户籍所在地上学的，户籍所在地学校应安排学校就读。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第十二条&nbsp;小学初中新生入学后学校即为其注册学籍，并在新学年9月底前将学生名单报县教育局基础教育股。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第十三条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">新生入学后，</span><span style="font-size: 15pt">学校采用统一的学籍网络管理软件建立学生档案。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">初一新生用小学升学招生系统招录，小学一年级新生添加须经教育局审核签章后再统一添加注册。学生学籍姓名必须和户口簿上姓名一致。</span></div>
+<div style="line-height: 30pt">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第三章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">转学</span></div>
+<div style="line-height: 30pt">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第十四条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">转学是</span><span style="font-size: 15pt">指法定监护人工作调动、户籍迁移及家庭住址变动或其他正当理由，其子女需随法定监护人跨地区就读学习。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">法定监护人持工作调动证明，户籍迁移证明或房产证和户口簿原件和复印件（二份）到转出学校申请办理转学证，由转出学校经办人审核合格后，开具转学证张贴证明复印件并由校长签字同意后加盖公章，法定监护人持转学证和工作调动证明、户籍迁移证明或房产证和户口原件、复印件到转入学校，由经办人根据学籍管理规定审查合格并经校长签字后加盖公章后由法定监护人持转学证和与张贴在转学证上的复印件相同的原件，在指定时间内到教育局审核，转出学校在收到转学证回执后，必须在规定的时间内办理电子档案转移手续。转入、转出学校必须将转学证存档备查。（见转学流程图）</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">转学时间为每年8月25日至9月10日。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">转学不得变更就读年级。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">跨县市转学参照县内转学办理有关手续。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第十五条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">转入学校办理转入手续须接收转学证明并在网上查阅学生学籍档案。跨县市转学的要及时发送和收取学生学籍纸质档案。外省转入我省的，学校凭相关手续报县教育局基础教育股重新建立学生学籍档案。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第十六条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">对学生</span><span style="font-size: 15pt">转学，学校不得组织入学考试。学生休学期间，学校不予转学。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第十七条&nbsp;学校不得招收无转学手续学生。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">&nbsp;</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第四章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">借读</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第十八条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">借读是指因</span><span style="font-size: 15pt">法定监护人从事野外或流动性工作、支援边疆、服现役等，其子女需随法定监护人到非户籍所在地学校临时就读学习。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第十九条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">要求借读的学生，其</span><span style="font-size: 15pt">法定监护人需持本人所在单位和子女学籍所在学校证明，向借读学校提出书面借读申请，经借读学校审核、县教育局基础教育股批准后，准予借读。借读学生将借读学校审核证明复印件交学籍所在学校保存备查。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第二十条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">借读学生的学籍保留在原校。学生在借读期间的成绩和表现，由借读学校考核并提供给学籍所在学校。</span><span style="font-size: 15pt">初中借读生原则上回原学籍所在地参加毕业考试，学生《义务教育完成证书》由学籍所在地县级教育行政部门发放。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第二十一条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">借读不得变更年级。</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><b>&nbsp;</b></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第五章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">休学和复学</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">　　</span></div>
+<div style="line-height: 30pt; text-indent: 30pt"><span style="font-size: 15pt">第二十二条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学生因伤病和本人不可抗拒的原因连续缺课超过</span><span style="font-size: 15pt">3</span><span style="font-size: 15pt">个月仍不能上学的，由法定监护人提出书面休学申请并提交相关材料（因伤病提出休学的，需经县级或县级以上医疗单位出具住院病历、病情证明、住院费结算单），经学校审核、县教育局基础教育股批准后，同意休学。学生因不可抗拒的原因提出休学的，需出具公安、民政、劳动等有关部门的证明。</span></div>
+<div style="line-height: 30pt"><span style="font-size: 15pt">　　第二十三条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学生因体育成绩突出被选入国家、省、市</span><span style="font-size: 15pt">体校或集训学校的应办理休学手续，由法定监护人提供材料，经学校审核、县教育局基础教育股批准后，同意休学。</span></div>
+<div style="line-height: 30pt"><span style="font-size: 15pt">　　上述休学的相关材料应由学校保存备查。</span></div>
+<div style="line-height: 30pt; text-indent: 30pt"><span style="font-size: 15pt">第二十四条　休学时间从缺课开始计算。休学期限为一学年。休学的学生由学校保留原学籍。</span></div>
+<div style="line-height: 30pt"><span style="font-size: 15pt">　　第二十五条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">休学期满，学生或法定监护人持休学证明到学校办理复学手续。复学时学校可根据学生实际情况并征求学生本人及其法定监护人的意见后编入相应年级就读。办理休学手续的初中学生参加初中毕业升学考试按应届生报考。</span></div>
+<div style="line-height: 30pt; text-indent: 28.5pt"><span style="font-size: 15pt">休学期满不能复学的，法定监护人提出书面申请、提交相关材料，学校报经县教育局基础教育股批准后，续办休学手续。</span></div>
+<div style="line-height: 30pt; text-indent: 28.5pt"><span style="font-size: 15pt">第二十六条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学校不得涂改、伪造转学、休学、借读学生的有关信息和材料。</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><b>&nbsp;</b></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第六章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">辍学</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="line-height: 30pt; text-indent: 34pt"><span style="letter-spacing: 1pt; font-size: 15pt">第二十七条&nbsp;义务</span><span style="font-size: 15pt">教育阶段新生无故不报到，或在校生无故不到校学习超过一周的视为辍学。</span></div>
+<div style="line-height: 30pt; text-indent: 30pt"><span style="font-size: 15pt">第二十八条&nbsp;教师发现学生辍学后，应立即向学校报告，由学校及时派员找学生监护人问明情况，并做说服动员工作。说服动员后三日内（不含双休日）仍不返校的，学校填写辍学情况报告单，向当地政府报告。</span></div>
+<div style="line-height: 30pt; text-indent: 30pt"><span style="font-size: 15pt">第二十九条&nbsp;对有辍学情况不及时上报的教师、校长，对学生辍学劝导或强制返校工作不力的有关人员，有关部门应</span><span style="letter-spacing: 1pt; font-size: 15pt">对其进行严肃处理。</span></div>
+<div style="text-align: center; line-height: 30pt; text-indent: 34pt; layout-grid-mode: char" align="center">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第七章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">考核和评价</span></div>
+<div style="line-height: 30pt">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 25.65pt" align="left"><span style="font-size: 15pt">第三十条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">建立学生成绩及身心发展多元考核评价机制。目前主要从学业成绩和综合素质评价（小学低年级称操行评定）两个方面评价学生并将结果记入学籍档案。</span><span style="font-size: 15pt">学生学业成绩及综合素质评价（含操行评定）实行等级制。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第三十一条&nbsp;小学每学期进行期末考试、考查或考核，考试、考查或考核科目为国家或省教育行政部门规定的学科。学生学期成绩按平时学习成绩，期末考试、考查或考核成绩综合评定。　　</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第三十二条&nbsp;初中每学期进行期中、期末考试、考查或考核，考试、考查或考核科目为国家或省教育行政部门规定的学科。学生学期成绩按平时学习成绩，期中、期末考试、考查或考核成绩综合评定。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">学生综合素质评价（含操行评定）按照上级教育行政部门规定的要求进行。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第三十三条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学生的学业成绩和综合素质评价（含操行评定）结果</span><span style="font-size: 15pt">记入学生学籍档案。学校根据学生的考试、考查、考核情况及综合素质评价结果填写《学生综合素质报告书》，向法定监护人报告。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">学校和教师</span><span style="font-size: 15pt">不得以任何形式根据考试成绩和综合素质评价（含操行评定）结果进行排队或公布名次。</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><b>&nbsp;</b></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第八章<span style="font: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 15pt">修业期满</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第三十四</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">全县义务教育阶段实行不留级和不跳级制度。对智力超常、操行优良、身体健康、提前达到高学历程度的学生，经本人和家长申请，学校考核，县教育局基础教育股审批，可提前升入相应年级学习。初中学校一律不得招收复读学生，对在校学习年限超过（正常休学除外）三年的，一律作非应届生处理。原则上非应届生中考后不得录入重点高中。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 25.65pt" align="left"><span style="font-size: 15pt">第三十五</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学生九年义务教育修业期满，县教育局发放《义务教育完成证书》和《初级中等教育毕业证书》。对未修满九年义务教育年限者，可视情况出具学业证明。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第三十六</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学生死亡、因故丧失学习能力的，由学校向县教育局基础教育股报告</span><span style="font-size: 15pt">并</span><span style="font-size: 15pt">注销其学籍。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第九章&nbsp;奖励和处分</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第三十七</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">对德智体美劳全面发展或某一方面有突出表现的学生，予以表彰、奖励。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">第三十八</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">对犯有错误的学生应给予帮助或批评教育，对极少数</span><span style="font-size: 15pt">严重违反中小学生守则、日常行为规范和学校各项规章制度等有关规定的，可分别给予警告、严重警告和记过处分。对违法犯罪的，由司法部门依法处理。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 28.5pt" align="left"><span style="font-size: 15pt">义务教育阶段的学校不得开除或者劝退学生。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第三十九</span><span style="font-size: 15pt">学生在受处分期间，表现积极，改正错误，由学生本人提出书面申请，学校批准，可以撤销处分。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　　第四十条　 学校对有严重不良行为的学生，可按规定送工读学校进行矫治和接受教育。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第四十一条</span><span style="font-size: 15pt">&nbsp;&nbsp; </span><span style="font-size: 15pt">解除收容教养、劳动教养或者刑罚执行完毕，但未受完义务教育的未成年人，教育行政部门应为其安排接收学校，保证其接受完规定年限的义务教育。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left">&nbsp;</div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第十章&nbsp;管理权限</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">　</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第四十二条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">全县义务教育阶段学生学籍管理由县教育局基础教育股负责。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">县教育局基础教育股具体实施义务教育阶段学籍管理工作。各学校积极配合做好义务教育学籍管理工作。</span></div>
+<div style="text-align: left; line-height: 30pt" align="left"><span style="font-size: 15pt">　&nbsp;第四十三条&nbsp;学校要配备学籍管理专职人员和学籍管理专用设备。</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 30pt" align="left"><span style="font-size: 15pt">第四十四条</span><span style="font-size: 15pt">&nbsp;</span><span style="font-size: 15pt">学</span><span style="font-size: 15pt">校和教育行政部门如有违反本规定的，要追究相关人员的责任。</span></div>
+<div style="text-align: center; line-height: 30pt" align="center"><b>&nbsp;</b></div>
+<div style="text-align: center; line-height: 30pt" align="center"><span style="font-size: 15pt">第十一章 附</span><span style="font-size: 15pt">则</span></div>
+<div style="text-align: center; line-height: 30pt" align="center">&nbsp;</div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第四十五条</span><span style="font-size: 15pt">&nbsp;&nbsp; </span><span style="font-size: 15pt">本规定由县教育局基础教育股负责解释。　　</span></div>
+<div style="text-align: left; line-height: 30pt; text-indent: 24pt" align="left"><span style="font-size: 15pt">第四十六条</span><span style="font-size: 15pt">&nbsp;&nbsp; </span><span style="font-size: 15pt">本规定自下发之日起施行。</span></div>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

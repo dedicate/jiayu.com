@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>夏福卿同志在第十二届六次全体（扩大）会议上的讲话 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="夏福卿同志在第十二届六次全体（扩大）会议上的讲话" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">夏福卿同志在第十二届六次全体（扩大）会议上的讲话</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-08-04</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" align="center" style="text-align: center; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（<st1:chsdate isrocdate="False" islunardate="False" day="4" month="8" year="2011" w:st="on"><span lang="EN-US">2011</span>年<span lang="EN-US">8</span>月<span lang="EN-US">4</span>日</st1:chsdate>）<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">各位委员、候补委员，同志们：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">今天的会议开得紧凑、务实，刚才，武华同志、从钦同志、新华同志分别就各自分管的工业、农业、旅游等工作作了发言，大家讲得很好，我完全赞同。会上，刘书记还要作重要讲话，请大家认真领会，切实抓好贯彻落实。根据会议安排，我就上半年经济社会发展情况及下半年工作重点向各位作如下汇报：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">一、不懈奋斗，上半年工作成绩显著<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 宋体; font-size: 12pt">2011</span><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">年是&ldquo;十二五&rdquo;规划的开局之年，也是推进全县跨越式发展极为关键的一年。开年以来，我们深入贯彻落实科学发展观，加快推进&ldquo;农业强县、工业大县、旅游新县&rdquo;建设，全县经济社会继续呈现出良好发展态势。今年上半年，全县完成地区生产总值<span lang="EN-US">52.93</span>亿元，按可比价格计算比上年同期增长<span lang="EN-US">17.2%</span>；完成规模工业增加值<span lang="EN-US">29.81</span>亿元，同比增长<span lang="EN-US">40.7%</span>，增速位居全市第一位；完成固定资产投资<span lang="EN-US">48.69</span>亿元，同比增长<span lang="EN-US">60.6%</span>，增幅居全市首位；完成地方一般预算收入<span lang="EN-US">2.69</span>亿元，同比增长<span lang="EN-US">50.1%</span>，增幅位居全市第二位；实现社会消费品零售总额<span lang="EN-US">14.5</span>亿元，同比增长<span lang="EN-US">18.6%</span>，增幅比全市高<span lang="EN-US">0.7</span>个百分点；实现外贸出口<span lang="EN-US">1329</span>万美元，提前半年超额完成全年目标任务。<span lang="EN-US">6</span>月末，全县金融机构各项存款余额<span lang="EN-US">48.57</span>亿元，比年初增加<span lang="EN-US">5.61</span>亿元；各项贷款余额<span lang="EN-US">29.41</span>亿元，比年初增加<span lang="EN-US">2.6</span>亿元。我县综合经济指标位居全市前列。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（一）农业经济健康发展。突出农业增效、农民增收、农村发展，加大农田水利基础设施建设力度，上半年，全县水利工程开工<span lang="EN-US">223</span>处，完成投资<span lang="EN-US">2.31</span>亿元，占计划投资的<span lang="EN-US">120%</span>。针对年初旱情，先后投入劳力<span lang="EN-US">5.9</span>万人次、机械<span lang="EN-US">1.1</span>万台套，投入抗旱资金<span lang="EN-US">1490</span>多万元，实现了大旱不见旱的目标。妥善应对包菜滞销，不断调整优化全县蔬菜种植结构，上半年全县蔬菜播种面积达<span lang="EN-US">24</span>万亩，比去年扩大<span lang="EN-US">0.5</span>万亩，其中新增大棚设施蔬菜面积<span lang="EN-US">650</span>亩；开展标准化健康养殖，上半年放养面积达<span lang="EN-US">25.4</span>万亩，其中精养鱼池面积<span lang="EN-US">9.9</span>万亩。上半年，全县农林牧渔及服务业产值达<span lang="EN-US">18.04</span>亿元，比上年同期增长<span lang="EN-US">28.01%</span>；农民现金收入<span lang="EN-US">3945</span>元，同比增加<span lang="EN-US">710</span>元，增长<span lang="EN-US">21.9%</span>。新农村建设步伐加快，官桥村新社区预计在<span lang="EN-US">9</span>月底前投入使用，净堡村<span lang="EN-US">24</span>户仿古派建筑已经建成；清洁能源入户工程扎实推进，上半年完成<span lang="EN-US">625</span>户，建设示范村<span lang="EN-US">7</span>个、示范户<span lang="EN-US">140</span>户，安装太阳能热水器<span lang="EN-US">120</span>户。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（二）工业经济运行良好。今年以来，我们抢抓咸嘉工业新城建设的重大机遇，加大招商力度，深入实施&ldquo;一区多园&rdquo;战略。开发区优势凸显，上半年，开发区完成规模工业总产值<span lang="EN-US">70.45</span>亿元<span lang="EN-US">,</span>同比增长<span lang="EN-US">73.3%</span>；完成规模工业增加值<span lang="EN-US">23.54</span>亿元，同比增长<span lang="EN-US">76.99%</span>；完成销售产值<span lang="EN-US">69.06</span>亿元<span lang="EN-US">, </span>产销率达<span lang="EN-US">98%</span>；实现企业上缴税金<span lang="EN-US">5220</span>万元，纳税总额比去年同期增长<span lang="EN-US">27.8%</span>。镇级工业园已具规模，潘家湾畈湖精细化工园落户企业达到<span lang="EN-US">39</span>家；官桥镇成功引进投资<span lang="EN-US">20</span>亿元的投资项目，初步形成了以森工产业园为主，电子产业为辅的工业格局；渡普镇农产品加工企业增至<span lang="EN-US">6</span>家，其中规模企业<span lang="EN-US">4</span>家；新街镇电子工业园、陆溪镇船舶工业园、高铁岭镇矿产品加工园、鱼岳镇纺织服装工业园、簰洲湾三木化工园不断发展壮大。招商引资成效显著，上半年，全县新签合同项目<span lang="EN-US">41</span>个，合同引进资金<span lang="EN-US">250.69</span>亿元；全县招商引资实际到位资金<span lang="EN-US">24.385</span>亿元，同比增长<span lang="EN-US">77.3%</span>，占市下达年计划的<span lang="EN-US">85.3% </span>；新增规模企业<span lang="EN-US">10</span>家，目前全县规模企业已达<span lang="EN-US">147</span>家。上半年，我县招商的一大特点是，引进的企业都是知名企业、龙头企业，如中科科凌、海航集团、广州酒家、大连成达等，这些企业的引进对于我县提升招商引资质量、加快经济转型具有重大的推动作用。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（三）旅游产业快速发展。旅游事业进入了发展快车道，成功引进海航集团投资<span lang="EN-US">105</span>亿元，整体开发三湖连江风景区，目前，项目正处于规划编制和评审阶段，即将启动一期工程景点建设；广东长鹿农庄投资<span lang="EN-US">60</span>亿元整体开发陆溪渗子湖水库及虎山林场景区项目，近期可启动建设；高铁岭镇九龙洞，具有很强的开发可行性，目前已联系多批客商前来考察。同时，我们深入挖掘旅游文化内涵，着力提升嘉鱼旅游知名度和美誉度，全县旅游业形势良好，共接待游客<span lang="EN-US">45</span>万人次，同比增长<span lang="EN-US">18.4%</span>；实现旅游总收入<span lang="EN-US">2.24</span>亿元，同比增长<span lang="EN-US">33.3%</span>。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（四）项目建设加快推进。重点项目进程加快，咸宁嘉鱼长江大桥及连线高速项目已与省高管局签订投资协议，预计在今年年底，最迟明年<span lang="EN-US">4</span>月底前开工建设<span lang="EN-US">;</span>武深高速公路项目（嘉鱼段）已正式确定线路方案，正在进行施工前的踏勘设计<span lang="EN-US">;</span>咸潘一级公路已完成前期准备工作，预计近期开工建设；城区南门大道改造工程和簰洲防汛路网建设工程已分别与施工单位签订建设合同，近期可开工建设；陆舒线<st1:chmetcnv w:st="on" tcsc="0" numbertype="1" negative="False" hasspace="False" sourcevalue="15" unitname="公里"><span lang="EN-US">15</span>公里</st1:chmetcnv>改建工程已全面动工，预计<span lang="EN-US">10</span>月底完工。目前，我县农村公路覆盖率已达<span lang="EN-US">100</span>％。一期投资<span lang="EN-US">3380</span>万元的环湖公园项目，预计<span lang="EN-US">8</span>月底前竣工投入使用。中能锂电、双美食品、金桦实业等一批投资过<span lang="EN-US">5000</span>万元项目已建成投产，和谐橡胶产业园、洁丽雅二期、中科科凌等投资过亿元项目全面开工建设。上半年，我县亿元以上项目共有<span lang="EN-US">24</span>个，完成投资<span lang="EN-US">24.86</span>亿元，占投资额的<span lang="EN-US">51.1%</span>，完成投资较大的有：湖北方圆船舶完成<span lang="EN-US">1.7</span>亿元，湖北中能锂电完成<span lang="EN-US">1.35</span>亿元，湖北华亿通完成<span lang="EN-US">1.2</span>亿元，嘉鱼城投公司完成<span lang="EN-US">1.15</span>亿元。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（五）社会事业全面进步。今年以来，我们全面加强和创新社会管理，坚持以民生为导向，主抓民心工程，群众生活水平切实得以提高。民生质量不断改善，上半年，全县社保扩面新增<span lang="EN-US">3860</span>人次，占目标任务的<span lang="EN-US">64%</span>。其中，完成养老保险扩面<span lang="EN-US">1693</span>人，占目标任务的<span lang="EN-US">68%</span>；职工医疗保险扩面<span lang="EN-US">526</span>人，占目标任务的<span lang="EN-US">53%</span>；工伤保险扩面<span lang="EN-US">1244</span>人，占目标任务的<span lang="EN-US">62%</span>；失业保险扩面<span lang="EN-US">227</span>人，占目标任务的<span lang="EN-US">57%</span>；生育保险扩面<span lang="EN-US">170</span>人，占目标任务的<span lang="EN-US">170%</span>。进一步提高低保标准，今年，我县城镇低保线由每人每月<span lang="EN-US">210</span>元提高至<span lang="EN-US">270</span>元，月补差标准达到<span lang="EN-US">149</span>元；农村低保人均提高<span lang="EN-US">12</span>元，一、二、三类低保标准分别达到<span lang="EN-US">117</span>元、<span lang="EN-US">72</span>元、<span lang="EN-US">52</span>元，人均补助达到<span lang="EN-US">57</span>元。完善基本医疗保障制度，今年参合人数达<span lang="EN-US">24.86</span>万人，参合率为<span lang="EN-US">97.65%</span>。廉租房建设进程加快，总投资<span lang="EN-US">1188</span>万元的廉租住房三期建设项目正在进行主体施工，预计<span lang="EN-US">10</span>月份可全部竣工；廉租住房四期建设项目正在进行基础施工，计划年底完工交付使用；上半年共对<span lang="EN-US">2468</span>户困难家庭发放了廉租住房补贴款<span lang="EN-US">156.49</span>万元。同时，千方百计扩大就业，上半年，完成城乡统筹就业<span lang="EN-US">5455</span>人，占目标任务的<span lang="EN-US">56%</span>，其中：城镇新增就业<span lang="EN-US">2843</span>人<span lang="EN-US">,</span>占目标任务的<span lang="EN-US">57%</span>；就业困难对象就业<span lang="EN-US">351</span>人，占目标任务的<span lang="EN-US">59%</span>；农村富余劳动力转移<span lang="EN-US">2612</span>人，占目标任务的<span lang="EN-US">87%</span>。科教文卫事业发展喜人，继续抓好重大科技专项和重点科技项目的跟踪管理，积极开展形式多样的科技培训。全县<span lang="EN-US">9</span>所寄宿制学校和<span lang="EN-US">9</span>个农村中小学校舍维修改造项目工程全部竣工，总投资<span lang="EN-US">170</span>万元的陆溪镇留守儿童中心工程建设项目预计年底完工，嘉鱼一中今年高考<span lang="EN-US">600</span>分以上人数达<span lang="EN-US">117</span>人，再创历史新高。精心策划&ldquo;二乔故里赏河灯&middot;童声悠悠颂屈子&rdquo;盛大游园活动，组织全县中小学生开展&ldquo;中华经典诵读&rdquo;、&ldquo;唱红歌&bull;诵经典&rdquo;等系列活动，为迎接建党<span lang="EN-US">90</span>周年营造了良好的文化氛围。投资<span lang="EN-US">150</span>余万元的新街镇、官桥镇、簰洲湾镇、鱼岳镇等卫生院基础设施完善项目和投入近<span lang="EN-US">80</span>万元资金的潘湾村、观音寺村、港东村、官洲村等四个村卫生室标准化建设项目均已完工，现已投入使用；县人民医院整体搬迁工程顺利实施，今年可完成主体工程建设任务。全面整顿生育秩序，稳定低生育水平，以关爱女孩为载体，深入开展出生人口性别比综合治理。和谐嘉鱼稳步推进，认真开展普法依法治理工作，群众知法懂法层面进一步扩大。加大重大信访案件解决力度，信访秩序不断好转，信访总量明显下降。深入推进平安嘉鱼建设，依法严厉打击各种犯罪，妥善处理各类突发事件，不断完善社会治安防控体系，社会治安综合治理成效显著，促进了社会和谐稳定。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">二、认清形势，敢于正视困难和问题<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">在充分肯定成绩的同时，我们也清醒地看到，当前全县经济社会发展还存在一些困难和问题。一是经济总量仍然偏小，综合竞争力还不够强，县域经济依然缺乏大的企业、项目和产业集群支撑；二是企业融资难的问题依然突出。由于银行对民营企业在信贷方面的较高要求和资本市场的高门槛特征，再加上央行连续上调存款准备金率，企业的融资需求难以满足，贷款难、融资难阻碍了部分企业发展壮大。三是劳动力呈普遍性和结构性短缺。&ldquo;用工荒&rdquo;从熟练工、技术工扩展到普通工，且企业人员流动性增大，导致用工成本增加。四是农业产业抗御市场风险的能力不强。农业产业化程度不高，农产品附加值偏低，畜牧养殖业、渔业养殖业缺乏龙头企业，缺乏养殖大户，农民把握市场动向的能力较差，经济效益较低。五是现代服务业发展不够，旅游开发水平有待进一步提高。这些问题，我们将在今后的工作中高度重视，采取切实有效的措施，认真加以解决。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">三、统一思想，全面做好下半年工作<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">下半年，我们将按照县委年初确定的指导思想，全面完成&ldquo;一确保、双百亿、三领先&rdquo;的目标，为实现&ldquo;十二五&rdquo;时期全县经济社会发展目标打下坚实基础。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（一）发展优质高效农业，提高抗灾能力。继续推进农田水利基本建设，积极做好中央财政小型农田水利重点县项目申报工作。抓好马鞍河（幸福河）水利血防工程、金水河（潘家湾段）河道整治工程、三湖连江灌区节水改造与续建配套工程，以及渗子湖水库除险加固工程，切实加强防汛工作，确保安全度汛。抓好早晚稻连作、中稻、双低油菜、马铃薯等四个万亩优质高产创建示范片，继续加大巩固退耕还林、新增粮食产能工程等项目的实施力度，确保每个项目按期完成。继续加强农产品质量安全和标准化生产建设，加大龙头企业招商和培植力度，进一步强化农产品加工转化与出口创汇，提高应对市场风险能力。继续抓好官桥村、四邑村、净堡村等<span lang="EN-US">3</span>个&ldquo;迁村腾地、产业先行、整村推进&rdquo;新农村建设示范点建设，实施农村&ldquo;一建三改&rdquo;基础工程和清洁能源入户工程，巩固新农村示范村建设成果。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 18pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（二）加快工业园区建设，打造承接平台。科学规划园区布局，以道路、供水、供电、通信、通网络等为重点，大力加强园区基础设施建设，加快园区一路、二路道路延伸工程建设进度；抓好园区用地工作，创新发展举措，加强土地储备，盘活存量土地，加快推进急需用地审批进度。进一步加大对镇级工业园建设的扶持力度，实现&ldquo;<span lang="EN-US">1+<st1:chmetcnv w:st="on" tcsc="0" numbertype="1" negative="False" hasspace="False" sourcevalue="8" unitname="&rdquo;">8<span lang="EN-US"><span lang="EN-US">&rdquo;</span></span></st1:chmetcnv><span lang="EN-US">共同发展。同时，加强对违法排污企业的查处<span lang="EN-US">力度，扎实推进重点企业污染物减排，全面优化园区环境。<o:p></o:p></span></span></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（三）科学谋划旅游布局，促进长远发展。在旅游资源的开发利用中，始终坚持经济效益、社会效益与生态效益并重，强化旅游资源的整体开发，努力实现旅游景点的优化整合。全力做好海航集团整体开发三湖连江项目的跟踪服务，确保尽快启动景点建设；认真做好广东长鹿农庄开发渗子湖项目的前期准备工作。继续抓好环湖公园建设，争取<span lang="EN-US">8</span>月底建成投入使用；全面完成投资<span lang="EN-US">5000</span>万元的新城区人行道改造和老城区道路黑化、街道绿化、人行道美化等工程建设，争创全国文明卫生城市。以旅游发展和城市环境美化促进其他服务业快速健康发展。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（四）全力推进对外开放，创新招商思路。当前，我县的经济发展水平还处在投资拉动型阶段，转型、跨越发展的第一支撑主要依靠投资来带动。投资既涉及跨越、又涉及转型，投资数量的多少就是跨越问题，投资项目的选择就是转型问题。因此，抓住了招商引资和项目建设，就抓住了实现经济社会发展目标的关键。一是要拓宽招商引资思路。要在更大的空间内，把更多的生产要素与我县的潜力、优势结合起来，通过扩大开放和招商引资，引进资金、技术、管理、理念、市场、人才，大招商、招大商，引进更多的新兴产业，促进全县经济社会在转型中跨越、在跨越中转型。二是要创新招商引资方式。积极探索区域性定向招商、产业性专业招商、龙头企业带动集群化招商等模式。区域性定向招商，就是瞄准一个地方，集中进行招商，全面承接转移。要重点发展我们有优势有基础的产业，培养龙头企业，引进大的行业、企业，通过它来扩张产业链条。专业化招商，就是要有一支专业化的团队，我们知识再多，视野再开阔，总有自己的局限。因此，我们的产业发展都要请有关的专业人士结合我们县的实际来帮我们设计，在招商引资和项目策划上也要专业化。集群化招商，就是同一类产品的不同企业在一个地方的聚集，是同一类产品的聚集合成。义乌的小商品市场推动义乌成为了全世界的小商品批发基地，这就是真正的集群化发展。我们要培养自己的优势产业，成为同行业的龙头企业，以这样一个龙头企业去带动招商，带动产业的集群式发展。三是要加大招商引资力度。要认真做好省、市组织的招商活动，全面展示我县对外开放的形象，力争引进更多的外商在我县投资兴业。要加强与大企业、大集团、重点民营企业和高层次人才的联系，特别是要引进世界<span lang="EN-US">500</span>强、中国<span lang="EN-US">500</span>强等大型企业、大品牌落户我县。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（五）积极推进项目建设，增强发展后劲。面对全省各地竞相转型跨越发展的形势，我们要把项目建设作为经济工作的首要任务，以超常之举大上项目、快上项目，上大项目、上好项目，以项目建设的大突破，推动嘉鱼经济的大转型大跨越。当前，正进入工程建设的黄金季节。要在抓好去年续建工程的同时，按照今年确定的重点工程，各相关单位要狠抓关键，密切配合，全力加快重点工程建设。要加强重点工程建设的组织领导，联企领导要亲自挂帅，勤分析、勤协调、抢进度、往前赶。重点抓好中科科凌、洁丽雅二期、盛宇三期、比伦纸业、嘉能热电、禾丰湿纸巾等项目建设；协助做好咸嘉工业新城建设前期相关工作；切实做好和谐橡胶产业园、<span lang="EN-US">LED</span>机场助航灯光及照明设备、医疗高科设备及医用耗材生产等项目前期准备工作。要突出抓好对新增长点和重点企业、项目的跟踪服务，已确定的项目要抓紧开工建设。对已开工的项目，要加强协调，及时解决项目建设中环保、资金、电力、规划、用地、企地关系等共性和个性问题，一个个跟进，一个个突破，力求加快建设进度，确保按期投产。全力抓好项目融资，进一步完善融资担保体系，提高担保实力，加强项目的超前谋划，充分利用各种平台主动与金融机构接触，推介项目，最大限度地争取金融机构支持；相关部门要积极协助金融机构向上级行宣传全县当前发展的良好势头和潜力，把工作做细、做实，最大限度地争取政策，用好、用活、用足政策，力争得到上级行对项目的认可和资金支持。各金融机构要关注全县重点建设项目的融资问题，在协调贷款上给予积极支持；人行要督促各商业银行积极向上级行争取信贷规模和授权，建立完善金融支持项目建设的激励机制。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（六）推进基础设施建设，提升城市品位。继续抓好咸宁嘉鱼长江大桥及连线高速、咸潘一级公路改扩建、武深高速公路项目（嘉鱼段）的前期准备工作，力争尽快启动建设。加快年度重点工程建设，重点抓好武嘉一级公路配套工程、陆口大桥、环湖公园、体育公园、人民医院整体迁建等项目建设；加快陆舒线改建等路网建设工程。强化政府监管，加快自来水管网改造步伐，重点解决水压不足和供水隐患两大问题，全面提高城区供水保障能力。推进污水处理厂配套管网和垃圾处理厂建设，提升我县污水处理和垃圾无害化处理水平。强化城市管理，严厉打击违法违规建设，规范房地产开发秩序。统筹城乡发展，出台《关于加强村镇规划建设管理推进新型城镇化的意见》，解决中心镇建设资金缺乏瓶颈，支持镇域经济发展。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（七）强化财税金融服务，提高运行质量。进一步强化激励约束机制，努力增加财政收入，坚定不移地完成年初确定的税收指标。要稳定已有税源，积极培植新的税源增长点，增强全县财政实力；加强非税收入征管，确保财政收入应收尽收，足额入库；规范非税收入管理，严格执行各项税费减免规定；加强财政支出管理，严格控制各项支出，强化预算管理，严控预算外支出，在确保各项重点支出的同时，压缩一切不必要的开支；突出主要行业、主要项目，广泛深入开展调研活动，进一步调动金融机构支持企业发展的热情，不断提升对企业的服务水平，推动发展前景好、潜力大的企业做大做强；学习借鉴外地先进财税金融工作经验，积极开展综合治税工作，严格落实考核和奖惩制度，确保全面完成今年财税金融工作任务。加快农村信用社组建商业银行步伐，全力做好信用社贷款清收工作，严厉打击逃废农村信用社贷款行为。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">（八）协调发展社会事业，做好民生工程。继续抓好就业工作，加强就业再就业和职业培训力度。进一步提高社会保障水平，重点做好城镇职工养老保险、城镇医疗保险和失地农民参保工作，保证各项社会保障政策惠及更广泛的群体。加大保障性住房建设和管理力度，抓好廉租房三期、四期工程及公租房、棚户区改造工程，积极探索项目建成后的管理模式，制定实物配租住房租金收取、租赁住房补贴发放等一套程序化、规范化的资金管理体制。继续抓好陆溪镇留守儿童中心建设，促进早日建成投入使用。切实做好安全生产和社会稳定工作。认真做好非煤矿山、道路交通等重点领域的安全防范工作，扎实落实汛期安全生产的各项措施，进一步加强危险化学品的安全管理。对责任不落实、工作不细致、失职渎职而造成较大事故的，要按照&ldquo;四不放过&rdquo;的原则，严肃追究有关领导和责任人的责任。加强食品安全整治，确保群众健康安全。要认真解决好社会热点难点问题，进一步健全完善预报、预警、预防和应急救援体系，认真做好信访工作，对各种急难热点问题要做到早发现、早处理，处理在萌芽状态，确保社会稳定和谐。扎实推进基层医疗卫生机构综合改革，建立规范、科学、合理的基层医疗机构运行机制。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 宋体; font-size: 12pt">同志们，完成全年目标，时间紧迫，任务艰巨。让我们在县委的正确领导下，团结一致、顾全大局，坚定信心、励精图治，同心同德、狠抓落实，确保全面完成今年的各项目标任务，为建设农业强县、工业大县、旅游新县和临港新城作出自己应有的贡献。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 24pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0">&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

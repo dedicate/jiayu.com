@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于印发县政府办扎实开展治庸问责工作实施方案的通知 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于印发县政府办扎实开展治庸问责工作实施方案的通知" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于印发县政府办扎实开展治庸问责工作实施方案的通知</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-12-06</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 仿宋_GB2312; font-size: 14pt">嘉政办发<span lang="EN-US">[2011]127</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">办公室各局办，各科室：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 33pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">根据县委、县政府的统一部署，为扎实开展办公室治庸问责工作，现将《县政府办关于扎实开展治庸问责工作的实施方案》印发给你们，请认真遵照执行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p>
+<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 仿宋_GB2312; font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二<span lang="EN-US">0</span>一一年十二月二日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="right" style="text-align: right; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="right" style="text-align: right; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 黑体; font-size: 15pt">县政府办关于扎实开展治庸问责工作的实施方案<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">为认真贯彻落实《嘉鱼县治庸问责工作领导小组关于扎实开展治庸问责工作的实施方案》，深入推进以&ldquo;治庸提能、治懒提效、治散提神、治软提劲&rdquo;为重点的治庸问责工作，结合政府办实际，特制定本实施方案。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">坚持以科学发展观为统领，认真学习贯彻省、市以及县委、县政府关于开展治庸问责工作的要求，以&ldquo;治庸、治懒、治散、治软&rdquo;为突破口，进一步强化党员干部能力席位意识、危机意识、责任意识、服务意识和奋发有为意识，形成解放思想、勇于担当、敢抓敢管的良好氛围，促进全办上下精神面貌大改观，干部作风大转变，服务效能大提升，发展环境大改变，为早日建成湖北经济强县、长江临港新城提供坚强有力的组织和作风保障。　<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">二、方法步骤<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">坚持把思想教育、检查整改、责任追究、完善机制贯穿始终，采取集中检查、明查暗访、群众举报、公开承诺、通报批评等方式，着力解决干部职工队伍中存在的能力平庸、业绩平淡，精神萎靡、工作懒惰，纪律松散、不求高标准、但求过得去等&ldquo;庸懒散软&rdquo;方面的突出问题。全办治庸问责工作分为&ldquo;宣传动员、查摆问题、整改提高、建章立制&rdquo;四个阶段。时间从<span lang="EN-US">2011</span>年<span lang="EN-US">11</span>月开始，到<span lang="EN-US">2012</span>年<span lang="EN-US">6</span>月结束。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">一<span lang="EN-US">)</span>宣传动员<span lang="EN-US">(2011</span>年<span lang="EN-US">11</span>月<span lang="EN-US">)<o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">深入发动，广泛动员，引导广大干部职工积极参与，在统一思想、提高认识上下功夫，使广大党员干部深刻认识&ldquo;治庸、治懒、治散、治软&rdquo;的重要性、必要性，增强参与治庸问责活动的自觉性、主动性，为治庸问责工作奠定思想基础。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">1</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、召开动员会议。召开一次办公室主任会议，专题研究部署治庸问责工作方案；召开一次办公室机关治庸问责动员大会，主要领导作动员讲话和工作部署，机关干部职工必须做到全员参与、全程参与。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">2</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、制定工作方案。制定具体实施方案，成立治庸问责工作领导小组，下设办公室，组建工作专班，明确工作目标，落实工作责任，健全工作机制，强化工作措施。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">3</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、组织学习讨论。采取专题学习会、党员干部学习讨论会等形式开展学习宣传活动。认真学习胡锦涛总书记在庆祝建党<span lang="EN-US">90</span>周年大会上的重要讲话、湖北省委常委会《关于推广武汉市经验在全省开展治庸问责工作的决议》等有关会议精神。加强党员干部理想信念教育、宗旨观念教育、职业道德教育和党风廉政教育，增强党员干部加强党性修养、弘扬优良作风、推进科学发展的自觉性。开展作风建设大讨论。讨论与对照检查相结合，全体党员干部要对自己提出&ldquo;三问&rdquo;，即责任是什么，清楚了没有？尽责怎么样，到位了没有？失责怎么办，认识了没有？通过讨论提高认识，搞好自查整改，进一步把思想和行动统一到县委、县政府的决策部署上来。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">)</span>查摆问题<span lang="EN-US">(2011</span>年<span lang="EN-US">12</span>月<span lang="EN-US">-2012</span>年<span lang="EN-US">1</span>月<span lang="EN-US">)<o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">组织干部职工结合岗位要求，全方位开展自我剖析，多渠道查找在思想品质、能力素质、履职尽责和纪律作风方面存在的突出问题，把问题整改贯穿于治庸问责工作的全过程。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">1</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、集中排查问题。各科（室）和个人要集中排查在&ldquo;庸懒散软&rdquo;方面的突出问题。要根据政府办工作要求，认真分析工作现状，查找影响政府办工作存在的问题；要结合年初县委、县政府与办公室签订的工作目标责任制，查找是否存在工作质量低下、进度迟缓、态度懒散的问题。然后把问题进行梳理归类。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">2</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、召开专题民主生活会。要本着有则改之、无则加勉的态度，认真开展批评和自我批评，有针对性地深入查找和分析存在的问题。批评别人要拉得下面子，实事求是，不夸大其词。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">3</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、开展公开承诺。各科（室）和个人要将查找的主要问题、整改措施和实现&ldquo;四个目标&rdquo;（</span><span lang="EN-US" style="line-height: 200%; font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;</font></span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">精神面貌大改观、干部作风大转变、服务效能大提升、发展环境大改变）进行公开承诺，通过网站、公开栏等多种方式向社会公示，接受群众监督。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">4</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、抓好正反典型。在治庸问责的过程中，既要发现和挖掘先进典型，弘扬正气，又要大胆揭露和曝光个别反面典型，鞭策后进，形成正确的舆论导向。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">三<span lang="EN-US">)</span>整改提高<span lang="EN-US">(</span>活动全过程<span lang="EN-US">)<o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">政府办治庸问责领导小组将按照县委、县政府的总体要求，结合自我排查出的问题，采取明察暗访、集中检查、调查核实、责任追究等方式，对机关内存在的&ldquo;庸懒散软&rdquo;等突出问题，全面开展督查问责工作。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">1</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、明查暗访。明查暗访是查找问题、促进整改的重要手段。县政府办治庸问责领导小组组织人员就&ldquo;庸懒散软&rdquo;问题随时进行明察暗访；县治庸问责领导小组办公室也将对机关普遍存在的问题，开展明查暗访并进行曝光。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">2</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、集中检查。县政办治庸问责工作领导小组办公室将组成督导检查组，对各科（室）治庸问责工作情况分阶段进行督导检查，并将检查结果在一定范围内通报。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">3</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、调查核实。治庸问责工作领导小组办公室将组织力量，集中时间调查核实，采取直办、督办等方式，做到事事有回音、件件有着落。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">4</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、责任追究。对监督检查中发现和调查核实的问题，视其情节轻重和影响程度，按照干部管理权限问责追责，进行约谈和通报批评，提请县纪委给予相关人员诫勉谈话、待岗学习、调离工作岗位、免职、降职、降级等纪律责任追究。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">四<span lang="EN-US">)</span>建章立制<span lang="EN-US">(2012</span>年<span lang="EN-US">4</span>月<span lang="EN-US">-6</span>月<span lang="EN-US">)<o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span lang="EN-US" style="line-height: 200%; font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"> 1</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">、建立长效机制。按照《公务员法》，依据各科（室）实际进行确责、履责、问责，进一步建立和完善工作行为规范、岗位目标管理责任制、干部考核评价机制、责任监督管理机制、业绩考评奖惩激励机制等；充分运用&ldquo;万名干部进万村入万户&rdquo;活动成果，建立健全服务承诺制、首问负责制、分工负责制、限时办结制等相关制度。<span lang="EN-US"><br />
+</span>　　<span lang="EN-US">2</span>、上报阶段性总结。办公室工作专班要对治庸问责工作开展情况进行阶段性总结，并形成书面材料，于<st1:chsdate w:st="on" year="2012" month="5" day="25" islunardate="False" isrocdate="False"><span lang="EN-US">2012</span>年<span lang="EN-US">5</span>月<span lang="EN-US">25</span>日</st1:chsdate>前报县治庸问责工作领导小组办公室。</span><span lang="EN-US" style="line-height: 200%; font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;</font></span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><br />
+</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">　　<span lang="EN-US">3</span>、成果转化应用。治庸问责工作结束后，对成绩突出、成效显著的科（室）予以通报表彰，并将治庸问责工作的实际效果，作为年度评先评优的重要依据。</span><span lang="EN-US" style="line-height: 200%; font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;</font></span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt"><br />
+</span><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span style="line-height: 200%; font-family: 黑体; font-size: 14pt">三、工作要求<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">　　各科（室）要进一步增强政治意识、大局意识和责任意识，把治庸问责工作作为当前及今后相当长一段时间的一项重要任务，狠抓落实。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">　　<b style="mso-bidi-font-weight: normal"><span lang="EN-US">(</span>一<span lang="EN-US">)</span>加强领导，分工负责。</b>县政府办治庸问责工作坚持主要领导亲自抓、负总责，分管领导具体负责、直接抓，确保领导力量到位、措施落实到位、工作责任到位。政府办治庸问责工作领导小组办公室负责治庸问责的日常工作，要发挥好服务协调、指导督办的作用。办公室成员要各司其职、各负其责，加强协调配合，形成抓治庸问责工作的整体合力。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">　　</span><span lang="EN-US" style="line-height: 200%; font-size: 14pt; mso-fareast-font-family: 仿宋_GB2312"><font face="Times New Roman">&nbsp;</font></span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">)</span>强化问责，注重实效。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">要把追责问责贯穿整个工作的始终。对检查、暗访和群众举报发现的问题，一律快查快处。要认真贯彻执行法律、法规，准确把握问责原则，正确运用问责手段，坚持以事实为依据，以法纪为准绳，努力实现治庸问责的政治效果、社会效果和法纪效果的有机统一。要惩治结合，把惩处与防范、治标与治本有机结合起来，寓教于惩，以惩施教，做到问责一个，教育一批。要通过强化问责，集中整治&ldquo;庸懒散软&rdquo;行为，查处曝光反面典型，教育党员干部，在政府办干部队伍中形成强大震慑力，促使广大党员干部自觉转变作风，创优发展环境。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">(</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">三<span lang="EN-US">)</span>营造氛围，强力推进。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; font-size: 14pt">要坚持面向群众，开门治庸问责，发动群众积极参与，主动接受群众监督。坚持把部门、基层和群众是否满意、是否赞成作为衡量政府办治庸问责工作成效的重要标准，充分发挥群众及社会舆论的监督作用，通过多种宣传手段，形成强大的舆论监督氛围，强力推进治庸问责工作。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>社会福利机构收养孤儿、弃婴登记 - 嘉鱼政务网</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="福利,孤儿,弃婴" name="keywords" />
+        <meta content="社会福利机构收养孤儿、弃婴登记" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','/');
+
+	document.getElementById("weathercustomize").src="/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+<div class="nav">
+<a href="/" class="indes">首页</a>
+<a href="/jiayuzhengwu/" target='_blank'>嘉鱼政务</a><a href="/banshidating/" target='_blank'>办事大厅</a><a href="/zhaoshangyinzi/" target='_blank'>招商引资</a><a href="/fuwulvyouzhe/" target='_blank'>游在嘉鱼</a>
+<a href="/mail/Complain.asp" target='_blank'>纪委举报网</a>
+<a href="/bbs/" target='_blank'>政务贴吧</a>
+</div>
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l">
+<div class="nav_ej" id="p_navigator"><a href="/">首页</a>&nbsp;>&nbsp;<a href="/fuwushimin/">服务市民</a>&nbsp;>&nbsp;<a href="/fuwushimin/shengyushouyang/">生育收养</a>&nbsp;>&nbsp;<a href="/fuwushimin/shengyushouyang/jihuashengyu/">计划生育</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">社会福利机构收养孤儿、弃婴登记</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-11-04 09:43:32</span>&nbsp;&nbsp;<span id="p_origin">来源：民政局&nbsp;&nbsp;责任编辑：</span></div>
+<div class="wenzi"></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p>社会福利机构收养孤儿、弃婴登记<br />
+事项名称&nbsp;社会福利机构收养孤儿、弃婴登记<br />
+受理机构&nbsp;嘉鱼县民政局<br />
+办理时间&nbsp;正常工作日<br />
+办理地点&nbsp;嘉鱼县民政局社会事务股<br />
+联系方式&nbsp;07156353788<br />
+服务内容概述&nbsp;夫妻双方或另一方无生育能力，且年满30周岁可在福利机构或社会弃婴收养办理收养登记手续。<br />
+政策法规依据&nbsp;《收养法》<br />
+事项申办条件&nbsp;1、属地社会弃婴。2、本县居民。3、未婚男性年满40岁以上。4、弃婴报刊公示。<br />
+申报材料&nbsp;个人申请、拴失婴儿报案材料，村、镇县级计生部门证明、户口本、身份证、结婚证<br />
+办事处理流程&nbsp;申请&rarr;审查&rarr;审批&rarr;发证<br />
+办理时限&nbsp;60个工作日<br />
+收费标准&nbsp;申请手续费20元、工本费10元、调查费220元<br />
+&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_r1">
+<div class="o_ra1">
+<div class="r_a1">
+<div class="raz"><a href="/hubeishengsheqixingzhengshiyexingshoufeibiaozhunmulu/2011-10-27/431.html" target="_blank"><img src="/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="raz"><a href="/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="raz"><a href="/jiayuxianxingzhengxukemulu/" target="_blank"><img src="/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="raz"><a href="/mail/E_LeadMail.asp" target="_blank"><img src="/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="raz"><a href="/baijianshishiwangshangban/" target="_blank"><img src="/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="copyright">    
+<table width="980" border="0" cellpadding="0" cellspacing="0" align="center">
+	  <tr>
+<td height="30" colspan="2" align="center" background="/skin/jy/images/foot_nav_bg.gif">
+<a href="/">网站首页</a>&nbsp;|&nbsp;
+<a href="/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;
+<a href="/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="/bbs/" target="_blank">政务贴吧</a></td>
+	  </tr>
+	  <tr><td height="25" colspan="2"></td></tr>
+        <tr>
+        <td width="130" rowspan="5"><a href="http://www.xianning.cyberpolice.cn/infoCategoryListAction.do?act=init" target="_blank"><img src="/skin/jy/images/jc.gif" width="100" height="100" /></a></td>
+        <td width="950" height="25" >Copyright 2001-2011 Jiayu China All Rights Reserved.</p></td>
+       </tr>
+       <tr>
+       <td height="25">中国·嘉鱼　嘉鱼县人民政府门户网站 嘉鱼县人民政府主办 嘉鱼县信息中心承办 版权所有　未经许可，不得转载</td>
+       </tr>
+       <tr>
+       <td height="25">版权所有：嘉鱼县人民政府　邮编：437200　政务邮箱: 88888888@qq.com　政务热线：0715-88888888</td>
+       </tr>
+        <tr>
+        <td height="25">管理员电话：0715-6355801　鄂ICP备05015679号 [<a href="/mail/login.asp" target="_blank">县长信箱</a>]</td>
+        </tr>
+      <tr><td></td></tr>
+    </table>
+</div>
+
+
+</div>
+</body>
+</html>

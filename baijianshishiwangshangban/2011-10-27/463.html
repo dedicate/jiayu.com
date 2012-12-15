@@ -1,0 +1,912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>药店信息查询 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="药店信息查询" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/">百件实事网上办</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">药店信息查询</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2011-10-27</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：嘉鱼政务网编辑</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p>
+<table border="0" cellspacing="0" cellpadding="0" width="643" x:str="" style="width: 482pt; border-collapse: collapse">
+    <tbody>
+        <tr height="40" style="height: 30pt">
+            <td height="40" width="643" colspan="5" style="border-bottom-color: #d4d0c8; text-align: center; background-color: transparent; border-top-color: #d4d0c8; width: 482pt; height: 30pt; border-right-color: #d4d0c8; border-left-color: #d4d0c8"><font size="5">嘉鱼县药品经营企业简表</font></td>
+        </tr>
+        <tr height="19" style="height: 14.25pt">
+            <td height="19" colspan="5" x:num="40725" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: #d4d0c8; height: 14.25pt; border-right-color: #d4d0c8; border-left-color: #d4d0c8">2011年7月</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">序号</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">机构名称</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">地址</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">负责人</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">电话</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">1</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">湖北省嘉康医药有限公司</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道106号</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">李茂华</td>
+            <td width="120" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 90pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6060222</td>
+        </tr>
+        <tr height="35" style="height: 26.25pt">
+            <td height="35" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 26.25pt; border-right: windowtext 0.5pt solid">2</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县平安大药房</td>
+            <td width="187" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 140pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            西正街79号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">施久香</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6330253</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">3</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县老百姓医药大楼药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            凤凰大道8号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">刘德春</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6332698</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">4</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县和平药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            凤凰大道76号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">骆传炳</td>
+            <td x:num="13872189387" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13872189387</td>
+        </tr>
+        <tr height="39" style="height: 29.25pt">
+            <td height="39" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 29.25pt; border-right: windowtext 0.5pt solid">5</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县中心药店</td>
+            <td width="187" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 140pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道105号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">李旭</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6323333</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">6</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县四大楼药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            西正街53号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">游海燕</td>
+            <td width="120" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 90pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6323765</td>
+        </tr>
+        <tr height="39" style="height: 29.25pt">
+            <td height="39" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 29.25pt; border-right: windowtext 0.5pt solid">7</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县新特药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            沙阳大道14号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid"><br />
+            林焰辉</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6328333</td>
+        </tr>
+        <tr height="35" style="height: 26.25pt">
+            <td height="35" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 26.25pt; border-right: windowtext 0.5pt solid">8</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县健民药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇<br />
+            沙阳大道68号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid"><br />
+            游姣</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6331963</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">9</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县新街药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">新街镇</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">郭冬英</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6289224</td>
+        </tr>
+        <tr height="38" style="height: 28.5pt">
+            <td height="38" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 28.5pt; border-right: windowtext 0.5pt solid">10</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县鱼岳镇<br />
+            南北药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇发展大道</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">龙云贵</td>
+            <td width="120" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 90pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6352812&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6288636</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">11</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县百草堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇发展大道</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">刘红英</td>
+            <td width="120" x:num="13807241715" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 90pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13807241715</td>
+        </tr>
+        <tr height="36" style="height: 27pt">
+            <td height="36" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 27pt; border-right: windowtext 0.5pt solid">12</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县福源大药房</td>
+            <td width="187" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 140pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">茶庵连江广场<br />
+            福源超市内</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">朱文姣</td>
+            <td width="120" x:num="13197416897" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 90pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13197416897</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">13</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县康欣大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇连江<br />
+            大道东路</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">刘绍华</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6352348</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">14</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县同心堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇连江<br />
+            大道17号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">杜剑锋</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6353182</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">15</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县万家康大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇麒麟路<br />
+            女婿街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">尹锦华</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6283636</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">16</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县同康堂药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇茶庵岭沙洋大道4-3号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">熊&nbsp;玲</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6352905</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">17</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县福仁堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道３８号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">&nbsp;汤智</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6323298</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">18</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县百惠大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道156-3-4号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">蔡燕</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6310060</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">19</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县阳光大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇东<br />
+            岳路43号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">张玉强</td>
+            <td x:num="6060560" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6060560</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">20</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县济世堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道74号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">张宇维</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6337426</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">21</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县普康药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇沙阳<br />
+            大道82号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">孙小平</td>
+            <td x:num="6320336" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6320336</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">22</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县便民大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇考<br />
+            棚村45号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">曾淑琼</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6331769</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">23</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县好邻居大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇鱼岳<br />
+            大道18号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">陈远明</td>
+            <td x:num="6339088" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6339088</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">24</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县北门药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇鱼岳<br />
+            大道36号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">彭虹</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6331670</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">25</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县惠民大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇麒麟山4号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">周伟帮</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6322820</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">26</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县保康大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇凤凰<br />
+            大道2号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">吴小姣</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6336638</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">27</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼来康大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇西<br />
+            正街47号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">徐显煌</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6336488</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">28</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县来福康大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇岳<br />
+            公路34号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">李歆元</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6339995</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">29</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县康乐药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇凤凰<br />
+            大道68号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">刘志</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6338998</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">30</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县康馨大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇凤凰<br />
+            大道74号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">孙成武</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6339957</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">31</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县三湖大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇滨湖路20号</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">曾连堂</td>
+            <td x:num="13451108226" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13451108226</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">32</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县健君大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇代湾路</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">周志明</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6356881</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">33</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县茶庵大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鱼岳镇人民大道2号</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">游宏</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6317566</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">34</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县江樱花园大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">江樱花园步行街</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">金利</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6669288</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">35</td>
+            <td style="border-bottom-color: #d4d0c8; text-align: center; background-color: transparent; border-top-color: #d4d0c8; border-right-color: #d4d0c8; border-left-color: #d4d0c8">嘉鱼县养生堂大药房</td>
+            <td style="border-bottom-color: #d4d0c8; text-align: center; background-color: transparent; border-top-color: #d4d0c8; border-right-color: #d4d0c8; border-left-color: #d4d0c8">鱼岳镇发展大道108号</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; border-right: windowtext 0.5pt solid">李敏</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6359258</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">36</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">嘉鱼县普恩堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-left-color: windowtext; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid">嘉鱼县沿湖东路</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">来姣娥</td>
+            <td x:num="13307247271" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13307247271</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">37</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县簰洲湾镇先锋药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">簰州湾镇中心街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">王德飞</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6516129</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">38</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县簰洲湾镇康乐药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">簰州湾镇中心街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">黄光剑</td>
+            <td x:num="6516080" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6516080</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">39</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县康宁大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">簰州湾镇西流街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">骆涛</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6516665</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">40</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县簰洲湾镇康福堂药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">簰州湾镇中心街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">杨光</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6516665</td>
+        </tr>
+        <tr height="36" style="height: 27pt">
+            <td height="36" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 27pt; border-right: windowtext 0.5pt solid">41</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县牌州药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">牌州湾镇西流街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid"><br />
+            杨本尧</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6527179</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">42</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宗圣堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾集贸<br />
+            市场3号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">曾祥文</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6613918</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">43</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县鲁南药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾通武街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">鲁群松</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6613171</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">44</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县潘湾尚威药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾<br />
+            中心街33号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">秦顺庭</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6613645</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">45</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县永康大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾通武街4号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">任志珍</td>
+            <td x:num="13886508227" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13886508227</td>
+        </tr>
+        <tr height="40" style="height: 30pt">
+            <td height="40" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 30pt; border-right: windowtext 0.5pt solid">46</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宁康长江大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾贯航街5号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">陈宽振<br />
+            何铭</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6613998</td>
+        </tr>
+        <tr height="41" style="height: 30.75pt">
+            <td height="41" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 30.75pt; border-right: windowtext 0.5pt solid">47</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宁康潘湾大药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">潘家湾镇文化路</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">陈宽振<br />
+            雷元安</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6612861</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">48</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县老官新特药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">老官通武街37号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">程晓荣</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6591880</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">49</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县惠济大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">老官通武街4号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">张先斌</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6591852</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">50</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宁康渡普平安大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">渡普镇东正街40号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">李志雄</td>
+            <td x:num="13971807626" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13971807626</td>
+        </tr>
+        <tr height="39" style="height: 29.25pt">
+            <td height="39" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 29.25pt; border-right: windowtext 0.5pt solid">51</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宁康渡普三星药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">渡普镇<br />
+            中心街1巷</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">陈宽振<br />
+            王荣汉</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6615837</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">52</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县三省堂大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">渡普镇<br />
+            东正街69号</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">曾柏林</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6614733</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">53</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县渡普桥头大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">渡普镇桥头</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">孙从枝</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6614278</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">54</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县宁康渡普康福大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">渡普镇北正街</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">张云芳</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6614881</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">55</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县官桥便民药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">官桥镇集镇</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">游大雄</td>
+            <td x:num="13797233091" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">13797233091</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">56</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县百信大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">舒桥集镇</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">龙伟珍</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6742108</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">57</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县长江药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">高铁镇<br />
+            金盆村四组</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">汤&nbsp;玲</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6810035</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">58</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县民康药店</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">高铁镇狮子山街</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">毕想生</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6812195</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">59</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">嘉鱼县永和春大药房</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">陆溪镇吴王东路织布厂左侧</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">黄显清</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6891007</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">60</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">湖北神农制药有限公司</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">官桥镇田野集团</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">&nbsp;</td>
+            <td x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6716777</td>
+        </tr>
+        <tr height="30" style="height: 23.1pt">
+            <td height="30" x:num="" style="border-bottom: windowtext 0.5pt solid; text-align: center; border-left: windowtext 0.5pt solid; background-color: transparent; border-top-color: windowtext; height: 23.1pt; border-right: windowtext 0.5pt solid">61</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">稳健医用纺织品有限公司</td>
+            <td style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">凤凰大道</td>
+            <td width="85" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; width: 64pt; border-left-color: windowtext; border-right: windowtext 0.5pt solid">&nbsp;</td>
+            <td x:num="6334688" style="border-bottom: windowtext 0.5pt solid; text-align: center; background-color: transparent; border-top-color: windowtext; border-left-color: windowtext; border-right: windowtext 0.5pt solid">6334688</td>
+        </tr>
+        <tr height="63" style="height: 47.25pt">
+            <td height="63" colspan="5" style="border-bottom-color: #d4d0c8; text-align: center; background-color: transparent; height: 47.25pt; border-right-color: #d4d0c8; border-left-color: #d4d0c8; border-top: windowtext 0.5pt solid"><font size="5">食品药品监督举报电话：6358218</font></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：嘉鱼政务网编辑）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

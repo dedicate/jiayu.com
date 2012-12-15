@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于印发 “喜迎十八大、争创新业绩”主题实践活动实施方案的通知 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于印发 “喜迎十八大、争创新业绩”主题实践活动实施方案的通知" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于印发 “喜迎十八大、争创新业绩”主题实践活动实施方案的通知</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-02-11</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 仿宋_GB2312; font-size: 14pt">嘉政办发<span lang="EN-US">[2012]9</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p>&nbsp;</o:p></span><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 150%; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">政府办各局（办）、各科室：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 32.25pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">根据县委、县政府的统一部署，为扎实开展好办公室&ldquo;喜迎十八大、争创新业绩&rdquo;主题实践活动，现将《县政府办扎实开展&ldquo;喜迎十八大、争创新业绩&rdquo;主题实践活动实施方案》印发给你们，请认真遵照执行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 14pt"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 仿宋_GB2312; font-size: 14pt">二<span lang="EN-US">0</span>一二年二月十日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span style="font-family: 黑体; font-size: 15pt">县政府办扎实开展&ldquo;喜迎十八大、争创新业绩&rdquo;主题实践活动实施方案<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="center" style="text-align: center; margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 黑体; font-size: 18pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">2012</span><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">年是实施&ldquo;十二五&rdquo;规划承前启后的重要一年，是全面加强党的建设，促进我县科学发展、跨越发展、和谐发展的关键之年，是党的十八大和省第十次党代会召开的喜庆之年，是贯彻落实市第四次党代会精神、县第十三次党代会精神的开局之年。按照县委、县政府的统一部署，自<span lang="EN-US">2012</span>年<span lang="EN-US">1</span>月开始，集中一年时间，在全办开展&ldquo;喜迎十八大、争创新业绩&rdquo;主题实践活动。结合政府办实际，现就活动有关事项通知如下：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">一、指导思想<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">以邓小平理论和&ldquo;三个代表&rdquo;重要思想为指导，深入贯彻落实科学发展观，以迎接党的十八大、学习贯彻党的十八大精神为主线，以贯彻落实市第四次党代会和县第十三次党代会精神，推动嘉鱼科学发展、跨越发展、和谐发展，加快建设湖北经济强县、长江临港新城为主题，团结带领全办党员干部，立足岗位创先争优，以优异成绩向党的十八大献礼。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">二、主要目标<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">坚持围绕&ldquo;推动科学发展、促进社会和谐、服务人民群众、加强基层组织&rdquo;的总体目标，紧紧抓住党的十八大和省第十次党代会召开的重大机遇，动员组织全办党员干部团结一心、众志成城、真抓实干、开拓创新，立足本职岗位，创造优异成绩，形成推动科学发展、跨越发展、和谐发展的强大合力。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 35.15pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">&mdash;&mdash;凝心聚力，提升精神区位。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">解放思想，提振精神，凝聚共识，形成发展的合力。进一步增强广大党员干部群众创先争优意识和干事创业激情，特别是增强党员领导干部和每一位共产党员的党员意识、党性意识，以饱满的政治热情和昂扬的工作斗志，投身嘉鱼经济社会发展主战场。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">&mdash;&mdash;争创业绩，促进跨越发展。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">引导广大党员干部群众积极投身建设湖北经济强县、长江临港新城的火热实践，力争使我县在项目建设、城市建设、交通建设和民生建设上走在全市前列，为早日建成湖北经济强县、长江临港新城打下坚实基础。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 35.15pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">&mdash;&mdash;兴办实事，做好民生工程。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">动员组织全办机关干部深入基层直接联系服务群众。结合基层实际、群众需求和部门职能，围绕人民群众最关心、最直接、最现实的利益问题，着力办好一批谋民利、解民难、惠民生的实事好事。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">&mdash;&mdash;服务群众，转变干部作风。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">时刻牢记&ldquo;六民要旨&rdquo;，准确把握&ldquo;九大关系&rdquo;，切实转变作风，不断增强服务基层、服务群众、服务企业、服务社会的意识和能力。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 35.15pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">&mdash;&mdash;加强组织，增添党建活力。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">抢抓&ldquo;基层组织建设年&rdquo;活动机遇，全面贯彻落实省委基层党建三年规划，努力创建党的基层组织建设示范县，不断加强&ldquo;五个基本&rdquo;、&ldquo;七个体系&rdquo;建设，使党的基层组织建起来、用起来、活起来、强起来。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">三、主要内容<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">为在全办上下掀起&ldquo;喜迎十八大、争创新业绩&rdquo;的高潮，重点开展以下六项活动：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;学党史、知党情、跟党走&rdquo;学习教育活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">组织全办党员干部学习党的历史，增强党员党性意识、忧患意识、责任意识和大局意识，进一步坚定建设湖北经济强县、长江临港新城的信心和决心。<b style="mso-bidi-font-weight: normal">认真组织学习党史。</b>全办党员开展阅读一本党史书籍、安排一场党史专题讲座、组织一次党史学习交流会、撰写一篇学习体会、开展一次党史知识测试活动。<b style="mso-bidi-font-weight: normal">深入开展革命传统教育。</b>清明节前，组织一次党员开展缅怀革命先烈，重温入党誓词，开展&ldquo;对照誓词查信念&rdquo;活动。<b style="mso-bidi-font-weight: normal">广泛开展学习雷锋活动。</b>开展以&ldquo;学雷锋讲奉献&rdquo;为主题的党日活动，广泛开展社会主义荣辱观宣传教育，弘扬中华传统美德，推进公民道德建设工程。<b style="mso-bidi-font-weight: normal">精心组织&ldquo;我为嘉鱼发展建言献策&rdquo;活动。</b>充分发扬民主，反映群众意愿，为推动嘉鱼科学发展、跨越式发展提供智力支持。<b style="mso-bidi-font-weight: normal">做好&ldquo;学党史、知党情、跟党走&rdquo;宣传。</b>积极学习党史中与嘉鱼相关的革命事件、先烈人物，争当身边的活雷锋，展现普通人身上的道德闪光点。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;机关联基层、干部联群众，促科学发展、促社会和谐&rdquo;活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">落实市委、县委关于做好机关干部直接联系和服务群众工作的意见，巩固和扩大&ldquo;三万&rdquo;活动、&ldquo;城乡互联、百村共建、千户帮扶&rdquo;活动成果，做到问政于民、问计于民、问需于民，突出知民情、聚民智、惠民生。<b style="mso-bidi-font-weight: normal">机关联系基层，重点做好&ldquo;三强一办&rdquo;。</b>为联系的村兴办公益事业尽力提供人力、物力、财力支持和技术帮助，帮助群众解决生产生活中的实际困难。<b style="mso-bidi-font-weight: normal">干部联系群众，重点抓好&ldquo;五访五问&rdquo;和&ldquo;十送基层&rdquo;活动。</b>访基层干部、群众代表，问发展良策；访创业能手、致富大户，问致富经验；访上访户、意见户，问问题缘由；访困难户、低保户，问群众疾苦；访服务对象、管理对象，问期望需求。围绕强农惠农送政策，围绕农村发展农民增收送项目，围绕农业生产送技术，围绕丰富群众生活送文化，围绕改善卫生条件送健康，围绕革除陈规陋习送新风，围绕拓宽增收渠道送信息，围绕方便群众生活送服务，围绕解决贫困群众困难送温暖，围绕解决突出矛盾送和谐，密切与群众的联系，增进与群众的感情。实现机关干部全覆盖，真正做到问政于民、问需于民、问计于民、问效于民。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;抓作风、抓环境、抓落实，促跨越&rdquo;活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">巩固和深化治庸问责工作成果，在全办机关干部中开展&ldquo;三抓一促&rdquo;活动，切实转变机关作风，以&ldquo;文不过夜、事不隔天、会不超时、首办担责、勤廉和谐&rdquo;为标准，打造优质高效服务型机关，开展&ldquo;开短会、讲短话、发短文、简办事&rdquo;活动，大力倡导真抓实干之风。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">4</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;基层组织建设年&rdquo;活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">围绕党的基层组织建起来、用起来、活起来、强起来的目标，着力加强党员队伍建设，实现质量建党、质量强党目标；着力加强党内基层民主建设，进一步落实党员民主权利，以党内民主推进人民民主；着力完善落实一套务实有效的制度，提升基层组织建设规范化、科学化水平。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">5</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;重大项目建设年&rdquo;活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">围绕<span lang="EN-US">2012</span>年全县经济社会发展主要预期目标，树立&ldquo;想方设法争项目、千方百计引项目、优化服务建项目&rdquo;的思路，围绕年初确定的<span lang="EN-US">50</span>个重点项目和政府<span lang="EN-US">10</span>件实事，重点抓好项目建设进展，跟踪检查抽调督办工作。以重大项目建设为引擎，带动全县经济增长，助推跨越发展。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">6</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．开展&ldquo;创建全国卫生县城我先行&rdquo;活动。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">积极开展&ldquo;创建全国卫生县城我先行&rdquo;、&ldquo;六联一争、共驻共建&rdquo;活动，发动机关党员干部带动宣传创建国家卫生县城的重要意义，发放《人人参与创卫、共建美好家园》倡仪书和居民守则等，形成全社会参与的良好氛围。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">四、活动步骤<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">主题实践活动从<span lang="EN-US">2012</span>年<span lang="EN-US">1</span>月开始，至<span lang="EN-US">2012</span>年<span lang="EN-US">12</span>月底结束，具体分为宣传发动、推进实施、评先表彰和成果运用四个步骤。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">（一）宣传发动（<span lang="EN-US">1</span>月底至<span lang="EN-US">2</span>月上旬）<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">召开领导小组会议。对全办主题实践活动进行具体安排，组建工作专班，明确责任分工，定活动方案。结合政办自身实际，制定活动方案，细化活动内容，并报县委主题实践活动领导小组审定。广泛宣传动员。<span lang="EN-US">2</span>月上旬，召开全办主题实践活动动员会，对活动进行全面部署。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">（二）推进实施（<span lang="EN-US">2</span>月中旬至<span lang="EN-US">10</span>月底）<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">省第十次党代会召开前，结合中央即将开展的&ldquo;学雷锋&rdquo;活动，开展&ldquo;学党史、知党情、跟党走&rdquo;学习教育活动，组织党员以加强党性修养、保持党的纯洁性为主题召开专题组织生活会。在&ldquo;三八&rdquo;、&ldquo;五一&rdquo;、&ldquo;五四&rdquo;期间，开展丰富多彩的群众性主题实践活动。开展&ldquo;双联双促&rdquo;和&ldquo;三抓一促&rdquo;活动，全面推进&ldquo;基层组织建设年&rdquo;和&ldquo;重大项目建设年&rdquo;活动。党的十八大召开前，开展&ldquo;七一&rdquo;评先活动，进一步深化各项活动，掀起活动新高潮。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 21.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">（三）评先表彰（<span lang="EN-US">7</span>月和<span lang="EN-US">12</span>月）<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">我办将把开展主题实践活动情况作为&ldquo;七一&rdquo;等各项表彰的重要依据。积极抓好各项表彰对象的申报、审核和推荐工作。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 21.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.5"><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">（四）成果运用（<span lang="EN-US">10</span>月底至<span lang="EN-US">12</span>月底）<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">党的十八大结束后，我办要认真总结主题实践活动开展情况，围绕加强党员党性修养、加强基层组织建设、立足岗位创业绩、树立典型营造氛围等方面，总结好经验好做法，形成务实管用、简便易行的制度成果。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><span style="line-height: 150%; font-family: 黑体; font-size: 14pt">五、组织领导<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．加强领导，落实责任。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">县政府办公室成立了&ldquo;喜迎十八大、争创新业绩&rdquo;主题实践活动领导小组，并组建了工作专班，具体负责实践活动的整体谋划、工作推动、组织协调和检查督办，确保主题活动顺利进行。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．统筹结合，精心组织。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">要把开展主题实践活动与创先争优活动结合起来，与推进和服务各项中心工作结合起来。要紧密联系实际，科学制定方案，周密安排部署，扎实有效推进。要充分发挥工青妇等群团组织作用，开展各具特色的争创活动，形成党群共创的良好局面。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．树立典型，营造氛围。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">要加大宣传力度，及时推介先进典型，在全办上下树立正确的舆论导向，营造学习典型、崇尚先进、争创业绩、助推跨越的良好氛围。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 150%; text-indent: 28.1pt; margin: 7.8pt 0cm; mso-para-margin-top: .5gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">4</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">．加强督导，整体推进。</span></b><span style="line-height: 150%; font-family: 仿宋_GB2312; font-size: 14pt">主题实践活动领导小组要加强巡查和督导力度，把主题实践活动的开展情况，作为评先评优的重要依据，确保活动取得实效。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-line-height-alt: 0pt"><span lang="EN-US" style="font-family: 仿宋_GB2312; font-size: 16pt"><o:p>&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

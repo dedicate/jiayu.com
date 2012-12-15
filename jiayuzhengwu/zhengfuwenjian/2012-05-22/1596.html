@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>县人民政府办公室关于建立安全生产事故隐患排查治理长效机制的意见 - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="县人民政府办公室关于建立安全生产事故隐患排查治理长效机制的意见" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/">嘉鱼政务</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">县人民政府办公室关于建立安全生产事故隐患排查治理长效机制的意见</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-05-22</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：县政府办</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<p class="MsoNormal" align="center" style="text-align: center; line-height: 16.75pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan"><span style="font-family: 仿宋_GB2312; color: #343333; font-size: 15pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">嘉政办发<span lang="EN-US">[2012]60</span>号<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt">各镇人民政府，县政府各部门，嘉鱼经济开发区管委会：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 26.9pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.92; mso-pagination: widow-orphan"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">近年来，我县各镇、各部门、各生产经营单位积极开展安全生产事故隐患（以下简称事故隐患）排查治理专项行动，有效遏制了重大安全生产事故发生，为保持全县安全生产持续平稳态势发挥了积极作用。但是，隐患排查治理工作在一些地方还存在责任不落实、进展不平衡、治理不到位、信息不畅通、效果不理想等问题。为巩固隐患排查治理成果，规范排查治理监督管理，建立排查治理长效机制，<span style="mso-bidi-font-weight: bold">根据《安全生产法》、</span>《安全生产事故隐患排查治理暂行规定》（国家安全生产监督管理总局令第</span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">16</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">号）和《<span style="mso-bidi-font-weight: bold">湖北省安全生产事故隐患监督管理暂行规定》，结合我县实际，</span>特提出如下指导意见：<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">一、提高认识，重视隐患排查治理工作</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">1</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、领会隐患排查治理的意义。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-bidi-font-weight: bold; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">事故隐患是生产经营活动中各种矛盾和问题的综合反映，是导致事故的土壤和温床。治理一个隐患，就会消灭一起事故，就能保住一方平安。深入开展</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">事故隐患排查治理，是贯彻&ldquo;安全第一、预防为主、综合治理&rdquo;方针，落实安全生产主体责任和监督管理责任，防控安全生产事故的有效措施。</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">各镇、各部门、各生产经营单位要充分认识开展事故隐患排查治理的重要性和紧迫性，把事故隐患排查治理工作作为一项长期的任务，常抓不懈。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">2</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、形成</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">隐患排查治理</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">的合力。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">要</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">以企业为主体，依靠社会监督、群众监督和媒体监督，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">调动各方面力量</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">共同推进</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">事故隐患排查治理工作，努力构建政府统一领导、部门依法监管、企业全面负责、群众参与</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">监督、社会</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">广泛</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">支持</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">的</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">工作格局。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 1.25pt 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: .12gd; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">3</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、明确</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">隐患排查治理的责任。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体; mso-ansi-language: EN-GB">生产经营单位是事故隐患排查治理的责任主体，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">其主要负责人对事故隐患的排查治理工作全面负责；</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #444444; font-size: 14pt; mso-hansi-font-family: &#718;&#805;; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">产经营单位将生产经营项目、场所、设备发包、出租的，应当与承包、承租单位签订安全生产管理协议，明确各方对事故隐患排查治理的管理职责，并对承包、承租单位的事故隐患排查治理负责统一协调和监督管理。</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门负责对本行政区域内生产经营单位排查治理事故隐患工作实施综合监督管理；负有安全生产监督管理职责的部门负责对所辖行业或领域排查治理事故隐患工作实施监督管理；其它管理部门依据职责对所辖范围内的事故隐患排查治理工作负责。各镇对辖区内事故隐患排查治理工作负责。<b style="mso-bidi-font-weight: normal"><span lang="EN-US"><o:p></o:p></span></b></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">二、掌握标准，提高辨识事故隐患能力<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 30pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">4</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、判定事故隐患的类别。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">事故隐患分为一般事故隐患和重大事故隐患两类。一般事故隐患，是指危害和整改难度较小，发现后能够立即整改排除的隐患。重大事故隐患，是指危害程度较高，整改难度较大，治理期限较长，应当全部或者局部停产停业整改治理方能排除的隐患，或者因外部因素影响致使生产经营单位自身难以治理的隐患。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.92; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">5</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、明确重大隐患的级别。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">按照国家相关法规、规定以及标准，依据可能发生事故的后果、整改的时间、投入的资金，将重大事故隐患分为四级：<b style="mso-bidi-font-weight: normal">一级重大事故隐患</b>是指可能造成<span lang="EN-US">30</span>人以上（以上包括本数，下同）死亡或者<span lang="EN-US">100</span>人以上重伤（包括急性中毒，下同），造成<span lang="EN-US">1</span>亿元以上直接经济损失，造成全省乃至全国范围内的重大影响、整改时间达到或超过一年、投入资金超过<span lang="EN-US">5000</span>万元的重大事故隐患。<b style="mso-bidi-font-weight: normal">二级重大事故隐患</b>是指可能造成<span lang="EN-US">10</span>人以上<span lang="EN-US">30</span>人以下（以下不包括本数，下同）死亡或者<span lang="EN-US">50</span>人以上<span lang="EN-US">100</span>人以下重伤，造成<span lang="EN-US">5000</span>万元以上<span lang="EN-US">1</span>亿元以下直接经济损失，造成全市乃至全省范围内的重大影响、整改时间在<span lang="EN-US">300</span>天以上一年以下、投入资金在<span lang="EN-US">1000</span>万元以上<span lang="EN-US">5000</span>万元以下的重大事故隐患。<b style="mso-bidi-font-weight: normal">三级重大事故隐患</b>是指可能造成<span lang="EN-US">3</span>人以上<span lang="EN-US">10</span>人以下死亡或者<span lang="EN-US">10</span>人以上<span lang="EN-US">50</span>人以下重伤，造成<span lang="EN-US">1000</span>万元以上<span lang="EN-US">5000</span>万元以下直接经济损失，造成全区乃至周边地区范围内的重大影响、整改时间在<span lang="EN-US">180</span>天以上<span lang="EN-US">300</span>天以下、投入资金在<span lang="EN-US">100</span>万元以上<span lang="EN-US">1000</span>万元以下的重大事故隐患<b style="mso-bidi-font-weight: normal">。四级重大事故隐患</b>是指可能造成<span lang="EN-US">3</span>人以下死亡或者<span lang="EN-US">10</span>人以下重伤，造成<span lang="EN-US">1000</span>万元以下直接经济损失，造成事发当地范围内的重大影响、且整改时间在<span lang="EN-US">10</span>天以上<span lang="EN-US">180</span>天以下、投入资金在<span lang="EN-US">10</span>万元以上<span lang="EN-US">100</span>万元以下的重大事故隐患。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">三、严密排查，有效治理生产事故隐患<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">6</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、加强隐患排查。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生产经营单位排查事故隐患必须做到：一是责任要落实。单位主要负责人、分管负责人、部门负责人、工程技术人员、岗位作业人员要立足本职工作，查找事故隐患。二是排查要全面。要对每个环节、每个部位，尤其是</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: &#718;&#805;; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">重大危险源部位、危险性较大的设施设备和危险性较大的作业岗位，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">以及因自然灾害可能导致事故灾难的隐患全面排查。三是排查要严格。要按照有关法律、法规、标准和规程的要求，细致排查事故隐患。四是方式要多样。可采取全员立足岗位查、部门交叉相互查、专家指导专项查等多种方式进行排查。生产经营单位接到有关自然灾害预报时，应及时向下属单位发出预警通知；发生自然灾害可能危及生产经营单位和人员安全的情况时，应当采取撤离人员、停止作业、加强监测等安全措施，并及时向同级人民政府及其有关部门报告。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>7</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、建立隐患档案</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #444444; font-size: 14pt; mso-hansi-font-family: &#718;&#805;; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: &#718;&#805;; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生产经营单位对自查出的事故隐患，应当分类登记、建档。一般事故隐患，要逐条记载、分类、建立台账；重大事故隐患，要建立一患一卡、一患一档。一般事故隐患台账的内容应当包括：登记时间、隐患名称、隐患类型、具体部位、整改资金、整改措施、整改期限、责任部门、整改责任人等。重大事故隐患档案除上述信息外，还应当包括：单位基本情况、隐患形成原因、危险危害程度、隐患确认报告、整改治理方案、整改评估结果、部门验收意见、申请销号文书等内容。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">8</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、规范信息报送。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生产经营单位应当按照</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">《安全生产事故隐患排查治理暂行规定》的要求，严格进行事故隐患自查和整改，并将自查整改情况按月上报给安全生产监督管理部门和有关部门，实行月查、月报、月改。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.55pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.96; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">9</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、实行分类处置。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门接到事故隐患报告后，如属自己职责范围内处理的事故隐患，应当及时进行处理；所接报告或检查中发现的应由其它有关部门处理的事故隐患，应当及时通知并将有关资料移送有管辖权的部门进行处理，并记录备查。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.92; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">10</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、落实整改治理。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生产经营单位对查出的事故隐患，一是要制定专项治理的方案。包括落实整治的措施，落实整治的资金，落实整治的期限，落实整治的责任，落实应急预案（&ldquo;五落实&rdquo;）。二是要注意整治过程的安全。在事故隐患治理过程中或事故隐患治理完成并核销以前，无法保证安全的，应当采取相应的安全防范措施，从危险区域内撤出作业人员，并疏散可能危及的其他人员，设置警戒标志，暂时停产停业或者停止使用，防止事故发生。对责令整改的隐患，要在整改期限内完成，复查发现未整改或整改不到位的，按相关法律法规予以处罚。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">四、突出重点，加大重大事故隐患防控<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>11</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、完善重大事故隐患的管理。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">重大事故隐患的监督管理工作在政府的统一领导下，实行分级分类管理。安全生产监督管理部门在督促生产经营单位整改重大事故隐患的同时，应提请企业所在地人民政府及时协调、解决重大事故隐患排查和整改工作中存在的困难和问题，确保重大事故隐患能有效监控、及时整改。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>12</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、加强重大事故隐患的报告。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">生产经营单位检查发现重大事故隐患后，应当向</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">和有关部门报告。重大事故隐患报告的内容：一是隐患的现状及其产生原因，二是隐患的危害程度和整改难易程度分析，三是隐患的治理方案。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>1<b style="mso-bidi-font-weight: normal">3</b></span><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、制定重大隐患治理的方案。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">重大事故隐患治理方案应由生产经营单位主要负责人组织制定并实施，具体包括以下内容</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">：一是治理的目标和任务；二是采取的方法和措施；三是经费和物资的落实；四是负责治理的责任单位和人员；五是治理的时限和要求；六是应急预案和安全措施。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">14</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、报备重大事故隐患的程序。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门和负有安全生产监督管理职责的部门接到重大事故隐患报告后，应当及时组织有关专家对是否构成重大隐患、重大隐患的等级、隐患治理&ldquo;五落实&rdquo;的情况进行确认，并按照重大事故隐患的等级上报备案。其中，四级以上重大事故隐患报县安全生产监督管理部门备案，三级以上重大事故隐患逐级报市安全生产监督管理部门备案，二级以上重大事故隐患逐级报省安全生产监督管理部门备案，一级重大事故隐患逐级报国家安全生产监督管理部门备案。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.55pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.96; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">15</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、督促重大事故隐患的整改。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门和负有安全生产监督管理职责的有关部门在检查中发现重大事故隐患时，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">应当下达整改指令，责令有关单位立即组织整改，要求其进行认定、分级和上报备案。同时，报告县人民政府，并</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">在主要新闻媒体上公告、挂牌督办，接受社会监督。负有安全生产监督管理职责的有关部门下达的《重大事故隐患整改指令书》，应当报安全生产监督管理部门备案。已经取得安全生产许可证而挂牌督办的生产经营单位，在重大事故隐患治理结束前，安全生产监督管理部门或负有安全生产监督管理职责的部门应当加强监督检查。对存在重大事故隐患被责令停产整改的企业，应提请发证机关依法暂扣其安全生产许可证。</span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: red; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">16</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、规范重大隐患整改的内容。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">《重大事故隐患整改指令书》的内容应包含：<b style="mso-bidi-font-weight: normal">一是</b>重大事故隐患基本情况；二是重大事故隐患类别；三是重大事故隐患等级；四是重大事故隐患的整改期限；五是重大事故隐患的&ldquo;五落实&rdquo;情况；六是重大事故隐患整治督办单位。<b style="mso-bidi-font-weight: normal"><span lang="EN-US"><o:p></o:p></span></b></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27.55pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.96; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">17</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、严格重大隐患整治的验收。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">经公告、挂牌督办的重大事故隐患治理工作结束后，生产经营单位应当组织本单位的技术人员和有关专家，或者委托具备相应资质的安全评价机构对重大事故隐患的治理情况进行评估。重大事故隐患经治理达到安全生产条件的，生产经营单位应当向下达《重大事故隐患整改指令书》的部门提出恢复生产的书面申请，取得核销重大事故隐患和同意恢复生产经营的批准文书后方能恢复生产。申请报告应当包括治理方案的内容、项目、评估结论或安全评价机构出具的评估报告等。</span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: red; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">18</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、做好重大事故隐患的销号。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">下达《重大事故隐患整改指令书》的部门接到生产经营单位提出恢复生产的书面申请后，应当在<span lang="EN-US">10</span>日内组织专家进行现场审查。审查不合格的，依法责令停产、停业整顿；审查合格的，对重大事故隐患予以核销。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">19</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、重大事故隐患的处罚。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">下达《重大事故隐患整改指令书》的部门，对生产经营单位列于挂牌督办的重大事故隐患逾期未完成整改、或根本无法整治到位的，要提出关闭该单位的意见，报县人民政府批准；对生产经营单位拒不执行整改指令的，要依法实施行政处罚，直至按要求完成整改。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">五、规范管理，建立隐患治理长效机制</span></b><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 27pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.92; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">20</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、健全制度，依法依规治理事故隐患。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">各级政府、安全生产监督管理部门和负有安全生产监督管理职责的部门，应当制定隐患排查治理的管理制度、工作规范，指导、督促生产经营单位按照有关法律、法规、规章以及标准和规程的要求，建立健全事故隐患排查治理的各项制度，同时加强监督检查，确保事故隐患排查治理制度化、规范化、常态化，建立事故隐患排查治理的长效机制。重点建立以下制度：一是事故隐患排查治理责任制。明确从领导到员工，从管理部门到生产岗位的排查治理事故隐患的职责、任务等。二是事故隐患排查治理工作制度。对排查治理的依据、标准、内容、方式、时间和隐患建档登记、级别认定、治理责任等做出规定，促使生产经营单位自觉查隐患、主动治隐患。三是事故隐患排查治理保障制度。规定事故隐患治理的资金、物资筹措渠道、投入预算、使用范围、管理办法等，为治理事故隐患提供必需的保证。四是重大事故隐患管理制度。明确重大事故隐患的报告、评估、定级、登记、治理、验收、销号、挂牌督办等程序和要求。五是事故隐患排查治理信息报送制度。按照</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 仿宋_GB2312; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">《安全生产事故隐患排查治理暂行规定》，及时、完整、准确、归口报送事故隐患排查治理情况统计分析。</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">六是事故隐患公众举报制度。安全生产监督管理部门应当公布举报电话，方便公众举报，接受社会监督，对发现和举报事故隐患的有功人员，应当给予物质奖励和表彰。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">21</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、加强检查，督促落实排查治理工作。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门应当建立事故隐患排查治理监督检查制度，每季度组织一次对生产经营单位，尤其是危险化学品、烟花爆竹、非煤矿山等重点单位开展事故隐患排查治理情况的监督检查。对检查过程中发现的重大事故隐患，应当下达整改指令书，并建立信息管理台账。必要时，报告同级人民政府并对重大事故隐患实行挂牌督办。安全生产监督管理</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">部门应当配合有关部门做好事故隐患排查治理的监督检查，依法查处事故隐患排查治理违法行为。</span><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="line-height: 200%; text-indent: 27.55pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 1.96; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">22</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、综合情况，加强隐患排查信息调度。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门和有关部门应当督促生产经营单位，按时、按要求报送事故隐患排查治</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">理情况和统计</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">分析表。安全生产监督管理部门和负有安全生产监督管理职责的部门，应当每季度将重大事故隐患的排查治理情况和统计分析表逐级上报至省安全生产监督管理部门。安全生产监督管理部门应当定期将各部门、各生产经营单位事故隐患排查治理的情况向社会通报。<b style="mso-bidi-font-weight: normal"><span lang="EN-US"><o:p></o:p></span></b></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 28.1pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-char-indent-count: 2.0; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">23</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、完善措施，加大重大危险源的监控。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">加强重大危险源的管理，是防范重特大事故的有效措施。<span style="mso-bidi-font-weight: bold">生产经营单位对本单位的重大危险源安全管理与监控全面负责，要建立管理制度，做好登记建档，进行安全评估，保证资金投入，增加监控设施，制定应急方案，开展应急演练，保证有效监控。安全生产监督管理部门对生产经营单位的重大危险源加强监督管理，</span></span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">要制定综合应急救援预案，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-bidi-font-weight: bold; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">建立重大危险源信息系统，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">开展</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-bidi-font-weight: bold; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">重大危险源专项督查，实施重大危险源动态管理。</span><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 200%; text-indent: 32.25pt; margin: 15.6pt 0cm; mso-para-margin-top: 1.0gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: 1.0gd; mso-para-margin-left: 0cm; mso-pagination: widow-orphan"><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">24</span></b><b style="mso-bidi-font-weight: normal"><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">、协调配合，形成事故隐患监管合力。</span></b><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">安全生产监督管理部门和负有安全生产监督管理职责的部门，要在政府的统一领导下，依照有关法律法规的规定，各负其责，依法加强事故隐患的监督管理。</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: #343333; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">对于隐患排查治理工作管辖范围不明晰，管理职能有交叉，管理权限有重叠的，各部门要加强沟通，</span><span style="line-height: 200%; font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">密切配合，形成事故隐患监管的合力。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan"><span lang="EN-US" style="font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align: left; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan">&nbsp;</p>
+<p class="MsoNormal" style="text-align: center; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan">&nbsp;</p>
+<p class="MsoNormal" style="text-align: center; line-height: 16.75pt; text-indent: 32.25pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan"><span style="font-family: 仿宋_GB2312; color: black; font-size: 14pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;二<span lang="EN-US">0</span>一二年五月十九日<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" align="right" style="text-align: right; line-height: 16.75pt; margin: 0cm 0cm 0pt; mso-pagination: widow-orphan"><span lang="EN-US" style="font-family: 仿宋_GB2312; color: black; font-size: 16pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="line-height: 16.75pt; margin: 0cm 32pt 0pt 0cm; mso-pagination: widow-orphan"><span lang="EN-US" style="font-family: 仿宋_GB2312; color: black; font-size: 16pt; mso-hansi-font-family: 宋体; mso-font-kerning: 0pt; mso-bidi-font-family: 宋体"><o:p>&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：县政府办）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxiansheqixingzhengshiyexingshoufeibiaozhunmulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l1.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/xingzhengshiyeshoufeimulujibiaozhun/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l2.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/jiayuxianxingzhengxukemulu/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l3.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l4.gif" width="168" height="50" border="0"></a></div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l5.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>

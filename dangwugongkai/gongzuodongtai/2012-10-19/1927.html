@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>农村基层干部廉洁履行职责若干规定（试行） - 嘉鱼县人民政府门户网站</title>
+    </head>
+    <body>
+        <meta content="text/html; charset=GB2312" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="Content-Language" />
+        <meta content="all" name="robots" />
+        <meta content=" " name="author" />
+        <meta content="" name="keywords" />
+        <meta content="农村基层干部廉洁履行职责若干规定（试行）" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" /><!-- 调用样式表 -->
+        <link href="http://www.jiayu.gov.cn/skin/jy/css.css" type="text/css" rel="stylesheet" /><script language="javascript" src="http://www.jiayu.gov.cn/skin/jy/effect.js"></script><script language="javascript">
+//Cookie日期修正函数 function FixCookieDate(date)
+function FixCookieDate(date){
+	var base = new Date(0);
+	var skew = base.getTime();
+	if (skew > 0)date.setTime(date.getTime() - skew);
+}
+
+//设置Cookie函数 function SetCookie(name,value,expires,path,domain,secure)
+function SetCookie(name,value,expires,path,domain,secure){
+	document.cookie = name + "=" + escape(value) + ((expires)? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+}
+	//设置Cookie相应名值对中值的函数 function getCookieVal(offset)
+	function getCookieVal(offset) {
+		var endstr = document.cookie.indexOf(";",offset);
+		if (endstr == -1) endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+
+	//设置Cookie函数 function GetCookie(name)
+	function GetCookie(name){
+		var arg = name + '=';
+		var alen = arg.length;
+		var clen = document.cookie.length;
+		var i = 0;
+		var flag = ''
+		while (i<clen) {
+			var j = i + alen;
+			if (document.cookie.substring(i,j) == arg) flag = getCookieVal(j);
+			i = document.cookie.indexOf(" ",i) + 1;
+			if (i == 0) break;
+		}
+		return flag;
+	}
+function myCustomize(city)
+{
+	if(city == "#")
+	{
+		alert("请选择城市");
+		return false;
+	}
+
+	var expdate = new Date();
+		FixCookieDate(expdate);//修正MAC机器的BUG
+		expdate.setTime(expdate.getTime() + (1000*60*60*24*365));//设置Cookie的有效期为1年
+//		SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/');
+SetCookie('PEOPLE_CUSTOMIZE_city',city,expdate,'/','http://www.jiayu.gov.cn/');
+
+	document.getElementById("weathercustomize").src="http://www.jiayu.gov.cn/";
+	//location.reload();
+}
+</script><!--检索--><body onload='e=new Selecter2("t_select_list3");'>
+<div class="center bor">
+<div class="top">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top01.gif" width="26" height="25" /></td>
+<td width="48">县　委</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县人大</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top02.gif" width="26" height="25" /></td>
+<td width="48">县政府</td>
+<td width="26"><img src="http://www.jiayu.gov.cn/skin/jy/images/top03.gif" width="26" height="25" /></td>
+<td width="49">县政协</td>
+<td width="294">&nbsp;</td>
+<td width="389" align="right">
+<a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jiayu.gov.cn');" rel="nofollow">设为首页</a> |
+<a href="javascript:window.external.AddFavorite('http://www.jiayu.gov.cn','嘉鱼政务网')" rel="nofollow">加入收藏</a> | 
+<a href="http://www.jiayu.gov.cn/">返回首页</a>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="banner">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="200">
+      <param name="movie" value="http://www.jiayu.gov.cn/skin/jy/images/banner.swf"/>
+      <param name="quality" value="high" />
+      <embed src="http://www.jiayu.gov.cn/skin/jy/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="200"></embed>
+    </object>
+</div>
+
+<style>
+
+/*对点击下栏显示边框的代码进行美化*/
+div.hackBox{display:none;height:25px;background-color:#fff;}
+div.hackBox a{color:#000000; font-size:12px;}
+
+</style>
+<script>
+
+function switchTab(cardBar,cardId){
+
+
+    document.getElementById(cardId).className="Selected";
+    //读出cardContent 下面的所有div标签
+    var dvs=document.getElementById("cardContent").getElementsByTagName("div");
+    //循环，判断应该显示的div
+    for (i=0;i<dvs.length;i++ ){
+        if (dvs[i].id==("D"+cardId)){
+            dvs[i].style.display="block";
+        }else{
+            dvs[i].style.display="none";
+        }
+    }
+}
+</script>
+
+<table width="980" height="35" id="cardBar" class="nav">
+<tr>
+    <td width="80" id="card0" align="center"><a href="http://www.jiayu.gov.cn/" onMouseOver="javascript:switchTab('cardBar','card0');">首页</a></td>
+    <td width="100" id="card1" align="center"><a href="http://www.jiayu.gov.cn/jiayuxianqing/"  onMouseOver="javascript:switchTab('cardBar','card1');">嘉鱼县情</a></td>
+    <td width="100" id="card2" align="center"><a href="http://www.jiayu.gov.cn/jiayuzhengwu/"  onMouseOver="javascript:switchTab('cardBar','card2');">嘉鱼政务</a></td>
+    <td width="100" id="card3" align="center"><a href="http://www.jiayu.gov.cn/dangwugongkai/"  onMouseOver="javascript:switchTab('cardBar','card3');">党务公开</a></td>
+    <td width="100" id="card4" align="center"><a href="http://www.jiayu.gov.cn/zhaoshangyinzi/"  onMouseOver="javascript:switchTab('cardBar','card4');">招商引资</a></td>
+    <td width="100" id="card5" align="center"><a href="http://www.jiayu.gov.cn/fuwulvyouzhe/"  onMouseOver="javascript:switchTab('cardBar','card5');">游在嘉鱼</a></td>
+    <td width="100" id="card6" align="center"><a href="http://219.138.168.126:8082/"  onMouseOver="javascript:switchTab('cardBar','card6');" target="_blank">纪委举报网</a></td>
+    <td width="100" id="card7" align="center"><a href="http://www.jiayu.gov.cn/bbs/"  onMouseOver="javascript:switchTab('cardBar','card7');" target="_blank">政务贴吧</a></td>
+     <td width="200"></td>
+  </tr>
+</table>
+
+<table width="980" id="cardContent">
+  <tr>
+  <td align="center">
+<div id="Dcard1" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayugailan/">嘉鱼概览</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/xianyujingji/">县域经济</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuxianqing/jiayuwenhua/">嘉鱼文化</a> |
+		</div>
+ 
+<div id="Dcard2" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaoxinxi/">领导信息</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zuzhijigou/">组织机构</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/lingdaojianghua/">领导讲话</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengwudongtai/">政务动态</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfuwenjian/">政府文件</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugonggao/">政府公告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/zhengfugongzuobaogao/">政府工作报告</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaizhinan/">信息公开指南</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaimulu/">信息公开目录</a> |
+		<a href="http://www.jiayu.gov.cn/jiayuzhengwu/xinxigongkaishenqing/">信息公开申请 </a> |
+		</div>
+<div id="Dcard3" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/dangwugongkai/jibenqingkuang/">基本情况</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/xianweigongzuo/">县委工作</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/jicengdangwu/">基层党务</a> |
+		<a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/">廉政文化</a> |
+		<a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6">建言献策</a> |
+		</div>
+<div id="Dcard4" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangdongtai/">招商动态</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzichengben/">投资成本</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangxiangmu/">招商项目</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/zhaoshangfuwu/">招商服务</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzihuanjing/">投资环境</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/touzizhengce/">投资政策</a> |
+		<a href="http://www.jiayu.gov.cn/zhaoshangyinzi/yuanqujianshe/">园区建设</a> |		
+		</div>
+<div id="Dcard5" class="hackBox">
+		| <a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouziyuan/">旅游资源</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguihua/">旅游规划</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingdian/">旅游景点</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyouguanli/">旅游管理</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoujingji/">旅游经济</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/lvyoubaoxian/">旅游保险</a> |
+		<a href="http://www.jiayu.gov.cn/fuwulvyouzhe/tesemeishi/">特色美食</a> |	
+                             </div> 
+ </td>
+  </tr>
+</table>
+
+
+<table height="37" border=0 cellpadding=3 cellspacing=1 style="background:url(http://www.jiayu.gov.cn/skin/jy/images/index_016_2.jpg) no-repeat;">
+<tr width="980">
+<td width="400" align="right">
+<script>  
+  var   CalendarData=new   Array(20);  
+  var   madd=new   Array(12);  
+  var   TheDate=new   Date();  
+  var   tgString="甲乙丙丁戊己庚辛壬癸";  
+  var   dzString="子丑寅卯辰巳午未申酉戌亥";  
+  var   numString="一二三四五六七八九十";  
+  var   monString="正二三四五六七八九十冬腊";  
+  var   weekString="日一二三四五六";  
+  var   sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";  
+  var   cYear;  
+  var   cMonth;  
+  var   cDay;  
+  var   cHour;  
+  var   cDateString;  
+  var   DateString;  
+  var   Browser=navigator.appName;  
+   
+  function   init()  
+  {    
+      CalendarData[0]=0x41A95;  
+      CalendarData[1]=0xD4A;  
+      CalendarData[2]=0xDA5;  
+      CalendarData[3]=0x20B55;  
+      CalendarData[4]=0x56A;  
+      CalendarData[5]=0x7155B;  
+      CalendarData[6]=0x25D;  
+      CalendarData[7]=0x92D;  
+      CalendarData[8]=0x5192B;  
+      CalendarData[9]=0xA95;  
+      CalendarData[10]=0xB4A;  
+      CalendarData[11]=0x416AA;  
+      CalendarData[12]=0xAD5;  
+      CalendarData[13]=0x90AB5;  
+      CalendarData[14]=0x4BA;  
+      CalendarData[15]=0xA5B;  
+      CalendarData[16]=0x60A57;  
+      CalendarData[17]=0x52B;  
+      CalendarData[18]=0xA93;  
+      CalendarData[19]=0x40E95;  
+      madd[0]=0;  
+      madd[1]=31;  
+      madd[2]=59;  
+      madd[3]=90;  
+      madd[4]=120;  
+      madd[5]=151;  
+      madd[6]=181;  
+      madd[7]=212;  
+      madd[8]=243;  
+      madd[9]=273;  
+      madd[10]=304;  
+      madd[11]=334;  
+    }  
+   
+  function   GetBit(m,n)  
+  {    
+        return   (m>>n)&1;  
+  }  
+   
+  function   e2c()  
+  {      
+      var   total,m,n,k;  
+      var   isEnd=false;  
+      var   tmp=TheDate.getYear();  
+      if   (tmp<1900)     tmp+=1900;  
+      total=(tmp-2001)*365  
+          +Math.floor((tmp-2001)/4)  
+          +madd[TheDate.getMonth()]  
+          +TheDate.getDate()  
+          -23;  
+      if   (TheDate.getYear()%4==0&&TheDate.getMonth()>1)  
+          total++;  
+      for(m=0;;m++)  
+      {      
+          k=(CalendarData[m]<0xfff)?11:12;  
+          for(n=k;n>=0;n--)  
+          {  
+              if(total<=29+GetBit(CalendarData[m],n))  
+              {    
+                  isEnd=true;  
+                  break;  
+              }  
+              total=total-29-GetBit(CalendarData[m],n);  
+          }  
+          if(isEnd)break;  
+      }  
+      cYear=2001   +   m;  
+      cMonth=k-n+1;  
+      cDay=total;  
+      if(k==12)  
+      {  
+          if(cMonth==Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth=1-cMonth;  
+          if(cMonth>Math.floor(CalendarData[m]/0x10000)+1)  
+              cMonth--;  
+      }  
+      cHour=Math.floor((TheDate.getHours()+3)/2);  
+  }  
+   
+  function   GetcDateString()  
+  {   var   tmp="";  
+      tmp+=tgString.charAt((cYear-4)%10);       //年干  
+      tmp+=dzString.charAt((cYear-4)%12);       //年支  
+      tmp+="年(";  
+      tmp+=sx.charAt((cYear-4)%12);  
+      tmp+=")   ";  
+      if(cMonth<1)  
+      {    
+        tmp+="闰";  
+          tmp+=monString.charAt(-cMonth-1);  
+      }  
+      else  
+          tmp+=monString.charAt(cMonth-1);  
+      tmp+="月";  
+      tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"卅"));  
+      if(cDay%10!=0||cDay==10)  
+          tmp+=numString.charAt((cDay-1)%10);  
+      tmp+="    ";  
+      if(cHour==13)tmp+="夜";  
+          tmp+=dzString.charAt((cHour-1)%12);  
+      tmp+="时";  
+      cDateString=tmp;  
+      return   tmp;  
+  }  
+   
+  function   GetDateString()  
+  {    
+      var   tmp="";  
+      var   t1=TheDate.getYear();  
+      if   (t1<1900)t1+=1900;  
+      tmp+=t1  
+                +"年"  
+                +(TheDate.getMonth()+1)+"月"  
+                +TheDate.getDate()+"日   "  
+                +TheDate.getHours()+":"  
+                +((TheDate.getMinutes()<10)?"0":"")  
+                +TheDate.getMinutes()
+                +"   星期"+weekString.charAt(TheDate.getDay());    
+      DateString=tmp;  
+      return   tmp;  
+  }  
+   
+  init();  
+  e2c();  
+  GetDateString();  
+  GetcDateString();  
+  document.write(DateString,"农历",cDateString);  
+</script>
+
+</td>
+
+<td width="580">
+<form name=search_js1 method=post action='http://www.jiayu.gov.cn/e/search/index.php' onsubmit='return search_check(document.search_js1);'>
+<div align="right">
+<select name=show><option value=title>
+标题</option><option value=smalltext>
+简介</option><option value=newstext>
+内容</option><option value=writer>
+作者</option><option value=title,smalltext,newstext,writer>
+搜索全部</option></select><select name=classid><option value=0>
+所有栏目</option>[!--class--]</select><input name=keyboard type=text size=13><input type=submit name=Submit value=搜索>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<div class="one">
+<div class="ej_l_nr">
+<div class="nav_ej" id="p_navigator"><a href="http://www.jiayu.gov.cn/">首页</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/dangwugongkai/">党务公开</a>&nbsp;>&nbsp;<a href="http://www.jiayu.gov.cn/dangwugongkai/gongzuodongtai/">工作动态</a></div>
+
+<div class="jbt"></div>
+<h2><div id="p_title">农村基层干部廉洁履行职责若干规定（试行）</div></h2>
+<div class="jbt"></div>
+<div class="zuozhe"></div>
+<div align="center"><span id="p_publishtime">2012-08-29</span>&nbsp;&nbsp;<span id="p_origin">来源：<a href='http://www.jiayu.gov.cn/' target=_blank>嘉鱼政务网</a>&nbsp;&nbsp;责任编辑：党务公开领导小组办公室</span></div>
+<font class="show_c" id="zoom">
+    <div id="p_content">
+	　　<div style="text-align: center"><font size="3"><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体"><img alt="《农村基层干部廉洁履行职责若干规定（试行）学习读本.jpg" width="546" height="295" src="/d/file/dangwugongkai/gongzuodongtai/2012-10-19/c1e030e7d2f6fc2a4502617e2da76429.jpg" /></span></font></div>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">农村基层干部廉洁履行职责若干规定（试行）</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: windowtext">为进一步加强农村党风廉政建设，促进农村基层干部廉洁履行职责，维护农村集体和农民群众利益，推动农村科学发展，促进农村社会和谐，依据《中国共产党章程》和其他有关党内法规、国家法律法规，制定本规定。<span lang="EN-US"><o:p></o:p></span></span></font></font></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">总<span lang="EN-US">&nbsp; </span>则</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: windowtext">农村党风廉政建设关系党的执政基础。农村基层干部廉洁履行职责，是坚持以邓小平理论和&ldquo;三个代表&rdquo;重要思想为指导，深入贯彻落实科学发展观，全面贯彻落实党的路线方针政策，加快推进社会主义新农村建设的重要保障；是新形势下加强党的执政能力建设和先进性建设，造就高素质农村基层干部队伍的重要内容；是保证农村基层干部正确行使权力，发展基层民主，保障农民权益，促进农村和谐稳定的重要基础，是加强和创新社会管理，做好新形势下群众工作，密切党群干群关系的必然要求。<span lang="EN-US"><o:p></o:p></span></span></font></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: windowtext">农村基层干部应当坚定理想信念，牢记和践行全心全意为人民服务的宗旨，恪尽职守、为民奉献；应当发扬党的优良传统和作风，求真务实、艰苦奋斗；应当遵守党的纪律和国家法律，知法守法、依法办事；应当正确履行职责和自觉接受监督，清正廉洁、公道正派；应当倡导健康文明的社会风尚，崇尚科学、移风易俗。<span lang="EN-US"><o:p></o:p></span></span></font></font></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第一章 乡镇领导班子成员和基层站所负责人廉洁履行职责行为规范</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第一条</span></strong></font></font><span style="color: windowtext"><font size="3" face="宋体"> 禁止滥用职权，侵害群众合法权益。不准有下列行为：</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）非法征占、侵占、&ldquo;以租代征&rdquo;转用、买卖农村土地和森林、山岭、草原、荒地、滩涂、水面等资源；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）违反乡镇土地利用总体规划、村镇建设规划和基本农田保护规定进行审批和建设；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）侵占、截留、挪用、挥霍或者违反规定借用农村集体财产或者各项强农惠农资金、物资以及征地补偿费等；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）违反规定干预、插手农村村级组织选举或者农村集体资金、资产、资源的使用、分配、承包、租赁以及农村工程建设等事项；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（五）违反规定扣押、收缴群众款物或者处罚群众；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（六）对发现的严重侵害群众合法权益的违纪违法行为隐瞒不报、压案不查；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（七）其他滥用职权，侵害群众合法权益的行为。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二条</span></strong><font face="宋体"> 禁止利用职务之便，谋取不正当利益。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）索取、收受或者以借为名占用管理、服务对象财物，或者吃拿卡要；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）在管理、服务活动中违反规定收取费用或者谋取私利；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）用公款或者由村级组织、乡镇企业、私营企业报销、支付应当由个人负担的费用；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）设立&ldquo;小金库&rdquo;，侵吞、截留、挪用、坐支公款；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（五）利用职权和职务上的影响为亲属谋取利益；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（六）其他利用职务之便，为本人或者他人谋取不正当利益的行为。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第三条</span></strong><font face="宋体"> 禁止搞不正之风，损害党群干群关系。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）违反规定选拔任用干部，或者在乡镇党委和政府换届选举中拉票贿选，败坏选人用人风气；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）弄虚作假，骗取荣誉和其他利益；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）在社会保障、政策扶持、救灾救济款物分配等事项中违规办事、显失公平；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）漠视群众正当诉求，或者对待群众态度恶劣，故意刁难群众；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（五）大吃大喝，公款旅游，或者违反规定配备、使用小汽车；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="宋体"><font size="3">（六）大操大办婚丧喜庆事宜，或者借机敛财。<span lang="EN-US"><o:p></o:p></span></font></font></span></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第二章 村党组织领导班子成员和村民委员会成员廉洁履行职责行为规范</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第四条</span></strong></font></font><span style="color: windowtext"><font size="3" face="宋体"> 禁止在村级组织选举中拉票贿选、破坏选举。不准有下列行为：</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）违反法定程序组织、参与选举，或者伪造选票、虚报选举票数、篡改选举结果；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）采取暴力、威胁、欺骗、贿赂等不正当手段参选或者妨害村民依法行使选举权、被选举权；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）利用宗教、宗族、家族势力或者黑恶势力干扰、操纵、破坏选举。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第五条</span></strong><font face="宋体"> 禁止在村级事务决策中独断专行、以权谋私。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）违反规定处置集体资金、资产、资源，或者擅自用集体财产为他人提供担保，损害集体利益；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）违法违规发包集体土地、调整收回农民承包土地、强迫或者阻碍农民流转土地承包经营权，非法转让、出租集体土地，或者违反规定强制调整农民宅基地；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）在政府拨付和接受社会捐赠的各类救灾救助、补贴补助资金、物资以及退耕还林退牧还草款物、征地补偿费使用分配发放等方面违规操作、挪用、侵占，或者弄虚作假、优亲厚友；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）在集体资金使用、集体经济项目和工程建设项目立项及承包、宅基地使用安排以及耕地、山林等集体资源承包、租赁、流转等经营活动中暗箱操作，为本人或者他人谋取私利；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（五）违背村民意愿超范围、超标准向村民筹资筹劳，加重村民负担，或者向村民乱集资、乱摊派、乱收费。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第六条</span></strong><font face="宋体"> 禁止在村级事务管理中滥用职权、损公肥私。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）采取侵占、截留、挪用、私分、骗取等手段非法占有集体资金、资产、资源或者其他公共财物；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）在计划生育、落户、殡葬等各项管理、服务工作中或者受委托从事公务活动时，吃拿卡要、故意刁难群众或者收受、索取财物；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）违反规定无据收（付）款，不按审批程序报销发票，或者设立&ldquo;小金库&rdquo;，隐瞒、截留、坐支集体收入；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）以虚报、冒领等手段套取、骗取或者截留、私分国家对集体土地的补偿、补助费以及各项强农惠农补助资金、项目扶持资金；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（五）未经批准擅自借用集体款物或者经批准借用集体款物但逾期不还，或者违反规定用集体资金、公物操办个人婚丧喜庆事宜；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（六）以办理村务为名，请客送礼、大吃大喝，挥霍浪费集体资金，或者滥发奖金、补贴，用集体资金支付应当由个人负担的费用。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第七条</span></strong><font face="宋体"> 禁止在村级事务监督中弄虚作假、逃避监督。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）不按照规定实行民主理财，或者伪造、变造、隐匿、销毁财务会计资料；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）阻挠、干扰村民依法行使询问质询权、罢免权等监督权利；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）阻挠、干扰经济责任审计以及其他重大事项的审计；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（四）阻挠、干扰有关机关、部门依法进行的监督检查或者案件查处。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第八条</span></strong><font face="宋体"> 禁止妨害和扰乱社会管理秩序。不准有下列行为：</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（一）参与、纵容、支持黑恶势力活动；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（二）组织、参与宗族宗派纷争或者聚众闹事；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">（三）参与色情、赌博、吸毒、迷信、邪教等活动或者为其提供便利条件；</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="宋体"><font size="3">（四）违反计划生育政策或者纵容、支持他人违反计划生育政策。<span lang="EN-US"><o:p></o:p></span></font></font></span></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第三章 实施与监督</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第九条</span></strong></font></font><span style="color: windowtext"><font size="3" face="宋体"> 各级党委和政府负责本规定的贯彻实施。开展教育培训，完善考评激励，落实待遇保障，加强监督检查，促进农村基层干部自觉贯彻执行本规定。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十条</span></strong><font face="宋体"> 各级党委和政府应当结合本规定的贯彻实施建立健全农村基层党务公开、政务公开、村务公开和办事公开制度以及农村基层干部经济责任审计制度，推进农村基层权力运行公开透明。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十一条</span></strong><font face="宋体"> 县（市、区、旗）党委和政府每年应当对乡镇领导班子成员执行本规定的情况进行一次检查考核。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">县（市、区、旗）有关主管部门每年应当按照干部管理权限对基层站所负责人执行本规定的情况进行一次检查考核。检查考核时应当充分听取基层站所所在地的乡镇党委和政府的意见，并将考核结果通报乡镇党委和政府。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">乡镇党委和政府每年应当对村党组织领导班子成员和村民委员会成员执行本规定的情况进行一次检查考核。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十二条</span></strong><font face="宋体"> 纪检监察机关协助同级党委和政府或者根据职责开展对本规定贯彻实施情况的监督检查，依纪依法查处农村基层干部违反本规定的行为。</font></font><span lang="EN-US"><br />
+<font face="宋体"><font size="3">&nbsp;&nbsp;<strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">&nbsp;&nbsp;</span></strong></font></font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十三条</span></strong><font face="宋体"> 村党组织和村民委员会应当依据本规定完善村规民约，建立廉政承诺制度，健全监督制约机制，保证本规定的贯彻执行。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十四条</span></strong><font face="宋体"> 村党组织和村民委员会应当结合贯彻执行本规定健全党组织领导的村级民主自治机制。对村级重大事务实行村党组织提议、村党组织和村民委员会商议、党员大会审议、村民会议或者村民代表会议决议，决议内容和实施结果应当公开。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十五条</span></strong><font face="宋体"> 村党组织和村民委员会应当结合贯彻执行本规定建立健全党务公开、村务公开和财务公开制度。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十六条</span></strong><font face="宋体"> 村党组织领导班子成员和村民委员会成员应当将贯彻执行本规定的情况作为民主生活会对照检查、年度述职述廉和民主评议的重要内容，接受党员和村民的监督。</font></font><span lang="EN-US"><br />
+<font face="宋体"><font size="3">&nbsp;&nbsp;&nbsp;<strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">&nbsp;</span></strong></font></font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十七条</span></strong><font face="宋体"> 村务监督委员会或者其他形式的村务监督机构应当依法履行监督职责，对村民委员会成员执行本规定的情况进行监督。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十八条</span></strong><font face="宋体"> 村民代表可以对村民委员会成员执行本规定的情况进行询问和质询。</font></font><span lang="EN-US"><br />
+<font face="宋体"><font size="3">&nbsp;&nbsp;&nbsp;<strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">&nbsp;</span></strong></font></font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第十九条</span></strong><font face="宋体"> 农村基层干部遵守本规定的情况应当作为对其奖励惩处、考核评价、选拔任用、考录的重要依据。<span lang="EN-US"><o:p></o:p></span></font></font></span></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第四章 违反规定行为的处理</span></strong><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第二十条</span></strong></font></font><span style="color: windowtext"><font size="3" face="宋体"> 乡镇领导班子成员和基层站所负责人有违反本规定第一章所列行为的，视情节轻重，由有关机关、部门依照职责权限给予诫勉谈话、通报批评、调离岗位、责令辞职、免职、降职等处理。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">应当追究党纪政纪责任的，依照《中国共产党纪律处分条例》、《行政机关公务员处分条例》等有关规定给予相应的党纪政纪处分。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">乡镇党委和政府领导班子成员因工作失职，应当进行问责的，依照《关于实行党政领导干部问责的暂行规定》处理。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">涉嫌犯罪的，移送司法机关依法处理。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十一条</span></strong><font face="宋体"> 村党组织领导班子成员有违反本规定第二章所列行为的，视情节轻重，由有关机关、部门依照职责权限给予警示谈话、责令公开检讨、通报批评、停职检查、责令辞职、免职等处理。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">应当追究党纪责任的，依照《中国共产党纪律处分条例》给予相应的党纪处分。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">涉嫌犯罪的，移送司法机关依法处理。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十二条</span></strong><font face="宋体"> 村民委员会成员有违反本规定第二章所列行为的，视情节轻重，由有关机关、部门依照职责权限给予警示谈话、责令公开检讨、通报批评、取消当选资格等处理或者责令其辞职，拒不辞职的，依照《中华人民共和国村民委员会组织法》的规定予以罢免。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">对其中的党员，应当追究党纪责任的，依照《中国共产党纪律处分条例》给予相应的党纪处分。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">涉嫌犯罪的，移送司法机关依法处理。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十三条</span></strong><font face="宋体"> 农村基层干部违反本规定获取的不正当经济利益，应当依法予以没收、追缴或者责令退赔；给国家、集体或者村民造成损失的，应当依照有关规定承担赔偿责任。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十四条</span></strong><font face="宋体"> 村党组织领导班子成员和村民委员会成员受到本规定第二十一条、第二十二条处理的，由县（市、区、旗）或者乡镇党委和政府按照规定减发或者扣发绩效补贴（工资）、奖金。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十五条</span></strong><font face="宋体"> 村党组织领导班子成员和村民委员会成员中的党员因违反本规定受到撤销党内职务处分的，或者受到留党察看处分恢复党员权利后，两年内不得担任村党组织领导班子成员；被责令辞职、免职的，一年内不得担任村党组织领导班子成员。<span lang="EN-US"><o:p></o:p></span></font></font></span></p>
+<p align="center" style="text-align: center; line-height: 180%"><font size="3"><font face="宋体"><span lang="EN-US" style="color: windowtext">&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第五章 附则</span></strong></font><span lang="EN-US" style="color: windowtext"><o:p></o:p></span></font></p>
+<p style="line-height: 180%"><font face="宋体"><font size="3"><span lang="EN-US" style="color: windowtext">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong><span style="font-family: 宋体; color: windowtext; mso-bidi-font-family: 宋体">第二十六条</span></strong></font></font><span style="color: windowtext"><font size="3" face="宋体"> 本规定适用于乡镇党委和政府领导班子成员、人大主席团负责人、基层站所负责人，村（社区）党组织（含党委、总支、支部）领导班子成员、村（居）民委员会成员。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3" face="宋体">乡镇其他干部、基层站所其他工作人员，农村集体经济组织中的党组织（含党委、总支、支部）领导班子成员、农村集体经济组织负责人，村民小组负责人，参照执行本规定。</font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十七条</span></strong><font face="宋体"> 各省、自治区、直辖市党委和政府可以根据本规定，结合实际情况制定具体实施办法，并报中央纪委、监察部备案。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十八条</span></strong><font face="宋体"> 本规定由中央纪委、监察部负责解释。</font></font><span lang="EN-US"><br />
+<font size="3" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font size="3"><strong><span style="font-family: 宋体; mso-bidi-font-family: 宋体">第二十九条</span></strong><font face="宋体"> 本规定自发布之日起施行。<span lang="EN-US"><o:p></o:p></span></font></font></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                </div>
+	</font>
+	<div class="wenzi"></div>
+<div align="left"> </div>
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="right"><div id="p_editor">（责任编辑：党务公开领导小组办公室）</div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="o_lb_1">
+<div class="o_lb_2">
+<div class="o_lb_3">
+<div class="o_lb_4"><img src="http://www.jiayu.gov.cn/skin/jy/images/by.gif" width="168" height="230" border="0"></a></div>
+<div class="o_lb_41"><table>
+
+<tr><td height="25"></td></tr>
+<tr><td> |  <a href="http://www.jyjyw.net/" target="_blank">县教育局</a> | </td><td> <a href="http://www.jylr.gov.cn/" target="_blank">县国土局</a> | </td></tr>
+<tr><td> |  <a href="http://www.jyrkjs.com/" target="_blank">县计生局</a> | </td><td> <a href="http://www.jywjw.gov.cn/" target="_blank">县物价局</a> | </td></tr>
+<tr><td> |  <a href="http://www.guanqiao.gov.cn/Index.htm" target="_blank">官 桥 镇</a> | </td></tr>
+</table>
+
+
+</div>
+<div class="o_lb_42"><table>
+
+<tr><td height="25"></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/geyanjingju/" target="_blank">格言警句</a></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/lianzhenggushi/" target="_blank">廉政故事</a></td></tr>
+<tr><td> <a href="http://www.jiayu.gov.cn/dangwugongkai/lianzhengwenhua/lianzhengshuhua/" target="_blank">廉政书画</a></td></tr>
+<tr><td><!--list.var4--></td></tr>
+<tr><td><!--list.var5--></td></tr>
+</table>
+
+
+</div>
+<div class="o_lb_4"><a href="http://www.jiayu.gov.cn/bbs/index.asp?boardid=6" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/l8.gif" width="168" height="50" border="0"></a></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="copyright">
+    <table width="980" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td height="30" colspan="2" align="center" background="http://www.jiayu.gov.cn/skin/jy/images/foot_nav_bg.gif">&nbsp;|&nbsp;<a href="/">网站首页</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/baijianshishiwangshangban/" target="_blank">百件实事网上办</a>&nbsp;|&nbsp;<a href="http://www.jiayu.gov.cn/mail/E_LeadMail.asp" target="_blank">县长信箱</a>&nbsp;|&nbsp;
+<a href="http://www.jiayu.gov.cn/bbs" target="_blank">政务贴吧</a>&nbsp;|&nbsp;</td>
+	  </tr>
+	  <tr><td height="25"></td></tr>
+      <tr>
+       <td height="25"><p>Copyright &copy; 嘉鱼县人民政府办公室  2001-2011</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p><a href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备11019422号-1</a></p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>地址：嘉鱼县人民政府 　邮编：437200　政务邮箱：<a href="mailto:jyzw0715@163.com">jyzw0715@163.com</a>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="25"><p>管理员电话：0715-6355801 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F234f36dff8122bee169172f964b18fc3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;[<a href="http://www.jiayu.gov.cn/mail/login.asp" target="_blank">县长信箱</a>]</p></td>
+      </tr>
+	  <tr><td><a href="http://www.xianning.cyberpolice.cn/" target="_blank"><img src="http://www.jiayu.gov.cn/skin/jy/images/jc.gif" width="70" height="65"></a></td>
+	  </tr>
+    </table>
+  </div>
+
+
+</div>
+</body>
+</html>
