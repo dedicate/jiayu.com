@@ -1,0 +1,966 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=GB2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9"><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:仿宋_GB2312;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:楷体_GB2312;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@仿宋_GB2312";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@楷体_GB2312";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 2.0cm 72.0pt 2.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+.font1
+	{font-size:15.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:仿宋_GB2312}
+.font2
+	{font-size:15.0pt;mso-bidi-font-size:12.0pt;font-family:楷体_GB2312;mso-ascii-font-family:"Times New Roman"}
+.font3
+	{font-size:26.0pt;mso-bidi-font-size:12.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";letter-spacing:2.0pt}
+.font4
+	{font-size:18.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:楷体_GB2312;letter-spacing:1.5pt}
+.font5
+	{font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:黑体}
+.font6
+	{font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:楷体_GB2312;mso-ascii-font-family:"Times New Roman"}
+.font7
+	{font-size:14.0pt;mso-bidi-font-size:12.0pt;font-family:楷体_GB2312;mso-ascii-font-family:"Times New Roman"}
+-->
+</style>
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=right style='text-align:right'><span
+ class='font1'><o:p></o:p></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:275.4pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font2'>事证第</span></b></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font2'></span></b></p>
+  </td>
+  <td width=38 valign=top style='width:28.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font2'>号</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=right style='text-align:right'><span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>
+<b><span class='font3'>事业单位法人年度报告书</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='mso-fareast-font-family:黑体;letter-spacing:1.5pt'><o:p></o:p></span></b></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:275.4pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=40 valign=top style='width:29.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font2'>（</span></b></p>
+  </td>
+  <td width=121 valign=top style='width:90.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font2'></span></b></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font2'>）年度</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'>
+<b><span class='font4'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class='font4'><o:p></o:p></span></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:-6.95pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='height:30.75pt'>
+  <td width=160 valign=bottom style='width:120.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:30.75pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:distribute-all-lines'>
+  <b><span class='font5'>单 位 名 称</span></b></p>
+  </td>
+  <td width=353 valign=bottom style='width:264.7pt;border:none;border-bottom:
+  solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><b><u><span style='font-size:12.0pt;font-family:黑体'><o:p></o:p></span></u></b></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:-2.95pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='height:30.75pt'>
+  <td width=158 valign=bottom style='width:118.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:30.75pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:distribute-all-lines'>
+  <b><span class='font5'>法<span style='letter-spacing:1.5pt'>定代表</span>人</span></b></p>
+  </td>
+  <td width=350 valign=bottom style='width:262.7pt;border:none;border-bottom:
+  solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class='font6'></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:36.15pt;mso-char-indent-count:3.0;
+mso-char-indent-size:12.05pt'><b><u><span style='font-size:12.0pt;
+font-family:黑体'><o:p></o:p></span></u></b></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:-6.95pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='height:30.75pt'>
+  <td width=160 valign=bottom style='width:120.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:30.75pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:distribute-all-lines'>
+  <b><span class='font5'>申 请 日 期</span></b></p>
+  </td>
+  <td width=353 valign=bottom style='width:264.7pt;border:none;border-bottom:
+  solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6' 
+  style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;月&nbsp;&nbsp;日</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><b><u><span
+lang=EN-US style='font-size:15.0pt;mso-bidi-font-size:12.0pt;font-family:黑体'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><u><span><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></p>
+
+<p class=MsoNormal align=center style='text-align:center'>
+<b><span class='font6'>国家事业单位登记管理局制</span></b></p>
+
+<p class=MsoNormal><u><span><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></p>
+
+<u><span style='font-size:10.5pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span></u>
+
+<p class=MsoNormal><u><span lang=EN-US><o:p></o:p></span></u></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.4pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='height:36.75pt'>
+  <td width=636 style='width:477.0pt;border:solid windowtext 1.5pt;border-bottom:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6' 
+  style="mso-spacerun: yes">开&nbsp; 展&nbsp; 业&nbsp; 务&nbsp; 活&nbsp; 动&nbsp; 情&nbsp; 况</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:638.0pt'>
+  <td width=636 valign=top style='width:477.0pt;border:solid windowtext 1.5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:638.0pt'>
+  <p class=MsoNormal style='line-height:22.0pt;mso-line-height-rule:exactly'>
+  <span class='font7'></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=left style='text-align:left'><span><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.4pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext 1.5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='height:36.75pt'>
+  <td width=108 colspan=2 rowspan=5 style='width:81.0pt;border-top:1.5pt;
+  border-left:1.5pt;border-bottom:.5pt;border-right:.5pt;border-color:windowtext;
+  border-style:solid;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt'>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>有年</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>关末</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>登实</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>记际</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>事情</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>项况</span></b></p>
+  </td>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:36.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>单位名称</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:36.75pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:16.0pt;mso-line-height-rule:exactly'>
+  <span class='font7'></span></p>
+  </td>
+ </tr>
+ <tr style='height:37.5pt'>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6' style="mso-spacerun: yes">住&nbsp;&nbsp;&nbsp; 所</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:16.0pt;mso-line-height-rule:exactly'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:37.7pt'>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>法定代表人</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.7pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:16.0pt;mso-line-height-rule:exactly'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:37.5pt'>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>经费来源</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:16.0pt;mso-line-height-rule:exactly'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:38.0pt'>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>开办资金（万元）</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.0pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:38.25pt'>
+  <td width=108 colspan=2 rowspan=6 style='width:81.0pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .5pt;
+  border-right:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>经</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>费</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>收</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>支</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>情</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>况</span></b></p>
+  </td>
+  <td width=133 colspan=2 rowspan=2 style='width:99.75pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>上年度结余</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>（万元）</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>本 年 度 收 入（万元）</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:38.25pt'>
+  <td width=119 colspan=3 style='width:89.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>合 计</span></b></p>
+  </td>
+  <td width=276 colspan=6 style='width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>其中，财政收入</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:29.1pt'>
+  <td width=133 colspan=2 style='width:99.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+  <td width=119 colspan=3 style='width:89.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+  <td width=276 colspan=6 style='width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+ <tr style='height:36.75pt'>
+  <td width=133 colspan=2 rowspan=2 style='width:99.75pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>本年度结余</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>（万元）</span></b></p>
+  </td>
+  <td width=395 colspan=9 style='width:296.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>本 年 度 支 出（万元）</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:38.4pt'>
+  <td width=119 colspan=3 style='width:89.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>合 计</span></b></p>
+  </td>
+  <td width=276 colspan=6 style='width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>其中，人员经费</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:29.2pt'>
+  <td width=133 colspan=2 valign=top style='width:99.75pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.2pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font7'></span></p>
+  </td>
+  <td width=119 colspan=3 valign=top style='width:89.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.2pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class=font7></span></p>
+  </td>
+  <td width=276 colspan=6 valign=top style='width:207.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.2pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:123.95pt'>
+  <td width=108 colspan=2 style='width:81.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:123.95pt'>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>受</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>奖评</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>惩估</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>和情</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>有况</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>关</span></b></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:123.95pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:138.15pt'>
+  <td width=108 colspan=2 style='width:81.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:138.15pt'>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>接及</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>受其</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>捐使</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>赠用</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>资情</span></b></p>
+  <p class=MsoNormal style='text-indent:16.05pt;mso-char-indent-count:1.0;
+  mso-char-indent-size:16.05pt;mso-line-height-alt:0pt'>
+  <b><span class='font6'>助况</span></b></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:138.15pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span class=font7></span></p>
+  </td>
+ </tr>
+ <tr style='height:45.25pt'>
+  <td width=108 colspan=2 rowspan=2 style='width:81.0pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .5pt;
+  border-right:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:0pt'>
+  <b><span class='font6'>人</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:0pt'>
+  <b><span class='font6'>员</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:0pt'>
+  <b><span class='font6'>编</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:0pt'>
+  <b><span class='font6'>制</span></b></p>
+  </td>
+  <td width=96 style='width:72.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext .5pt;border-right:solid windowtext .5pt;mso-border-top-alt:
+  solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>上年末</span></b></p>
+  </td>
+  <td width=120 colspan=3 style='width:90.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+  <td width=108 colspan=3 rowspan=2 style='width:81.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+  0pt'><b><span class='font6'>从</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+  0pt'><b><span class='font6'>业</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+  0pt'><b><span class='font6'>人</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+  0pt'><b><span class='font6'>数</span></b></p>
+  </td>
+  <td width=96 colspan=3 style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>上年末</span></b></p>
+  </td>
+  <td width=108 style='width:81.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+ <tr style='height:45.0pt'>
+  <td width=96 style='width:72.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext .5pt;border-right:solid windowtext .5pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:45.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>本年度</span></b></p>
+  </td>
+  <td width=120 colspan=3 style='width:90.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+  <td width=96 colspan=3 style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>本年度</span></b></p>
+  </td>
+  <td width=108 style='width:81.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+ <tr style='height:39.0pt'>
+  <td width=108 colspan=2 style='width:81.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:39.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>开户银行</span></b></p>
+  </td>
+  <td width=216 colspan=4 style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.0pt'>
+  <p class=MsoNormal>
+  <span class='font6'></span></p>
+  </td>
+  <td width=108 colspan=3 style='width:81.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>银行帐号</span></b></p>
+  </td>
+  <td width=204 colspan=4 style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+ <tr style='height:92.5pt'>
+  <td width=108 colspan=2 rowspan=2 valign=top style='width:81.0pt;border-top:
+  none;border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .5pt;
+  border-right:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:92.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:16.05pt;
+  mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>举</span></b></p>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:16.05pt;
+  mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>办意</span></b></p>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:16.05pt;
+  mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>单见</span></b></p>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:16.05pt;
+  mso-char-indent-count:1.0;mso-char-indent-size:16.05pt'>
+  <b><span class='font6'>位</span></b></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border:none;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:92.5pt'>
+  <p class=MsoNormal><b><span class='font6'></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=96 valign=bottom style='width:72.0pt;border:none;border-bottom:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.0pt'>
+  <p class=MsoNormal>
+  <b><span class='font6'>负责人：</span></b></p>
+  </td>
+  <td width=94 colspan=2 valign=bottom style='width:70.3pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+  <td width=74 colspan=3 valign=bottom style='width:55.7pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=MsoNormal>
+  <b><span class='font6'>公章：</span></b></p>
+  </td>
+  <td width=84 colspan=3 valign=bottom style='width:63.0pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=MsoNormal><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+  <td width=180 colspan=2 valign=bottom style='width:135.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'>
+  <b><span class='font7' 
+  style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;月&nbsp;&nbsp;日
+  </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:67.95pt'>
+  <td width=48 rowspan=6 style='width:36.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:67.95pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>登</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>记</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>管</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>理</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>机</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>关</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>意</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>见</span></b></p>
+  </td>
+  <td width=60 rowspan=2 style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:67.95pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>受</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>理</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>人</span></b></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border:none;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:67.95pt'>
+  <p class=MsoNormal><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:21.25pt'>
+  <td width=96 valign=bottom style='width:72.0pt;border:none;border-bottom:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:21.25pt'>
+  <p class=MsoNormal>
+  <b><span class='font6' style="mso-spacerun:yes">签&nbsp; 名：</span></b></p>
+  </td>
+  <td width=252 colspan=8 valign=bottom style='width:189.0pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:21.25pt'>
+  <p class=MsoNormal>
+  <b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+  <td width=180 colspan=2 valign=bottom style='width:135.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>
+  <b><span class='font6' style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp; 月&nbsp; </span>日</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:66.85pt'>
+  <td width=60 rowspan=2 style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:66.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>审</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>核</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>人</span></b></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border:none;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:66.85pt'>
+  <p class=MsoNormal><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:29.5pt'>
+  <td width=96 valign=bottom style='width:72.0pt;border:none;border-bottom:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.5pt'>
+  <p class=MsoNormal>
+  <b><span class='font6' style="mso-spacerun:yes">签&nbsp; 名：</span></b></p>
+  </td>
+  <td width=252 colspan=8 valign=bottom style='width:189.0pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:29.5pt'>
+  <p class=MsoNormal><span class='font6'><o:p></o:p></span></p>
+  </td>
+  <td width=180 colspan=2 valign=bottom style='width:135.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.5pt'>
+  <p class=MsoNormal align=right style='text-align:right'>
+  <b><span class='font6' style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp; 月&nbsp; </span>日</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:63.45pt'>
+  <td width=60 rowspan=2 style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:63.45pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>负<span><o:p></o:p></span></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>责<span><o:p></o:p></span></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>人</span></b><span class='font6'><o:p></o:p></span></p>
+  </td>
+  <td width=528 colspan=11 valign=bottom style='width:396.0pt;border:none;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:63.45pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:25.85pt'>
+  <td width=96 valign=bottom style='width:72.0pt;border:none;border-bottom:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.85pt'>
+  <p class=MsoNormal><b><span class='font6' style="mso-spacerun:yes">签&nbsp; 名：</span></b></p>
+  </td>
+  <td width=252 colspan=8 valign=bottom style='width:189.0pt;border:none;
+  border-bottom:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:25.85pt'>
+  <p class=MsoNormal><b><span class='font6'><o:p></o:p></span></b></p>
+  </td>
+  <td width=180 colspan=2 valign=bottom style='width:135.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:25.85pt'>
+  <p class=MsoNormal align=right style='text-align:right'>
+  <b><span class='font6' style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp; 月&nbsp; </span>日</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:86.75pt'>
+  <td width=108 colspan=2 style='width:81.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:86.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>备<span><o:p></o:p></span></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span class='font6'>注</span></b><span class='font6'><o:p></o:p></span></p>
+  </td>
+  <td width=528 colspan=11 valign=top style='width:396.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.75pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span class='font6'></span></p>
+  </td>
+ </tr>
+ <tr style='height:29.65pt'>
+  <td width=108 colspan=2 style='width:81.0pt;border:none;mso-border-top-alt:
+  solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>联系人：</span></b></p>
+  </td>
+  <td width=216 colspan=4 valign=top style='width:162.0pt;border:none;
+  mso-border-top-alt:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.65pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class='font6'></span></p>
+  </td>
+  <td width=120 colspan=4 valign=top style='width:90.0pt;border:none;
+  mso-border-top-alt:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'>
+  <b><span class='font6'>联系电话：</span></b></p>
+  </td>
+  <td width=192 colspan=3 valign=top style='width:144.0pt;border:none;
+  mso-border-top-alt:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.65pt'>
+  <p class=MsoNormal align=left style='text-align:left'>
+  <span class='font6'></span></p>
+  </td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=48 style='border:none'></td>
+  <td width=60 style='border:none'></td>
+  <td width=96 style='border:none'></td>
+  <td width=37 style='border:none'></td>
+  <td width=57 style='border:none'></td>
+  <td width=26 style='border:none'></td>
+  <td width=36 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+  <td width=60 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+  <td width=72 style='border:none'></td>
+  <td width=108 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+<p class=MsoNormal align=left style='text-align:left'><b><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:楷体_GB2312'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>
